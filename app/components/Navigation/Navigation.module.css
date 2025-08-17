@@ -24,8 +24,6 @@
 .logoButton {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
   background: none;
   border: none;
   cursor: pointer;
@@ -33,11 +31,23 @@
   transition: all var(--transition-fast);
 }
 
-.logoButton:hover {
+.hamburgerButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-1) 0;
+  transition: all var(--transition-fast);
+}
+
+.logoButton:hover,
+.hamburgerButton:hover {
   opacity: 0.8;
 }
 
-.logoButton:focus-visible {
+.logoButton:focus-visible,
+.hamburgerButton:focus-visible {
   outline: 2px solid var(--color-black);
   outline-offset: 2px;
   border-radius: var(--radius-small);
@@ -141,7 +151,7 @@
 .menu {
   position: fixed;
   top: 0;
-  left: -320px;
+  right: -320px;
   width: 320px;
   height: 100vh;
   background: var(--color-white);
@@ -151,7 +161,7 @@
 }
 
 .menuOpen {
-  transform: translateX(320px);
+  transform: translateX(-320px);
 }
 
 .menuContent {
@@ -209,11 +219,11 @@
   
   .menu {
     width: 360px;
-    left: -360px;
+    right: -360px;
   }
   
   .menuOpen {
-    transform: translateX(360px);
+    transform: translateX(-360px);
   }
   
   .menuContent {
@@ -245,8 +255,8 @@
     display: flex;
   }
   
-  /* Hide hamburger menu on desktop */
-  .menuIcon {
+  /* Hide hamburger button on desktop */
+  .hamburgerButton {
     display: none;
   }
   

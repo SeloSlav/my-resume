@@ -35,20 +35,17 @@ export default function Navigation() {
         <div className={styles.navContent}>
           <button 
             className={styles.logoButton}
-            onClick={(e) => {
-              // Check if we're on desktop (menuIcon is hidden)
-              const menuIcon = e.currentTarget.querySelector(`.${styles.menuIcon}`);
-              const isDesktop = menuIcon && window.getComputedStyle(menuIcon).display === 'none';
-              
-              if (isDesktop) {
-                scrollToTop();
-              } else {
-                toggleMenu();
-              }
-            }}
-            aria-label="Toggle navigation menu"
+            onClick={scrollToTop}
+            aria-label="Go to top"
           >
             <span className={styles.logo}>Martin Erlic</span>
+          </button>
+          
+          <button 
+            className={styles.hamburgerButton}
+            onClick={toggleMenu}
+            aria-label="Toggle navigation menu"
+          >
             <div className={`${styles.menuIcon} ${isOpen ? styles.menuIconOpen : ''}`}>
               <span></span>
               <span></span>

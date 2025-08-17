@@ -302,7 +302,7 @@ export default function Home() {
                 <p>
                   <span style={{textDecoration: 'line-through', opacity: 0.6}}>
                     Croatian national team football player
-                  </span> • Business strategist • Technology innovator • Problem solver
+                  </span> • Business strategist • Tech builder • Problem solver
                 </p>
               </div>
               <div className={styles.aboutImage}>
