@@ -157,18 +157,18 @@ export default function Home() {
                   <div className={styles.portfolioImage} data-has-image="true">
                     <Image 
                       src="/travel-guide.png" 
-                      alt="Croatia Travel Guide" 
+                      alt="Croatia Day Planner" 
                       className={styles.portfolioImageBg}
                       fill
                       style={{objectFit: 'cover'}}
                     />
                     <div className={styles.portfolioOverlay}></div>
                     <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Croatia Travel Guide</div>
+                      <div className={styles.placeholderImage}>Croatia Day Planner</div>
                     </div>
                   </div>
                 </a>
-                <h3 className="h3 mb-2">Single-Day MVP: Croatia Travel Guide</h3>
+                <h3 className="h3 mb-2">Single-Day MVP: Croatia Day Planner</h3>
                 <p className="caption text-gray mb-3">
                   AI-Powered • Next.js • Rapid Prototyping • Vercel
                 </p>
@@ -179,7 +179,7 @@ export default function Home() {
                   deliver a functional prototype using the best that AI tools have to offer.
                 </p>
                 <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Try Guide →
+                  Try Day Planner →
                 </a>
               </div>
 
