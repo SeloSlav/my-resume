@@ -230,6 +230,7 @@ export default function Home() {
                   <span className={styles.skill}>JavaScript & React</span>
                   <span className={styles.skill}>TypeScript</span>
                   <span className={styles.skill}>Node.js</span>
+                  <span className={styles.skill}>Ruby on Rails</span>
                   <span className={styles.skill}>Python</span>
                   <span className={styles.skill}>Java</span>
                   <span className={styles.skill}>Kotlin</span>
@@ -256,6 +257,7 @@ export default function Home() {
                 <h3 className="h3 mb-4">Databases & APIs</h3>
                 <div className={styles.skillsList}>
                   <span className={styles.skill}>PostgreSQL</span>
+                  <span className={styles.skill}>MySQL</span>
                   <span className={styles.skill}>MongoDB</span>
                   <span className={styles.skill}>SpacetimeDB</span>
                   <span className={styles.skill}>Parse (Open Source)</span>
