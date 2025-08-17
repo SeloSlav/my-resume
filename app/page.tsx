@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Navigation from './components/Navigation/Navigation';
 import styles from './page.module.css';
 
@@ -173,7 +174,7 @@ export default function Home() {
                 </p>
                 <p>
                   Have an idea that needs technical expertise and business acumen? 
-                  Let's discuss how we can bring your vision to life with the right 
+                  Let&apos;s discuss how we can bring your vision to life with the right 
                   combination of strategy and execution.
                 </p>
                 <button 
@@ -194,11 +195,11 @@ export default function Home() {
               <div className={styles.aboutText}>
                 <h2 className="h1 mb-6">About</h2>
                 <p className="mb-4">
-                  I'm an entrepreneur and full-stack developer who thrives at the 
+                  I&apos;m an entrepreneur and full-stack developer who thrives at the 
                   intersection of business strategy and cutting-edge technology. 
                   My journey spans from establishing international trade operations 
                   to deploying AI-powered applications that push the boundaries of 
-                  what's possible.
+                  what&apos;s possible.
                 </p>
                 <p className="mb-4">
                   From navigating complex health code regulations and licensing for 
@@ -208,17 +209,19 @@ export default function Home() {
                 </p>
                 <p>
                   My approach is rooted in rapid adaptation, continuous learning, 
-                  and the relentless pursuit of innovative solutions. Whether it's 
+                  and the relentless pursuit of innovative solutions. Whether it&apos;s 
                   scaling businesses across international markets or implementing 
                   sophisticated AI systems, I deliver results that matter.
                 </p>
               </div>
               <div className={styles.aboutImage}>
                 <div className={styles.profileImage}>
-                  <img 
+                  <Image 
                     src="/me.png" 
                     alt="Martin Erlic - Entrepreneur & Full-Stack Developer" 
                     className={styles.profilePhoto}
+                    width={280}
+                    height={280}
                   />
                 </div>
               </div>
@@ -327,11 +330,11 @@ export default function Home() {
           <div className="container">
             <div className={styles.contactContent}>
               <div className={styles.contactInfo}>
-                <h2 className="h1 mb-6">Let's Build Something Extraordinary</h2>
+                <h2 className="h1 mb-6">Let&apos;s Build Something Extraordinary</h2>
                 <p className="mb-6">
                   Ready to transform your vision into reality? Whether you need 
                   a full-stack application, business strategy consultation, or 
-                  innovative AI integration, let's discuss how we can push the 
+                  innovative AI integration, let&apos;s discuss how we can push the 
                   boundaries together.
                 </p>
                 <p className="mb-6 text-gray">
@@ -339,7 +342,7 @@ export default function Home() {
                   <br />
                   I grew up in Canada but speak conversational Croatian and can understand almost everything.
                   <br />
-                  <em>Currently waiting for my son to be born so he can teach me better Croatian! 👶</em>
+                  <em>Currently waiting for my son to be born so he can help me! 👶</em>
                 </p>
                 <div className={styles.contactDetails}>
                   <a href="tel:+385091906361" className={styles.contactLink}>
@@ -356,7 +359,7 @@ export default function Home() {
                       Stack Overflow Profile
                     </a>
                     <p className={`caption text-gray ${styles.stackOverflowNote}`}>
-                      * Yeah, I know SO is basically dead, but here's some proof I knew a thing or two before OpenAI called all of our technical abilities into question 😅
+                      * Yeah, I know SO is basically dead, but here&apos;s some proof I knew a thing or two before OpenAI called all of our technical abilities into question 😅
                     </p>
                   </div>
                 </div>
