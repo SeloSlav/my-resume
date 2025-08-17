@@ -1,0 +1,138 @@
+---
+description: When designing any element in CSS for this sophisticated portfolio website, follow the comprehensive design system and architectural principles outlined in the style guide. This includes using component-specific CSS files, maintaining consistent typography hierarchy with serif fonts, implementing the elegant black & white aesthetic, following the mathematical spacing scale (8px base unit), and ensuring responsive design with proper accessibility standards. Always reference @style-guide.mdc for detailed specifications on typography, colors, spacing, interactive elements, and best practices.
+alwaysApply: false
+---
+# Portfolio Website Style Guide
+
+## CSS Architecture & Design System
+
+When designing any element in CSS for this sophisticated portfolio website, follow these principles:
+
+### File Structure
+- Use component-specific CSS files (e.g., `Header.module.css`, `ProjectCard.module.css`)
+- Maintain `globals.css` for shared design tokens, typography, and base styles
+- Follow CSS Modules pattern for component isolation
+
+### Design Philosophy
+- **Elegant Black & White Aesthetic**: Sophisticated monochromatic palette with strategic use of contrast
+- **Serif Typography**: Professional, readable serif fonts for headers and body text
+- **Modern Minimalism**: Clean layouts with purposeful whitespace and geometric precision
+- **Consistent Spacing**: Mathematical spacing scale (8px base unit: 8, 16, 24, 32, 48, 64, 96px)
+
+### Typography Hierarchy
+- **Display**: Large serif headings (48-72px) for hero sections
+- **H1**: Primary headings (36-48px) for section titles
+- **H2**: Secondary headings (24-32px) for subsections
+- **H3**: Tertiary headings (20-24px) for card titles
+- **Body**: Readable serif text (16-18px) with optimal line height (1.6-1.8)
+- **Caption**: Small text (14px) for metadata and labels
+
+### Color System
+- **Primary Black**: #000000 (pure black for text and accents)
+- **Charcoal**: #1a1a1a (dark backgrounds)
+- **Medium Gray**: #666666 (secondary text)
+- **Light Gray**: #f5f5f5 (subtle backgrounds)
+- **Pure White**: #ffffff (primary background)
+- **Accent**: Minimal use of single accent color if needed
+
+### Spacing & Layout
+- **Container Max Width**: 1200px with responsive padding
+- **Grid System**: CSS Grid and Flexbox for layouts
+- **Vertical Rhythm**: Consistent 24px baseline grid
+- **Component Spacing**: 48px between major sections, 24px between related elements
+
+### Interactive Elements
+- **Buttons**: Minimal borders, subtle hover states, consistent padding (12px 24px)
+- **Links**: Underline on hover, smooth transitions (200ms ease)
+- **Cards**: Subtle shadows, clean borders, hover elevation
+- **Forms**: Clean inputs with focus states
+
+### Responsive Design
+- **Mobile First**: Start with mobile styles, enhance for larger screens
+- **Breakpoints**: 
+  - Mobile: 320px+
+  - Tablet: 768px+
+  - Desktop: 1024px+
+  - Large: 1440px+
+
+### Performance & Accessibility
+- **Font Loading**: Optimize web font loading with font-display: swap
+- **Contrast**: Ensure WCAG AA compliance (4.5:1 minimum)
+- **Focus States**: Clear, visible focus indicators
+- **Semantic HTML**: Proper heading hierarchy and landmark elements
+
+### CSS Best Practices
+- Use CSS custom properties for design tokens
+- Implement consistent naming conventions (BEM or CSS Modules)
+- Minimize specificity conflicts
+- Use logical properties (margin-inline, padding-block)
+- Implement smooth transitions for interactive states
+
+This style guide ensures a cohesive, professional, and accessible portfolio website that showcases work with sophistication and clarity.
+# Portfolio Website Style Guide
+
+## CSS Architecture & Design System
+
+When designing any element in CSS for this sophisticated portfolio website, follow these principles:
+
+### File Structure
+- Use component-specific CSS files (e.g., `Header.module.css`, `ProjectCard.module.css`)
+- Maintain `globals.css` for shared design tokens, typography, and base styles
+- Follow CSS Modules pattern for component isolation
+
+### Design Philosophy
+- **Elegant Black & White Aesthetic**: Sophisticated monochromatic palette with strategic use of contrast
+- **Serif Typography**: Professional, readable serif fonts for headers and body text
+- **Modern Minimalism**: Clean layouts with purposeful whitespace and geometric precision
+- **Consistent Spacing**: Mathematical spacing scale (8px base unit: 8, 16, 24, 32, 48, 64, 96px)
+
+### Typography Hierarchy
+- **Display**: Large serif headings (48-72px) for hero sections
+- **H1**: Primary headings (36-48px) for section titles
+- **H2**: Secondary headings (24-32px) for subsections
+- **H3**: Tertiary headings (20-24px) for card titles
+- **Body**: Readable serif text (16-18px) with optimal line height (1.6-1.8)
+- **Caption**: Small text (14px) for metadata and labels
+
+### Color System
+- **Primary Black**: #000000 (pure black for text and accents)
+- **Charcoal**: #1a1a1a (dark backgrounds)
+- **Medium Gray**: #666666 (secondary text)
+- **Light Gray**: #f5f5f5 (subtle backgrounds)
+- **Pure White**: #ffffff (primary background)
+- **Accent**: Minimal use of single accent color if needed
+
+### Spacing & Layout
+- **Container Max Width**: 1200px with responsive padding
+- **Grid System**: CSS Grid and Flexbox for layouts
+- **Vertical Rhythm**: Consistent 24px baseline grid
+- **Component Spacing**: 48px between major sections, 24px between related elements
+
+### Interactive Elements
+- **Buttons**: Minimal borders, subtle hover states, consistent padding (12px 24px)
+- **Links**: Underline on hover, smooth transitions (200ms ease)
+- **Cards**: Subtle shadows, clean borders, hover elevation
+- **Forms**: Clean inputs with focus states
+
+### Responsive Design
+- **Mobile First**: Start with mobile styles, enhance for larger screens
+- **Breakpoints**: 
+  - Mobile: 320px+
+  - Tablet: 768px+
+  - Desktop: 1024px+
+  - Large: 1440px+
+
+### Performance & Accessibility
+- **Font Loading**: Optimize web font loading with font-display: swap
+- **Contrast**: Ensure WCAG AA compliance (4.5:1 minimum)
+- **Focus States**: Clear, visible focus indicators
+- **Semantic HTML**: Proper heading hierarchy and landmark elements
+
+### CSS Best Practices
+- Use CSS custom properties for design tokens
+- Implement consistent naming conventions (BEM or CSS Modules)
+- Minimize specificity conflicts
+- Use logical properties (margin-inline, padding-block)
+- Implement smooth transitions for interactive states
+
+This style guide ensures a cohesive, professional, and accessible portfolio website that showcases work with sophistication and clarity.
