@@ -139,13 +139,13 @@ export default function Home() {
                 </a>
                 <h3 className="h3 mb-2">Zoodio AI Platform</h3>
                 <p className="caption text-gray mb-3">
-                  OpenAI • Gemini • Full-Stack • Copywriting
+                  OpenAI • Gemini • Web Development • Copywriting
                 </p>
                 <p>
-                  Developed the full-stack application using cloud-based databases
-                  and AI APIs, with heavy attention to front-end design, UI/UX, and
-                  optimization of user subscriptions to maximize customer retention
-                  and engagement.
+                  Built the complete application from front-end to back-end infrastructure,
+                  integrating AI APIs with custom server logic and database architecture.
+                  Focused heavily on front-end design, UI/UX, and optimization of user
+                  subscriptions to maximize customer retention and engagement.
                 </p>
                 <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Explore Platform →
