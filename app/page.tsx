@@ -8,7 +8,7 @@ export default function Home() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ 
+      element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -18,10 +18,42 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      
+
       <main className={styles.main}>
         {/* Hero Section */}
         <section id="hero" className={`${styles.section} ${styles.hero}`}>
+          {/* Background Images - Desktop Only */}
+          <div className={styles.heroBackgroundImages}>
+            <Image
+              src="/business-icon.png"
+              alt=""
+              className={styles.heroImageLeft}
+              width={400}
+              height={400}
+            />
+            <Image
+              src="/hero_image_combined.png"
+              alt=""
+              className={styles.heroImageCombined}
+              width={280}
+              height={200}
+            />
+            <Image
+              src="/technology-icon.png"
+              alt=""
+              className={styles.heroImageRight}
+              width={400}
+              height={400}
+            />
+            <Image
+              src="/bridge-icon.png"
+              alt=""
+              className={styles.heroImageTop}
+              width={250}
+              height={250}
+            />
+          </div>
+          
           <div className="container">
             <div className={styles.heroContent}>
               <h1 className={`display ${styles.heroTitle}`}>
@@ -30,18 +62,18 @@ export default function Home() {
                 & Technology
               </h1>
               <p className={styles.heroSubtitle}>
-                Entrepreneur & Full-Stack Developer with proven expertise in scaling 
-                businesses from concept to deployment across e-commerce, AI applications, 
-                and innovative web technologies.
+                Entrepreneur & Full-Stack Developer with proven expertise in scaling
+                businesses from concept to deployment across e-commerce
+                and the web.
               </p>
               <div className={styles.heroActions}>
-                <button 
+                <button
                   className="btn btn--primary"
                   onClick={() => scrollToSection('portfolio')}
                 >
                   View Work
                 </button>
-                <button 
+                <button
                   className="btn"
                   onClick={() => scrollToSection('contact')}
                 >
@@ -59,8 +91,18 @@ export default function Home() {
             <div className={`grid grid-3 ${styles.portfolioGrid}`}>
               <div className={`card ${styles.portfolioCard}`}>
                 <a href="https://www.seloolive.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage}>
-                    <div className={styles.placeholderImage}>Selo Olive</div>
+                  <div className={styles.portfolioImage} data-has-image="true">
+                    <Image
+                      src="/selo.png"
+                      alt="Selo Olive E-Commerce Platform"
+                      className={styles.portfolioImageBg}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                    />
+                    <div className={styles.portfolioOverlay}></div>
+                    <div className={styles.portfolioText}>
+                      <div className={styles.placeholderImage}>Selo Olive</div>
+                    </div>
                   </div>
                 </a>
                 <h3 className="h3 mb-2">Selo Olive E-Commerce</h3>
@@ -68,42 +110,129 @@ export default function Home() {
                   Import/Export • Health Regulations • Digital Marketing
                 </p>
                 <p>
-                  Full-scale e-commerce platform specializing in olive oil imports. 
-                  Managed regulatory compliance, licensing, and business establishment 
-                  across international markets. Executed digital marketing campaigns 
-                  across TikTok, Instagram, and Twitter to build brand awareness 
+                  Full-scale e-commerce platform specializing in olive oil imports.
+                  Managed regulatory compliance, licensing, and business establishment
+                  across international markets. Executed digital marketing campaigns
+                  across TikTok, Instagram, and Twitter to build brand awareness
                   and drive customer acquisition.
                 </p>
                 <a href="https://www.seloolive.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Visit Site →
                 </a>
               </div>
-              
+
               <div className={`card ${styles.portfolioCard}`}>
                 <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage}>
-                    <div className={styles.placeholderImage}>Zoodio.ai</div>
+                  <div className={styles.portfolioImage} data-has-image="true">
+                    <Image
+                      src="/zoodio.png"
+                      alt="Zoodio AI Platform"
+                      className={styles.portfolioImageBg}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                    />
+                    <div className={styles.portfolioOverlay}></div>
+                    <div className={styles.portfolioText}>
+                      <div className={styles.placeholderImage}>Zoodio.ai</div>
+                    </div>
                   </div>
                 </a>
                 <h3 className="h3 mb-2">Zoodio AI Platform</h3>
                 <p className="caption text-gray mb-3">
-                  OpenAI • Gemini API • Full-Stack • Copywriting
+                  OpenAI • Gemini • Full-Stack • Copywriting
                 </p>
                 <p>
-                  Developed the entire full-stack application using cloud-based databases 
-                  and AI APIs, with heavy attention to front-end design, UI/UX, and 
-                  optimization of user subscriptions to maximize customer retention 
+                  Developed the full-stack application using cloud-based databases
+                  and AI APIs, with heavy attention to front-end design, UI/UX, and
+                  optimization of user subscriptions to maximize customer retention
                   and engagement.
                 </p>
                 <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Explore Platform →
                 </a>
               </div>
-              
-                            <div className={`card ${styles.portfolioCard}`}>
+
+              <div className={`card ${styles.portfolioCard}`}>
+                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                  <div className={styles.portfolioImage} data-has-image="true">
+                    <Image 
+                      src="/travel-guide.png" 
+                      alt="Croatia Travel Guide" 
+                      className={styles.portfolioImageBg}
+                      fill
+                      style={{objectFit: 'cover'}}
+                    />
+                    <div className={styles.portfolioOverlay}></div>
+                    <div className={styles.portfolioText}>
+                      <div className={styles.placeholderImage}>Croatia Travel Guide</div>
+                    </div>
+                  </div>
+                </a>
+                <h3 className="h3 mb-2">Single-Day MVP: Croatia Travel Guide</h3>
+                <p className="caption text-gray mb-3">
+                  AI-Powered • Next.js • Rapid Prototyping • Vercel
+                </p>
+                <p>
+                  Example of rapid MVP development - built in a single day using AI to
+                  create personalized activity guides for every major city in Croatia.
+                  I wanted to see how quickly I could validate a product concept and
+                  deliver a functional prototype using the best that AI tools have to offer.
+                </p>
+                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                  Try Guide →
+                </a>
+              </div>
+
+              {/* Second Row */}
+              <div className={`card ${styles.portfolioCard}`}>
+                <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                  <div className={styles.portfolioImage} data-has-image="true">
+                    <Image 
+                      src="/babushka-book.png" 
+                      alt="Babushka Book & Universe" 
+                      className={styles.portfolioImageBg}
+                      fill
+                      style={{objectFit: 'cover'}}
+                    />
+                    <div className={styles.portfolioOverlay}></div>
+                    <div className={styles.portfolioText}>
+                      <div className={styles.placeholderImage}>Babushka Book</div>
+                    </div>
+                  </div>
+                </a>
+                <h3 className="h3 mb-2">Babushka Book & Universe</h3>
+                <p className="caption text-gray mb-3">
+                  Creative Writing • Web Development • World Building
+                </p>
+                <p>
+                  Yes, I wrote a book! Published in 2022, working closely
+                  with professional developmental editor{' '}
+                  <a href="https://nonsensefreeeditor.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>
+                    Kristin McTiernan
+                  </a>. Think of it as
+                  the ultimate stakeholder management project, getting to know dozens of
+                  characters, understanding their motivations, and building a cohesive
+                  universe where everything connects.
+                </p>
+                                <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                  Explore Universe →
+                </a>
+              </div>
+
+              <div className={`card ${styles.portfolioCard}`}>
                 <a href="https://www.brothandbullets.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage}>
-                    <div className={styles.placeholderImage}>Broth & Bullets</div>
+                  <div className={styles.portfolioImage} data-has-image="true">
+                    <Image 
+                      src="/broth-bullets.png" 
+                      alt="Broth & Bullets Multiplayer Game" 
+                      className={styles.portfolioImageBg}
+                      fill
+                      style={{objectFit: 'cover'}}
+                    />
+                    <div className={styles.portfolioOverlay}></div>
+                    <div className={styles.portfolioText}>
+                      <div className={styles.placeholderImage}>Broth & Bullets</div>
+                    </div>
                   </div>
                 </a>
                 <h3 className="h3 mb-2">Real-Time Multiplayer Survival Game</h3>
@@ -121,63 +250,20 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Second Row */}
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage}>
-                    <div className={styles.placeholderImage}>Croatia Travel Guide</div>
-                  </div>
-                </a>
-                <h3 className="h3 mb-2">Single-Day MVP: Croatia Travel Guide</h3>
-                <p className="caption text-gray mb-3">
-                  AI-Powered • Next.js • Rapid Prototyping • Vercel
-                </p>
-                <p>
-                  Example of rapid MVP development - built in a single day using AI to 
-                  create personalized activity guides for any city in Croatia. 
-                  I wanted to see how quickly I could validate a product concept and 
-                  deliver a functional prototype using the best that AI tools have to offer.
-                </p>
-                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Try Guide →
-                </a>
-              </div>
-
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage}>
-                    <div className={styles.placeholderImage}>Babushka Book</div>
-                  </div>
-                </a>
-                <h3 className="h3 mb-2">Babushka Book & Universe</h3>
-                <p className="caption text-gray mb-3">
-                  Creative Writing • Web Development • World Building
-                </p>
-                <p>
-                  Yes, I wrote an entire book! This was before AI was any good, 
-                  so you know hopefully you can trust that I wrote it myself!
-                  Also created the website that showcases the book and the 
-                  universe in which it is set.
-                </p>
-                <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Explore Universe →
-          </a>
-        </div>
-
               <div className={`card ${styles.portfolioCard} ${styles.comingSoon}`}>
                 <div className={styles.portfolioImage}>
                   <div className={styles.placeholderImage}>Your Project?</div>
                 </div>
-                <h3 className="h3 mb-2">Let's Collaborate</h3>
+                <h3 className="h3 mb-2">Let&apos;s Collaborate</h3>
                 <p className="caption text-gray mb-3">
                   Partnership • Innovation • Growth
                 </p>
                 <p>
-                  Have an idea that needs technical expertise and business acumen? 
-                  Let&apos;s discuss how we can bring your vision to life with the right 
+                  Have an idea that needs technical expertise and business acumen?
+                  Let&apos;s discuss how we can bring your vision to life with the right
                   combination of strategy and execution.
                 </p>
-                <button 
+                <button
                   className="btn"
                   onClick={() => scrollToSection('contact')}
                 >
@@ -193,32 +279,37 @@ export default function Home() {
           <div className="container">
             <div className={styles.aboutContent}>
               <div className={styles.aboutText}>
-                <h2 className="h1 mb-6">About</h2>
+                <h2 className="h1 mb-6">About Me</h2>
                 <p className="mb-4">
-                  I&apos;m an entrepreneur and full-stack developer who thrives at the 
-                  intersection of business strategy and cutting-edge technology. 
-                  My journey spans from establishing international trade operations 
-                  to deploying AI-powered applications that push the boundaries of 
+                  I&apos;m an entrepreneur and full-stack developer who thrives at the
+                  intersection of business strategy and cutting-edge technology.
+                  My journey spans from establishing international trade operations
+                  to deploying AI-powered applications that push the boundaries of
                   what&apos;s possible.
                 </p>
                 <p className="mb-4">
-                  From navigating complex health code regulations and licensing for 
-                  e-commerce ventures to architecting real-time gaming platforms with 
-                  advanced AI integration, I bring a unique perspective that combines 
+                  From navigating complex health code regulations and licensing for
+                  e-commerce ventures to architecting real-time gaming platforms with
+                  advanced AI integration, I bring a unique perspective that combines
                   entrepreneurial vision with technical execution.
                 </p>
                 <p>
-                  My approach is rooted in rapid adaptation, continuous learning, 
-                  and the relentless pursuit of innovative solutions. Whether it&apos;s 
-                  scaling businesses across international markets or implementing 
+                  My approach is rooted in rapid adaptation, continuous learning,
+                  and the relentless pursuit of innovative solutions. Whether it&apos;s
+                  scaling businesses across international markets or implementing
                   sophisticated AI systems, I deliver results that matter.
+                </p>
+                <p>
+                  <span style={{textDecoration: 'line-through', opacity: 0.6}}>
+                    Croatian national team football player
+                  </span> • Business strategist • Technology innovator • Problem solver
                 </p>
               </div>
               <div className={styles.aboutImage}>
                 <div className={styles.profileImage}>
-                  <Image 
-                    src="/me.png" 
-                    alt="Martin Erlic - Entrepreneur & Full-Stack Developer" 
+                  <Image
+                    src="/me.png"
+                    alt="Martin Erlic - Entrepreneur & Full-Stack Developer"
                     className={styles.profilePhoto}
                     width={280}
                     height={280}
@@ -233,7 +324,7 @@ export default function Home() {
         <section id="expertise" className={`${styles.section} ${styles.expertise}`}>
           <div className="container">
             <h2 className="h1 text-center mb-8">Core Expertise</h2>
-            
+
             <div className={styles.expertiseGrid}>
               {/* Technical Skills */}
               <div className={styles.expertiseCategory}>
@@ -286,7 +377,6 @@ export default function Home() {
                   <span className={styles.skill}>OpenAI APIs</span>
                   <span className={styles.skill}>Gemini APIs</span>
                   <span className={styles.skill}>ElevenLabs APIs</span>
-                  <span className={styles.skill}>Advanced Prompting</span>
                   <span className={styles.skill}>Cursor IDE</span>
                   <span className={styles.skill}>AI-Readable Documentation</span>
                   <span className={styles.skill}>Rule Files & Context Optimization</span>
@@ -332,9 +422,9 @@ export default function Home() {
               <div className={styles.contactInfo}>
                 <h2 className="h1 mb-6">Let&apos;s Build Something Extraordinary</h2>
                 <p className="mb-6">
-                  Ready to transform your vision into reality? Whether you need 
-                  a full-stack application, business strategy consultation, or 
-                  innovative AI integration, let&apos;s discuss how we can push the 
+                  Ready to transform your vision into reality? Whether you need
+                  a full-stack application, business strategy consultation, or
+                  innovative AI integration, let&apos;s discuss how we can push the
                   boundaries together.
                 </p>
                 <p className="mb-6 text-gray">
@@ -364,47 +454,47 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
+
               <form className={styles.contactForm}>
                 <div className={styles.formGroup}>
                   <label htmlFor="name" className="caption mb-1">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    className="input" 
-                    required 
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="input"
+                    required
                   />
                 </div>
-                
+
                 <div className={styles.formGroup}>
                   <label htmlFor="email" className="caption mb-1">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    className="input" 
-                    required 
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="input"
+                    required
                   />
                 </div>
-                
+
                 <div className={styles.formGroup}>
                   <label htmlFor="message" className="caption mb-1">Message</label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    rows={5} 
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
                     className={`input ${styles.textarea}`}
                     required
                   ></textarea>
                 </div>
-                
+
                 <button type="submit" className="btn btn--primary">
                   Send Message
                 </button>
               </form>
             </div>
-    </div>
+          </div>
         </section>
       </main>
     </>

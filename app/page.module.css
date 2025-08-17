@@ -14,6 +14,8 @@
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, var(--color-white) 0%, var(--color-gray-light) 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .heroContent {
@@ -42,6 +44,44 @@
   gap: var(--space-3);
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* Hero Background Images */
+.heroBackgroundImages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding-top: 120px; /* Mobile: Push content down to make room for combined image */
+}
+
+/* Mobile: Hide individual icons */
+.heroImageLeft,
+.heroImageRight,
+.heroImageTop {
+  display: none;
+}
+
+/* Mobile: Show combined image centered */
+.heroImageCombined {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 200px;
+  opacity: 0.3;
+  transition: all var(--transition-slow);
+  object-fit: contain;
 }
 
 /* Portfolio Section */
@@ -77,18 +117,77 @@
   border-radius: var(--radius-medium);
   margin-bottom: var(--space-3);
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   transition: all var(--transition-fast);
 }
 
-.portfolioImageLink:hover .portfolioImage {
-  background: var(--color-gray-medium);
+.portfolioImageBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all var(--transition-fast);
+  z-index: 1;
 }
 
-.portfolioImageLink:hover .placeholderImage {
+.portfolioOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all var(--transition-fast);
+  border-radius: var(--radius-medium);
+  z-index: 2;
+}
+
+.portfolioText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: all var(--transition-fast);
+}
+
+.portfolioImageLink:hover .portfolioOverlay,
+.portfolioImageLink:hover .portfolioText {
+  opacity: 0;
+}
+
+.placeholderImage {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: var(--text-h3);
   color: var(--color-white);
+  font-weight: 400;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+}
+
+/* Styling for images WITH background */
+.portfolioImage[data-has-image="true"] .placeholderImage {
+  color: var(--color-white);
+}
+
+/* Fallback styling when no background image */
+.portfolioImage:not([data-has-image="true"]) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolioImage:not([data-has-image="true"]) .placeholderImage {
+  color: var(--color-gray-medium);
+}
+
+.portfolioImage:not([data-has-image="true"]) .portfolioOverlay,
+.portfolioImage:not([data-has-image="true"]) .portfolioText {
+  display: none;
 }
 
 .comingSoon {
@@ -354,6 +453,57 @@
   
   .heroSubtitle {
     margin-bottom: var(--space-12);
+  }
+  
+  /* Desktop: Hide combined image */
+  .heroImageCombined {
+    display: none;
+  }
+  
+  /* Desktop: Reset hero content padding */
+  .heroContent {
+    padding-top: 0;
+  }
+  
+  /* Desktop: Show individual icons in triangle layout */
+  .heroImageLeft {
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    opacity: 0.25;
+    transition: all var(--transition-slow);
+    object-fit: contain;
+  }
+  
+  .heroImageRight {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    opacity: 0.25;
+    transition: all var(--transition-slow);
+    object-fit: contain;
+    left: auto;
+  }
+  
+  .heroImageTop {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 350px;
+    opacity: 0.25;
+    transition: all var(--transition-slow);
+    object-fit: contain;
   }
   
   .portfolioImage {
