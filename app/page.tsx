@@ -24,9 +24,9 @@ export default function Home() {
           <div className="container">
             <div className={styles.heroContent}>
               <h1 className={`display ${styles.heroTitle}`}>
-                Building Tomorrow's
+                Bridging Business
                 <br />
-                Digital Solutions
+                & Technology
               </h1>
               <p className={styles.heroSubtitle}>
                 Entrepreneur & Full-Stack Developer with proven expertise in scaling 
@@ -154,14 +154,14 @@ export default function Home() {
                 </p>
                 <p>
                   Yes, I wrote an entire book! This was before AI was any good, 
-                  so you know hopefully you can trust that I wrote it myself! 
+                  so you know hopefully you can trust that I wrote it myself!
                   Also created the website that showcases the book and the 
                   universe in which it is set.
                 </p>
                 <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Explore Universe →
-                </a>
-              </div>
+          </a>
+        </div>
 
               <div className={`card ${styles.portfolioCard} ${styles.comingSoon}`}>
                 <div className={styles.portfolioImage}>
@@ -212,6 +212,15 @@ export default function Home() {
                   scaling businesses across international markets or implementing 
                   sophisticated AI systems, I deliver results that matter.
                 </p>
+              </div>
+              <div className={styles.aboutImage}>
+                <div className={styles.profileImage}>
+                  <img 
+                    src="/me.png" 
+                    alt="Martin Erlic - Entrepreneur & Full-Stack Developer" 
+                    className={styles.profilePhoto}
+                  />
+                </div>
               </div>
             </div>
           </div>

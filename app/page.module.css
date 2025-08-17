@@ -138,10 +138,43 @@
   display: grid;
   gap: var(--space-8);
   align-items: start;
+  grid-template-columns: 1fr;
 }
 
 .aboutText {
   max-width: none;
+}
+
+.aboutImage {
+  display: flex;
+  justify-content: center;
+  order: -1; /* Show image above text on mobile */
+}
+
+.profileImage {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-medium);
+}
+
+.profileImage:hover {
+  transform: translateY(-4px);
+}
+
+.profilePhoto {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-medium);
+}
+
+.profilePlaceholder {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: var(--text-h3);
+  color: var(--color-gray-medium);
+  font-weight: 400;
+  text-align: center;
 }
 
 /* Expertise Section */
@@ -280,7 +313,18 @@
   }
   
   .aboutContent {
+    grid-template-columns: 2fr 1fr;
     gap: var(--space-12);
+    align-items: center;
+  }
+  
+  .aboutImage {
+    order: 0; /* Reset order - image goes to the right on tablet+ */
+    justify-content: flex-end;
+  }
+  
+  .profileImage {
+    max-width: 240px;
   }
   
   .expertiseGrid {
@@ -318,6 +362,10 @@
   
   .aboutContent {
     gap: var(--space-16);
+  }
+  
+  .profileImage {
+    max-width: 280px;
   }
   
   .expertiseGrid {
