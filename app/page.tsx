@@ -38,7 +38,7 @@ export default function Home() {
               width={280}
               height={200}
             />
-            <Image
+        <Image
               src="/technology-icon.png"
               alt=""
               className={styles.heroImageRight}
@@ -107,7 +107,7 @@ export default function Home() {
                 </a>
                 <h3 className="h3 mb-2">Selo Olive E-Commerce</h3>
                 <p className="caption text-gray mb-3">
-                  Import/Export • Health Regulations • Digital Marketing
+                  International Trade • Regulatory Compliance • Digital Marketing
                 </p>
                 <p>
                   Full-scale e-commerce platform specializing in olive oil imports.
@@ -139,7 +139,7 @@ export default function Home() {
                 </a>
                 <h3 className="h3 mb-2">Zoodio AI Platform</h3>
                 <p className="caption text-gray mb-3">
-                  OpenAI • Gemini • Web Development • Copywriting
+                  AI Integration • Full-Stack Development • Business Strategy • UI/UX
                 </p>
                 <p>
                   Built the complete application from front-end to back-end infrastructure,
@@ -153,37 +153,48 @@ export default function Home() {
               </div>
 
               <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                <a href="https://dev.profind.shop" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
                   <div className={styles.portfolioImage} data-has-image="true">
                     <Image 
-                      src="/travel-guide.png" 
-                      alt="Croatia Day Planner" 
+                      src="/profind.png" 
+                      alt="Profind Manufacturing Platform" 
                       className={styles.portfolioImageBg}
                       fill
                       style={{objectFit: 'cover'}}
                     />
                     <div className={styles.portfolioOverlay}></div>
                     <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Croatia Day Planner</div>
+                      <div className={styles.placeholderImage}>Profind</div>
                     </div>
                   </div>
                 </a>
-                <h3 className="h3 mb-2">Single-Day MVP: Croatia Day Planner</h3>
+                <h3 className="h3 mb-2">Profind Manufacturing Platform</h3>
                 <p className="caption text-gray mb-3">
-                  AI-Powered • Next.js • Rapid Prototyping • Vercel
+                  Enterprise Integration • AI Matching • Ruby on Rails • MySQL
                 </p>
                 <p>
-                  Example of rapid MVP development - built in a single day using AI to
-                  create personalized activity guides for every major city in Croatia.
-                  I wanted to see how quickly I could validate a product concept and
-                  deliver a functional prototype using the best that AI tools have to offer.
+                  Collaborative full-stack platform connecting e-commerce to manufacturing 
+                  suppliers including Bosch, Magna International, and Continental AG. Built comprehensive 
+                  APIs for component sourcing and implemented AI-powered matching algorithms 
+                  to optimize supplier-part relationships across the supply chain.
                 </p>
-                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Try Day Planner →
+                <a href="https://dev.profind.shop" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                  Explore Platform →
                 </a>
               </div>
+            </div>
 
-              {/* Second Row */}
+            {/* Experimental Projects Section */}
+            <div className="text-center mb-6" style={{marginTop: 'var(--space-12)'}}>
+              <h3 className="h2 mb-2">Experimental Projects</h3>
+              <p className="text-gray" style={{fontSize: 'var(--text-body)', maxWidth: '700px', margin: '0 auto'}}>
+                These are projects where I let curiosity drive the process. Sometimes I want to see 
+                how quickly I can build something, other times I&apos;m exploring a completely new domain 
+                just to understand how it works.
+              </p>
+            </div>
+
+            <div className={`grid grid-3 ${styles.portfolioGrid}`}>
               <div className={`card ${styles.portfolioCard}`}>
                 <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
                   <div className={styles.portfolioImage} data-has-image="true">
@@ -202,7 +213,7 @@ export default function Home() {
                 </a>
                 <h3 className="h3 mb-2">Babushka Book & Universe</h3>
                 <p className="caption text-gray mb-3">
-                  Creative Writing • Web Development • World Building
+                  Project Management • Stakeholder Collaboration • Creative Development
                 </p>
                 <p>
                   Yes, I wrote a book! Published in 2022, working closely
@@ -216,13 +227,13 @@ export default function Home() {
                 </p>
                                 <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Explore Universe →
-                </a>
-              </div>
+          </a>
+        </div>
 
               <div className={`card ${styles.portfolioCard}`}>
                 <a href="https://www.brothandbullets.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
                   <div className={styles.portfolioImage} data-has-image="true">
-                    <Image 
+          <Image
                       src="/broth-bullets.png" 
                       alt="Broth & Bullets Multiplayer Game" 
                       className={styles.portfolioImageBg}
@@ -237,7 +248,7 @@ export default function Home() {
                 </a>
                 <h3 className="h3 mb-2">Real-Time Multiplayer Survival Game</h3>
                 <p className="caption text-gray mb-3">
-                  SpacetimeDB • React • PostgreSQL • Vite
+                  Real-Time Architecture • Advanced Database • React • AI Integration
                 </p>
                 <p>
                   Multiplayer survival game with real-time voice assistant that provides 
@@ -250,25 +261,35 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className={`card ${styles.portfolioCard} ${styles.comingSoon}`}>
-                <div className={styles.portfolioImage}>
-                  <div className={styles.placeholderImage}>Your Project?</div>
-                </div>
-                <h3 className="h3 mb-2">Let&apos;s Collaborate</h3>
+              <div className={`card ${styles.portfolioCard}`}>
+                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                  <div className={styles.portfolioImage} data-has-image="true">
+          <Image
+                      src="/travel-guide.png" 
+                      alt="Croatia Day Planner" 
+                      className={styles.portfolioImageBg}
+                      fill
+                      style={{objectFit: 'cover'}}
+                    />
+                    <div className={styles.portfolioOverlay}></div>
+                    <div className={styles.portfolioText}>
+                      <div className={styles.placeholderImage}>Croatia Day Planner</div>
+                    </div>
+                  </div>
+                </a>
+                <h3 className="h3 mb-2">Single-Day MVP: Croatia Day Planner</h3>
                 <p className="caption text-gray mb-3">
-                  Partnership • Innovation • Growth
+                  Rapid Prototyping • AI-Powered • Product Validation • Next.js
                 </p>
                 <p>
-                  Have an idea that needs technical expertise and business acumen?
-                  Let&apos;s discuss how we can bring your vision to life with the right
-                  combination of strategy and execution.
+                  Example of rapid MVP development - built in a single day using AI to
+                  create personalized activity guides for every major city in Croatia.
+                  I wanted to see how quickly I could validate a product concept and
+                  deliver a functional prototype using the best that AI tools have to offer.
                 </p>
-                <button
-                  className="btn"
-                  onClick={() => scrollToSection('contact')}
-                >
-                  Get Started →
-                </button>
+                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                  Try Day Planner →
+                </a>
               </div>
             </div>
           </div>
@@ -307,7 +328,7 @@ export default function Home() {
               </div>
               <div className={styles.aboutImage}>
                 <div className={styles.profileImage}>
-                  <Image
+          <Image
                     src="/me.png"
                     alt="Martin Erlic - Entrepreneur & Full-Stack Developer"
                     className={styles.profilePhoto}
@@ -494,7 +515,7 @@ export default function Home() {
                 </button>
               </form>
             </div>
-          </div>
+    </div>
         </section>
       </main>
     </>
