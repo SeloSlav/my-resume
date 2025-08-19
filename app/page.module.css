@@ -351,6 +351,27 @@
   text-decoration: underline;
 }
 
+/* Resume Link in Contact Section */
+.contactLink.resumeLink {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-medium);
+  font-weight: 500;
+  margin-top: var(--space-2);
+  text-align: center;
+  font-size: var(--text-body);
+  transition: all var(--transition-fast);
+}
+
+.contactLink.resumeLink:hover {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
 .stackOverflowLink {
   margin-top: var(--space-2);
 }

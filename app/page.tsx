@@ -475,6 +475,9 @@ export default function Home() {
                   <a href="https://github.com/seloslav" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                     GitHub Profile
                   </a>
+                  <a href="https://github.com/SeloSlav/my-resume" target="_blank" rel="noopener noreferrer" className={`${styles.contactLink} ${styles.resumeLink}`}>
+                    📄 View Full Resume
+                  </a>
                   <div className={styles.stackOverflowLink}>
                     <a href="https://stackoverflow.com/users/4077513/martin-erlic" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                       Stack Overflow Profile

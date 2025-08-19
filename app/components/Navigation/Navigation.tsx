@@ -79,6 +79,14 @@ export default function Navigation() {
             >
               Contact
             </button>
+            <a 
+              href="https://github.com/SeloSlav/my-resume"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.desktopNavItem} ${styles.resumeLink}`}
+            >
+              Resume
+            </a>
           </div>
         </div>
       </nav>
@@ -122,6 +130,15 @@ export default function Navigation() {
           >
             Contact
           </button>
+          <a 
+            href="https://github.com/SeloSlav/my-resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.menuItem} ${styles.resumeLink}`}
+            onClick={() => setIsOpen(false)}
+          >
+            Resume
+          </a>
         </div>
       </div>
     </>
