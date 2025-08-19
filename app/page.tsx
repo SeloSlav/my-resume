@@ -122,38 +122,7 @@ export default function Home() {
               </div>
 
               <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage} data-has-image="true">
-                    <Image
-                      src="/zoodio.png"
-                      alt="Zoodio AI Platform"
-                      className={styles.portfolioImageBg}
-                      fill
-                      style={{ objectFit: 'cover' }}
-                    />
-                    <div className={styles.portfolioOverlay}></div>
-                    <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Zoodio.ai</div>
-                    </div>
-                  </div>
-                </a>
-                <h3 className="h3 mb-2">Zoodio AI Platform</h3>
-                <p className="caption text-gray mb-3">
-                  AI Integration • Full-Stack Development • Business Strategy • UI/UX
-                </p>
-                <p>
-                  Built the complete application from front-end to back-end infrastructure,
-                  integrating AI APIs with custom server logic and database architecture.
-                  Focused heavily on front-end design, UI/UX, and optimization of user
-                  subscriptions to maximize customer retention and engagement.
-                </p>
-                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Explore Platform →
-                </a>
-              </div>
-
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://dev.profind.shop" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                <a href="https://dev.profind.shop/products/UCC28C45DR?manufacturerId=296" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
                   <div className={styles.portfolioImage} data-has-image="true">
                     <Image 
                       src="/profind.png" 
@@ -168,17 +137,50 @@ export default function Home() {
                     </div>
                   </div>
                 </a>
-                <h3 className="h3 mb-2">Profind Manufacturing Platform</h3>
+                <h3 className="h3 mb-2">Profind Automative Parts Catalog</h3>
                 <p className="caption text-gray mb-3">
-                  Enterprise Integration • AI Matching • Ruby on Rails • MySQL
+                  Integration Management • Front-End Development • Enterprise APIs • UI/UX
                 </p>
                 <p>
-                  Collaborative full-stack platform connecting e-commerce to manufacturing 
-                  suppliers including Bosch, Magna International, and Continental AG. Built comprehensive 
-                  APIs for component sourcing and implemented AI-powered matching algorithms 
-                  to optimize supplier-part relationships across the supply chain.
+                  AI-powered automotive parts catalog similar to McMaster-Carr, connecting buyers 
+                  to suppliers including Bosch, Continental AG, and Magna International. Partnered with Carleton 
+                  University&apos;s Automotive Engineering department to research component optimization. 
+                  Managed integration of existing APIs and AI matching systems (RAG + LLMs) while 
+                  developing the front-end interface for intelligent parts discovery and sourcing.
                 </p>
-                <a href="https://dev.profind.shop" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                <a href="https://dev.profind.shop/products/UCC28C45DR?manufacturerId=296" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                  Explore Platform →
+                </a>
+              </div>
+
+              <div className={`card ${styles.portfolioCard}`}>
+                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                  <div className={styles.portfolioImage} data-has-image="true">
+                    <Image
+                      src="/zoodio.png"
+                      alt="Zoodio AI Image Converter"
+                      className={styles.portfolioImageBg}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                    />
+                    <div className={styles.portfolioOverlay}></div>
+                    <div className={styles.portfolioText}>
+                      <div className={styles.placeholderImage}>Zoodio.ai</div>
+                    </div>
+                  </div>
+                </a>
+                <h3 className="h3 mb-2">Zoodio AI Image Converter</h3>
+                <p className="caption text-gray mb-3">
+                  AI Integration • Google Cloud • Business Strategy • UI/UX
+                </p>
+                <p>
+                  Built the complete application using React front-end with Firebase backend,
+                  integrating AI APIs and cloud-based data management.
+                  Connected to print-on-demand providers (Printful, Gelato) for automated product
+                  fulfillment and Stripe for payment processing. Focused heavily on front-end 
+                  design, UI/UX, and optimization of user subscriptions to maximize customer retention.
+                </p>
+                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Explore Platform →
                 </a>
               </div>
@@ -234,8 +236,8 @@ export default function Home() {
                 <a href="https://www.brothandbullets.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
                   <div className={styles.portfolioImage} data-has-image="true">
           <Image
-                      src="/broth-bullets.png" 
-                      alt="Broth & Bullets Multiplayer Game" 
+                      src="/broth-and-bullets.png" 
+                      alt="Broth & Bullets Multiplayer Game"
                       className={styles.portfolioImageBg}
                       fill
                       style={{objectFit: 'cover'}}
@@ -248,13 +250,13 @@ export default function Home() {
                 </a>
                 <h3 className="h3 mb-2">Real-Time Multiplayer Survival Game</h3>
                 <p className="caption text-gray mb-3">
-                  Real-Time Architecture • Advanced Database • React • AI Integration
+                  Real-Time Architecture • SpacetimeDB • React • Railway Hosting
                 </p>
                 <p>
-                  Multiplayer survival game with real-time voice assistant that provides 
-                  contextual in-game guidance. Built with custom authentication server 
+                  Real-time multiplayer survival game supporting multiple concurrent clients 
+                  with synchronized game state. Built with custom authentication server 
                   and SpacetimeDB for real-time multiplayer state management, deployed 
-                  to production on Railway.
+                  to production on Railway with scalable infrastructure.
                 </p>
                 <a href="https://www.brothandbullets.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Play Game →
