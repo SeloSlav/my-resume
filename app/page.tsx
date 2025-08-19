@@ -233,7 +233,7 @@ export default function Home() {
         </div>
 
               <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://www.brothandbullets.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                <a href="https://www.brothandbullets.com/blog/broth-bullets-alpha-launch" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
                   <div className={styles.portfolioImage} data-has-image="true">
           <Image
                       src="/broth-and-bullets.png" 
@@ -258,8 +258,8 @@ export default function Home() {
                   and SpacetimeDB for real-time multiplayer state management, deployed 
                   to production on Railway with scalable infrastructure.
                 </p>
-                <a href="https://www.brothandbullets.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Play Game →
+                <a href="https://www.brothandbullets.com/blog/broth-bullets-alpha-launch" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                  Read Blog →
                 </a>
               </div>
 
@@ -286,8 +286,10 @@ export default function Home() {
                 <p>
                   Example of rapid MVP development - built in a single day using AI to
                   create personalized activity guides for every major city in Croatia.
-                  I wanted to see how quickly I could validate a product concept and
-                  deliver a functional prototype using the best that AI tools have to offer.
+                  Developed consistent AI-readable documentation and custom rules files to 
+                  maximize output efficiency and ensure quality. I wanted to see how quickly 
+                  I could validate a product concept through strategic AI optimization rather 
+                  than just prompting.
                 </p>
                 <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Try Day Planner →
@@ -349,12 +351,46 @@ export default function Home() {
             <h2 className="h1 text-center mb-8">Core Expertise</h2>
 
             <div className={styles.expertiseGrid}>
+              {/* Business & Strategy */}
+              <div className={styles.expertiseCategory}>
+                <h3 className="h3 mb-4">Business & Strategy</h3>
+                <div className={styles.skillsList}>
+                  <span className={styles.skill}>Product Development</span>
+                  <span className={styles.skill}>Agile/Scrum Methodologies</span>
+                  <span className={styles.skill}>Waterfall Project Management</span>
+                  <span className={styles.skill}>Market Analysis</span>
+                  <span className={styles.skill}>Competitive Analysis</span>
+                  <span className={styles.skill}>Strategic Copywriting</span>
+                  <span className={styles.skill}>Customer Acquisition</span>
+                  <span className={styles.skill}>Outsourcing Management</span>
+                  <span className={styles.skill}>MVP Development</span>
+                </div>
+              </div>
+
+              {/* AI & Integration */}
+              <div className={styles.expertiseCategory}>
+                <h3 className="h3 mb-4">AI & Integration</h3>
+                <div className={styles.skillsList}>
+                  <span className={styles.skill}>OpenAI APIs</span>
+                  <span className={styles.skill}>Gemini APIs</span>
+                  <span className={styles.skill}>ElevenLabs APIs</span>
+                  <span className={styles.skill}>Cursor IDE</span>
+                  <span className={styles.skill}>AI-Readable Documentation</span>
+                  <span className={styles.skill}>Rule Files & Context Optimization</span>
+                  <span className={styles.skill}>RAG</span>
+                  <span className={styles.skill}>LLMs</span>
+                </div>
+              </div>
+
               {/* Technical Skills */}
               <div className={styles.expertiseCategory}>
                 <h3 className="h3 mb-4">Technical Stack</h3>
                 <div className={styles.skillsList}>
-                  <span className={styles.skill}>JavaScript & React</span>
+                  <span className={styles.skill}>JavaScript</span>
                   <span className={styles.skill}>TypeScript</span>
+                  <span className={styles.skill}>React</span>
+                  <span className={styles.skill}>HTML/CSS</span>
+                  <span className={styles.skill}>Git</span>
                   <span className={styles.skill}>Node.js</span>
                   <span className={styles.skill}>Ruby on Rails</span>
                   <span className={styles.skill}>Python</span>
@@ -393,34 +429,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* AI & Integration */}
-              <div className={styles.expertiseCategory}>
-                <h3 className="h3 mb-4">AI & Integration</h3>
-                <div className={styles.skillsList}>
-                  <span className={styles.skill}>OpenAI APIs</span>
-                  <span className={styles.skill}>Gemini APIs</span>
-                  <span className={styles.skill}>ElevenLabs APIs</span>
-                  <span className={styles.skill}>Cursor IDE</span>
-                  <span className={styles.skill}>AI-Readable Documentation</span>
-                  <span className={styles.skill}>Rule Files & Context Optimization</span>
-                </div>
-              </div>
-
-              {/* Business & Strategy */}
-              <div className={styles.expertiseCategory}>
-                <h3 className="h3 mb-4">Business & Strategy</h3>
-                <div className={styles.skillsList}>
-                  <span className={styles.skill}>Product Development</span>
-                  <span className={styles.skill}>Business Strategy</span>
-                  <span className={styles.skill}>Market Analysis</span>
-                  <span className={styles.skill}>Competitive Analysis</span>
-                  <span className={styles.skill}>Strategic Copywriting</span>
-                  <span className={styles.skill}>Customer Acquisition</span>
-                  <span className={styles.skill}>Outsourcing Management</span>
-                  <span className={styles.skill}>MVP Development</span>
-                </div>
-              </div>
-
               {/* International Operations */}
               <div className={styles.expertiseCategory}>
                 <h3 className="h3 mb-4">International Operations</h3>
@@ -431,7 +439,7 @@ export default function Home() {
                   <span className={styles.skill}>Health Code Navigation</span>
                   <span className={styles.skill}>Cross-border E-commerce</span>
                   <span className={styles.skill}>Supply Chain Management</span>
-                  <span className={styles.skill}>Legal Documentation</span>
+                  <span className={styles.skill}>Cross-border Tax Compliance</span>
                 </div>
               </div>
             </div>
