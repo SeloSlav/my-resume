@@ -77,6 +77,13 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://martinerlic.com"
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icon.svg', type: 'image/svg+xml', sizes: '32x32' }
+    ],
+    apple: '/icon.svg'
   }
 };
 
