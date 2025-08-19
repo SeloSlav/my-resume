@@ -51,7 +51,7 @@ Experienced IT Business Analyst and Full-Stack Developer with proven expertise i
 
 ## Professional Experience
 
-### Founder & CEO | Selo Olive Oil (2017-Present) - :us::croatia::globe_with_meridians: USA, Croatia, International
+### Founder & CEO | Selo Olive Oil (2017-Present) - USA, Croatia, International
 *International olive oil import/export business - $600k total sales*
 
 - **Business Development**: Built and scaled international olive oil business from startup to $600k in total sales
@@ -62,7 +62,7 @@ Experienced IT Business Analyst and Full-Stack Developer with proven expertise i
 - **Process Optimization**: Implemented automated systems for inventory management, compliance tracking, and customer acquisition
 - **Live Site**: [seloolive.com](https://www.seloolive.com)
 
-### IT Business Analyst & Integration Manager | Profind Engineering (2023-2025) - 🌐 Remote
+### IT Business Analyst & Integration Manager | Profind Engineering (2023-2025) - Remote
 *AI-powered automotive parts catalog connecting buyers to enterprise suppliers*
 
 - **Requirements Analysis**: Collaborated with Carleton Formula SAE team to research and define component optimization requirements
@@ -72,7 +72,7 @@ Experienced IT Business Analyst and Full-Stack Developer with proven expertise i
 - **Process Documentation**: Created comprehensive documentation for API integrations and system workflows
 - **Live Demo**: [dev.profind.shop](https://dev.profind.shop/products/UCC28C45DR?manufacturerId=296)
 
-### Director of Sales & Marketing | OneFeather (2018-2020) - :canada: Victoria, Canada
+### Director of Sales & Marketing | OneFeather (2018-2020) - Victoria, Canada
 *Indigenous technology and consulting company*
 
 - **Product Owner**: Served as Product Owner for SmartBallot voting system, managing requirements gathering, user stories, and stakeholder communication for electoral technology platform
@@ -82,7 +82,7 @@ Experienced IT Business Analyst and Full-Stack Developer with proven expertise i
 - **Regulatory Compliance**: Ensured SmartBallot system met all federal and provincial electoral regulations and Indigenous governance requirements
 - **Remote Operations**: Coordinated technology deployment and support in challenging remote locations with limited infrastructure
 
-### Cloud IT Developer | NNIT (2015-2017) - :czech_republic: Prague, Czech Republic
+### Cloud IT Developer | NNIT (2015-2017) - Prague, Czech Republic
 *IT consulting and cloud solutions provider*
 
 - **HP Operations Orchestration (HP OO)**: Developed and maintained automated workflows using HP OO platform for enterprise process automation and system orchestration
@@ -94,7 +94,7 @@ Experienced IT Business Analyst and Full-Stack Developer with proven expertise i
 - **Technical Documentation**: Created comprehensive technical documentation, user guides, and process workflows for enterprise systems
 - **Agile Development**: Participated in Agile development cycles and cross-functional team collaboration in enterprise consulting environment
 
-### Field Sales Representative | Vivint (2013-2014) - :canada: Calgary, Canada
+### Field Sales Representative | Vivint (2013-2014) - Calgary, Canada
 *Home automation and security systems - Door-to-door sales*
 
 - **Direct Sales**: Achieved $250k in total door-to-door sales of home automation and security systems working 10 hours a day, 6 days a week (10am-8pm) as part of a 5-person team deployed across different nearby suburbs
