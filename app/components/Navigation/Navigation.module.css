@@ -91,21 +91,37 @@
   border-radius: var(--radius-small);
 }
 
-/* Resume Link Styling */
-.resumeLink {
+/* Contact Button Styling */
+.contactButton {
   background: var(--color-black) !important;
   color: var(--color-white) !important;
-  padding: var(--space-2) var(--space-3) !important;
   border-radius: var(--radius-small);
   text-decoration: none;
   font-weight: 500;
   transition: all var(--transition-fast);
 }
 
-.resumeLink:hover {
+/* Desktop Contact Button */
+.desktopNavItem.contactButton {
+  padding: var(--space-2) var(--space-3) !important;
+}
+
+/* Mobile Contact Button */
+.menuItem.contactButton {
+  padding: var(--space-3) 0 var(--space-3) var(--space-3) !important;
+}
+
+.contactButton:hover {
   background: var(--color-charcoal) !important;
   color: var(--color-white) !important;
+}
+
+.desktopNavItem.contactButton:hover {
   transform: translateY(-1px);
+}
+
+.menuItem.contactButton:hover {
+  padding-left: var(--space-4) !important;
 }
 
 /* Hamburger Menu Icon */
@@ -191,7 +207,7 @@
 .menuItem {
   display: block;
   width: 100%;
-  padding: var(--space-3) 0;
+  padding: var(--space-3) 0 var(--space-3) var(--space-3);
   background: none;
   border: none;
   font-family: var(--font-serif), Georgia, serif;
@@ -206,7 +222,7 @@
 
 .menuItem:hover {
   color: var(--color-gray-medium);
-  padding-left: var(--space-2);
+  padding-left: var(--space-4);
 }
 
 .menuItem:focus-visible {

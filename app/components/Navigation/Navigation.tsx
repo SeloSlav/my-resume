@@ -74,19 +74,11 @@ export default function Navigation() {
               Expertise
             </button>
             <button 
-              className={styles.desktopNavItem}
+              className={`${styles.desktopNavItem} ${styles.contactButton}`}
               onClick={() => scrollToSection('contact')}
             >
               Contact
             </button>
-            <a 
-              href="https://github.com/SeloSlav/my-resume"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${styles.desktopNavItem} ${styles.resumeLink}`}
-            >
-              Resume
-            </a>
           </div>
         </div>
       </nav>
@@ -125,20 +117,11 @@ export default function Navigation() {
             Expertise
           </button>
           <button 
-            className={styles.menuItem}
+            className={`${styles.menuItem} ${styles.contactButton}`}
             onClick={() => scrollToSection('contact')}
           >
             Contact
           </button>
-          <a 
-            href="https://github.com/SeloSlav/my-resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles.menuItem} ${styles.resumeLink}`}
-            onClick={() => setIsOpen(false)}
-          >
-            Resume
-          </a>
         </div>
       </div>
     </>
