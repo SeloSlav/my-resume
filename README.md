@@ -1,5 +1,5 @@
 # Martin Erlic
-**IT Business Analyst | Full-Stack Developer**  
+**Product Owner | Full-Stack Developer**  
 📧 martin.erlic@gmail.com | 📱 +385 091 906 3613  
 🌐 [Portfolio](https://martinerlic.com) | [GitHub](https://github.com/seloslav) | [StackOverflow](https://stackoverflow.com/users/4077513/martin-erlic)  
 📍 Available for immediate work in EU and Canada
