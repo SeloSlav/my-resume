@@ -152,6 +152,36 @@ export default function Home() {
                   Explore Platform →
                 </a>
               </div>
+
+              <div className={`card ${styles.portfolioCard}`}>
+                <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                  <div className={styles.portfolioImage} data-has-image="true">
+                    <Image 
+                      src="/profind.png" 
+                      alt="Profind Engineering Platform" 
+                      className={styles.portfolioImageBg}
+                      fill
+                      style={{objectFit: 'cover'}}
+                    />
+                    <div className={styles.portfolioOverlay}></div>
+                    <div className={styles.portfolioText}>
+                      <div className={styles.placeholderImage}>Profind</div>
+                    </div>
+                  </div>
+                </a>
+                <h3 className="h3 mb-2">Profind Engineering Platform</h3>
+                <p className="caption text-gray mb-3">
+                  Collaboration • McMaster Forge • AI Matching • Private Development
+                </p>
+                <p>
+                  AI-powered automotive parts catalog developed in collaboration with McMaster Forge 
+                  accelerator. Features intelligent parts matching and supplier connections. Currently 
+                  being iterated on in private development. References available upon request.
+                </p>
+                <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                  View Proof of Concept →
+                </a>
+              </div>
             </div>
 
             {/* Experimental Projects Section */}
