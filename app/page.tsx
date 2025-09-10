@@ -122,38 +122,6 @@ export default function Home() {
               </div>
 
               <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage} data-has-image="true">
-                    <Image 
-                      src="/profind.png" 
-                      alt="Profind Manufacturing Platform" 
-                      className={styles.portfolioImageBg}
-                      fill
-                      style={{objectFit: 'cover'}}
-                    />
-                    <div className={styles.portfolioOverlay}></div>
-                    <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Profind</div>
-                    </div>
-                  </div>
-                </a>
-                <h3 className="h3 mb-2">Profind Automative Parts Catalog</h3>
-                <p className="caption text-gray mb-3">
-                  Integration Management • Front-End Development • Enterprise APIs • UI/UX
-                </p>
-                <p>
-                  AI-powered automotive parts catalog similar to McMaster-Carr, connecting buyers 
-                  to suppliers including Bosch, Continental AG, and Magna International. Partnered with Carleton 
-                  University&apos;s Automotive Engineering department to research component optimization. 
-                  Managed integration of existing APIs and AI matching systems (RAG + LLMs) while 
-                  developing the front-end interface for intelligent parts discovery and sourcing.
-                </p>
-                <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Explore Platform →
-                </a>
-              </div>
-
-              <div className={`card ${styles.portfolioCard}`}>
                 <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
                   <div className={styles.portfolioImage} data-has-image="true">
                     <Image

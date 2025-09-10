@@ -63,19 +63,6 @@ IT Project Manager and Product Owner with a strong background in leading cross-f
 - **Process Optimization**: Implemented automated systems for inventory management, compliance tracking, and customer acquisition
 
 
-### Integration Manager | Profind Engineering (2023-2025) - Remote
-*AI-powered automotive parts catalog connecting buyers to enterprise suppliers*
-
-- **Live Demo**: [parts-graph.vercel.app](https://parts-graph.vercel.app/)
-- **Enterprise Partnership Management**: Led integration projects with enterprise partners including Bosch, Continental AG, and Magna International, ensuring timely delivery and alignment with business goals
-- **Project Lifecycle Management**: Managed project lifecycle from planning to closure, including requirements gathering, backlog refinement, sprint planning, and Jira tracking
-- **Cross-Functional Team Coordination**: Coordinated cross-functional teams to deliver API integrations and AI-driven parts discovery features, balancing scope, quality, and budget constraints
-- **Documentation & Communication**: Produced project documentation, workflows, and stakeholder updates, ensuring transparency and alignment across teams
-- **Risk Management**: Oversaw risk management, identified dependencies, and removed impediments to maintain delivery timelines
-- **Requirements Analysis**: Collaborated with Carleton Formula SAE team to research and define component optimization requirements
-- **System Integration**: Managed integration of existing APIs and AI matching systems (RAG + LLMs) for intelligent parts discovery
-- **Front-End Development**: Developed user interface for parts catalog similar to McMaster-Carr, focusing on user experience and workflow optimization
-
 
 ### Director of Sales & Marketing | OneFeather (2018-2020) - Victoria, Canada
 *Indigenous technology and consulting company*
