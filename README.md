@@ -66,7 +66,7 @@ IT Project Manager and Product Owner with a strong background in leading cross-f
 ### Integration Manager | Profind Engineering (2023-2025) - Remote
 *AI-powered automotive parts catalog connecting buyers to enterprise suppliers*
 
-- **Live Demos**: [dev.profind.shop](https://dev.profind.shop/products/UCC28C45DR?manufacturerId=296) | [parts-graph.vercel.app](https://parts-graph.vercel.app/)
+- **Live Demo**: [parts-graph.vercel.app](https://parts-graph.vercel.app/)
 - **Enterprise Partnership Management**: Led integration projects with enterprise partners including Bosch, Continental AG, and Magna International, ensuring timely delivery and alignment with business goals
 - **Project Lifecycle Management**: Managed project lifecycle from planning to closure, including requirements gathering, backlog refinement, sprint planning, and Jira tracking
 - **Cross-Functional Team Coordination**: Coordinated cross-functional teams to deliver API integrations and AI-driven parts discovery features, balancing scope, quality, and budget constraints

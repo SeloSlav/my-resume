@@ -122,7 +122,7 @@ export default function Home() {
               </div>
 
               <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://dev.profind.shop/products/UCC28C45DR?manufacturerId=296" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
+                <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
                   <div className={styles.portfolioImage} data-has-image="true">
                     <Image 
                       src="/profind.png" 
@@ -148,7 +148,7 @@ export default function Home() {
                   Managed integration of existing APIs and AI matching systems (RAG + LLMs) while 
                   developing the front-end interface for intelligent parts discovery and sourcing.
                 </p>
-                <a href="https://dev.profind.shop/products/UCC28C45DR?manufacturerId=296" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                   Explore Platform →
                 </a>
               </div>
@@ -268,18 +268,18 @@ export default function Home() {
                   <div className={styles.portfolioImage} data-has-image="true">
           <Image
                       src="/travel-guide.png" 
-                      alt="Croatia Day Planner" 
+                      alt="Day Trip Planner" 
                       className={styles.portfolioImageBg}
                       fill
                       style={{objectFit: 'cover'}}
                     />
                     <div className={styles.portfolioOverlay}></div>
                     <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Croatia Day Planner</div>
+                      <div className={styles.placeholderImage}>Day Trip Planner</div>
                     </div>
                   </div>
                 </a>
-                <h3 className="h3 mb-2">Single-Day MVP: Croatia Day Planner</h3>
+                <h3 className="h3 mb-2">Single-Day MVP: Day Trip Planner</h3>
                 <p className="caption text-gray mb-3">
                   Rapid Prototyping • AI-Powered • Product Validation • Next.js
                 </p>
