@@ -17,7 +17,7 @@
 
 ## Professional Summary
 
-Experienced IT Business Analyst and Full-Stack Developer with proven expertise in bridging business requirements with technical implementation. Demonstrated success in gathering and analyzing user requirements, translating business needs into functional specifications, and managing stakeholder relationships across diverse industries including e-commerce, manufacturing, and international trade. Strong background in Agile/Scrum methodologies, AI integration, and process optimization.
+IT Project Manager and Product Owner with a strong background in leading cross-functional engineering teams to deliver complex digital solutions. Experienced in Agile and hybrid project management, from initiation through closure, with proven success in managing scope, risks, budgets, and stakeholder expectations. Skilled at bridging technical and business requirements, removing obstacles, and mentoring teams to achieve outstanding results. Hands-on technical expertise in full-stack development, cloud platforms, and AI integration enables effective collaboration with engineers and ensures delivery of scalable, high-quality solutions. International experience across North America and Europe, with a track record of managing projects for global enterprises and startups alike.
 
 ---
 
@@ -54,23 +54,28 @@ Experienced IT Business Analyst and Full-Stack Developer with proven expertise i
 ### Founder & CEO | Selo Olive Oil (2017-Present)
 *International olive oil import/export business - $600k total sales*
 
+- **Live Site**: [seloolive.com](https://www.seloolive.com)
 - **Business Development**: Built and scaled international olive oil business from startup to $600k in total sales
 - **Regulatory Compliance**: Navigated complex health code regulations and international licensing across multiple markets
 - **Market Expansion**: Successfully established operations in US, EU, and Canadian markets with full regulatory compliance
 - **Digital Strategy**: Executed comprehensive digital marketing campaigns across TikTok, Instagram, and Twitter
 - **Supply Chain Management**: Coordinated with international suppliers, regulatory bodies, and distribution partners, managing third-party logistics operations out of Chicago for US distribution
 - **Process Optimization**: Implemented automated systems for inventory management, compliance tracking, and customer acquisition
-- **Live Site**: [seloolive.com](https://www.seloolive.com)
 
-### IT Business Analyst & Integration Manager | Profind Engineering (2023-2025) - Remote
+
+### Integration Manager | Profind Engineering (2023-2025) - Remote
 *AI-powered automotive parts catalog connecting buyers to enterprise suppliers*
 
+- **Live Demos**: [dev.profind.shop](https://dev.profind.shop/products/UCC28C45DR?manufacturerId=296) | [parts-graph.vercel.app](https://parts-graph.vercel.app/)
+- **Enterprise Partnership Management**: Led integration projects with enterprise partners including Bosch, Continental AG, and Magna International, ensuring timely delivery and alignment with business goals
+- **Project Lifecycle Management**: Managed project lifecycle from planning to closure, including requirements gathering, backlog refinement, sprint planning, and Jira tracking
+- **Cross-Functional Team Coordination**: Coordinated cross-functional teams to deliver API integrations and AI-driven parts discovery features, balancing scope, quality, and budget constraints
+- **Documentation & Communication**: Produced project documentation, workflows, and stakeholder updates, ensuring transparency and alignment across teams
+- **Risk Management**: Oversaw risk management, identified dependencies, and removed impediments to maintain delivery timelines
 - **Requirements Analysis**: Collaborated with Carleton Formula SAE team to research and define component optimization requirements
-- **Stakeholder Management**: Coordinated integration projects with enterprise suppliers including Bosch, Continental AG, and Magna International
 - **System Integration**: Managed integration of existing APIs and AI matching systems (RAG + LLMs) for intelligent parts discovery
 - **Front-End Development**: Developed user interface for parts catalog similar to McMaster-Carr, focusing on user experience and workflow optimization
-- **Process Documentation**: Created comprehensive documentation for API integrations and system workflows
-- **Live Demo**: [dev.profind.shop](https://dev.profind.shop/products/UCC28C45DR?manufacturerId=296)
+
 
 ### Director of Sales & Marketing | OneFeather (2018-2020) - Victoria, Canada
 *Indigenous technology and consulting company*
@@ -110,27 +115,41 @@ Experienced IT Business Analyst and Full-Stack Developer with proven expertise i
 
 ### Zoodio AI Image Converter
 *AI-powered image conversion platform with e-commerce integration*
+
+- **Live Demo**: [zoodio.ai](https://www.zoodio.ai)
+- **Technologies**: React, Google Cloud, Firebase, AI APIs, Stripe, Printful, Gelato
 - Built complete application using React front-end with Google Cloud backend
 - Integrated AI APIs for image processing and conversion workflows
 - Connected multiple third-party services including Printful, Gelato (print-on-demand), and Stripe (payment processing)
 - Developed comprehensive user subscription system with retention optimization
 - Focused heavily on front-end design, UI/UX, and automated workflow implementation
-- **Technologies**: React, Google Cloud, Firebase, AI APIs, Stripe, Printful, Gelato
-- **Live Demo**: [zoodio.ai](https://www.zoodio.ai)
 
 ### Real-Time Multiplayer Gaming Platform
+*Real-time multiplayer survival game with custom authentication and scalable infrastructure*
+
+- **Technologies**: React, SpacetimeDB, PostgreSQL, Railway
+- **Project Blog**: [brothandbullets.com/blog](https://www.brothandbullets.com/blog)
 - Developed real-time multiplayer survival game supporting multiple concurrent clients
 - Implemented custom authentication server and SpacetimeDB for real-time state management
 - Deployed to production on Railway with scalable infrastructure
-- **Technologies**: React, SpacetimeDB, PostgreSQL, Railway
-- **Project Blog**: [brothandbullets.com/blog](https://www.brothandbullets.com/blog)
 
-### Croatia Day Planner - Single-Day MVP
+### Baba Selo (AI Recipe Maker)
+*AI-powered recipe generator for traditional Slavic cuisine*
+
+- **Technologies**: Next.js, OpenAI API, Firebase, Vercel
+- **Live App**: [babaselo.com](https://www.babaselo.com/)
+- Built AI-powered recipe generator integrating multiple OpenAI endpoints, including image recognition, image generation, and text completion
+- Designed system to convert traditional Slavic cookbooks into structured, searchable recipes
+- Implemented custom workflows for recipe validation, substitution, and cultural context preservation
+- Optimized prompts and retrieval for both creative and practical culinary outputs
+
+
+### Day Trip Planner - Single-Day MVP
+- **Technologies**: Next.js, AI APIs, Vercel
+- **Live Demo**: [travel-guide-omega-nine.vercel.app](https://travel-guide-omega-nine.vercel.app/)
 - Rapid prototype development demonstrating product validation capabilities
 - Developed consistent AI-readable documentation and custom rules files for output optimization
 - Strategic AI optimization approach rather than basic prompting
-- **Technologies**: Next.js, AI APIs, Vercel
-- **Live Demo**: [travel-guide-omega-nine.vercel.app](https://travel-guide-omega-nine.vercel.app/)
 
 ---
 
