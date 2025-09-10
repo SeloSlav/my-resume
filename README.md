@@ -103,8 +103,8 @@ IT Project Manager and Product Owner with a strong background in leading cross-f
 ### Zoodio AI Image Converter
 *AI-powered image conversion platform with e-commerce integration*
 
-- **Live Demo**: [zoodio.ai](https://www.zoodio.ai)
 - **Technologies**: React, Google Cloud, Firebase, AI APIs, Stripe, Printful, Gelato
+- **Live Demo**: [zoodio.ai](https://www.zoodio.ai)
 - Built complete application using React front-end with Google Cloud backend
 - Integrated AI APIs for image processing and conversion workflows
 - Connected multiple third-party services including Printful, Gelato (print-on-demand), and Stripe (payment processing)
