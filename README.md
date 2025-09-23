@@ -17,7 +17,7 @@
 
 ## Professional Summary
 
-IT Project Manager and Product Owner with a strong background in leading cross-functional engineering teams to deliver complex digital solutions. Experienced in Agile and hybrid project management, from initiation through closure, with proven success in managing scope, risks, budgets, and stakeholder expectations. Skilled at bridging technical and business requirements, removing obstacles, and mentoring teams to achieve outstanding results. Hands-on technical expertise in full-stack development, cloud platforms, and AI integration enables effective collaboration with engineers and ensures delivery of scalable, high-quality solutions. International experience across North America and Europe, with a track record of managing projects for global enterprises and startups alike.
+Versatile IT professional with 10+ years of international experience spanning project management, product ownership, and full-stack development. Skilled at leading cross-functional teams and delivering scalable digital solutions, from MVPs to enterprise platforms. Hands-on expertise in React, Node.js, and Java/Spring MVC, with strong knowledge of cloud platforms, API integration, and database management. Experienced in Agile project delivery, requirements gathering, and stakeholder communication, ensuring alignment between business goals and technical execution. Proven ability to navigate fast-moving startup environments as well as structured enterprise projects, with a track record of launching products, integrating AI solutions, and scaling operations across global markets. Currently based in Zagreb and available immediately for roles ranging from software development to product ownership.
 
 ---
 
