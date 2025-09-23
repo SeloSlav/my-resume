@@ -62,7 +62,18 @@ IT Project Manager and Product Owner with a strong background in leading cross-f
 - **Supply Chain Management**: Coordinated with international suppliers, regulatory bodies, and distribution partners, managing third-party logistics operations out of Chicago for US distribution
 - **Process Optimization**: Implemented automated systems for inventory management, compliance tracking, and customer acquisition
 
+### Front-End Developer | Profind (2023-2025)
+*Engineering parts catalogue and procurement platform - McMaster Forge startup accelerator*
 
+- **Startup Environment**: Worked at early-stage startup through McMaster Forge startup accelerator program
+- **Front-End Development**: Developed and maintained React-based user interfaces for engineering parts catalogue system
+- **Parts Catalogue System**: Built comprehensive search and filtering functionality for engineering components and parts
+- **API Integration**: Integrated with backend APIs from DigiKey, Mouser, Arrow Electronics, and other electronic component suppliers to manage parts inventory, specifications, and supplier information
+- **User Experience**: Designed intuitive interfaces for engineers to search, compare, and procure industrial parts and components
+- **Performance Optimization**: Optimized front-end performance for large datasets and complex parts catalogues
+- **Remote Team Collaboration**: Collaborated remotely with engineering teams, product managers, and suppliers based in Canada to understand technical requirements
+- **Startup Agility**: Adapted to rapid pivots and iterations as startup explored market fit and product direction
+- **References**: Project references and portfolio samples available upon request
 
 ### Director of Sales & Marketing | OneFeather (2018-2020) - Victoria, Canada
 *Indigenous technology and consulting company*
