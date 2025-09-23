@@ -89,7 +89,7 @@ IT Project Manager and Product Owner with a strong background in leading cross-f
 *IT consulting and cloud solutions provider*
 
 - **HP Operations Orchestration (HP OO)**: Developed and maintained automated workflows using HP OO platform for enterprise process automation and system orchestration
-- **Java Development**: Created custom Java applets for internal efficiency tools, improving operational workflows and reducing manual processes
+- **Java Development**: Developed and integrated backend applications and APIs in Java (REST and SOAP/XML) using Spring MVC
 - **Ticketing System Integration**: Implemented and customized ticketing systems for client support and incident management, integrating with existing enterprise infrastructure
 - **System Integration**: Integrated various IT systems and platforms for improved business processes across multiple client environments
 - **Process Automation**: Designed automated solutions to streamline repetitive tasks and improve operational efficiency
