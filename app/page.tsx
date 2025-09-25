@@ -322,11 +322,6 @@ export default function Home() {
                   scaling businesses across international markets or implementing
                   sophisticated AI systems, I deliver results that matter.
                 </p>
-                <p>
-                  <span style={{textDecoration: 'line-through', opacity: 0.6}}>
-                    Croatian national team football player
-                  </span> • Business strategist • Tech builder • Problem solver
-                </p>
               </div>
               <div className={styles.aboutImage}>
                 <div className={styles.profileImage}>
@@ -461,7 +456,6 @@ export default function Home() {
                   <br />
                   I grew up in Canada but speak conversational Croatian and can understand almost everything.
                   <br />
-                  <em>Currently waiting for my son to be born so he can help me! 👶</em>
                 </p>
                 <div className={styles.contactDetails}>
                   <a href="tel:+385091906361" className={styles.contactLink}>
