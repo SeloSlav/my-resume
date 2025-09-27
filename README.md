@@ -153,6 +153,15 @@ Versatile IT professional with 10+ years of international experience spanning pr
 
 ## Education & Continuous Learning
 
+**University of Victoria - Bachelor of Arts, Social Sciences (Economics & Psychology)**  
+*2008–2012 | Victoria, Canada*
+- **Relevant Coursework**: Microeconomics, Macroeconomics, Money and Banking, International Economics, Econometrics, Social Psychology, Cognitive Psychology, Consumer Psychology
+
+**St. Michaels University School - High School Diploma**  
+*2003–2008 | Victoria, Canada*
+- Independent university-preparatory school recognized for rigorous academics, athletics, and leadership programs
+- Played baritone horn in concert band and competed in rugby
+
 **Self-Directed Learning in Business Analysis & Technology**
 - Advanced AI integration and prompt engineering
 - Modern web development frameworks and cloud platforms
