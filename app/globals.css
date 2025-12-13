@@ -45,6 +45,114 @@
   --glow-primary: 0 0 15px rgba(0, 217, 255, 0.4);
   --glow-text: 0 0 5px rgba(0, 217, 255, 0.3);
   --glow-secondary: 0 0 15px rgba(157, 78, 221, 0.4);
+  --nav-bg: rgba(0, 0, 0, 0.9);
+  
+  /* Component Specific Backgrounds */
+  --bg-grid-pattern: linear-gradient(rgba(0, 217, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px);
+  --bg-panel-header: rgba(0, 217, 255, 0.05);
+  --bg-contact-link: rgba(0, 217, 255, 0.03);
+  --bg-contact-status: rgba(17, 24, 39, 0.3); /* gray-900 with opacity */
+}
+
+/* Light Mode - Simple Black & White */
+.light-mode {
+  /* Colors - High Contrast B&W */
+  --color-bg: #ffffff;
+  --color-bg-offset: #ffffff;
+  --color-text: #000000;
+  --color-text-dim: #000000;
+  --color-primary: #000000;
+  --color-secondary: #000000;
+  --color-accent: #000000;
+  --color-alert: #000000;
+  --color-border: #000000;
+  --color-border-active: #000000;
+  --nav-bg: #ffffff;
+  
+  /* Component Specific Backgrounds - Light Mode */
+  --bg-grid-pattern: none;
+  --bg-panel-header: transparent;
+  --bg-contact-link: transparent;
+  --bg-contact-status: transparent;
+  
+  /* Typography - Times New Roman */
+  --font-mono: "Times New Roman", Times, serif;
+  
+  /* Font Sizes - Larger for readability with serif font */
+  --text-body: 1rem; /* 16px base */
+  --text-small: 0.875rem; /* 14px */
+  
+  /* Remove Effects */
+  --glow-primary: none;
+  --glow-text: none;
+  --glow-secondary: none;
+  
+  /* Layout Adjustments for Simplicity */
+  --border-width: 1px;
+}
+
+/* Remove decorative elements in light mode */
+.light-mode body::after {
+  display: none; /* Remove scanlines */
+}
+
+.light-mode body {
+  background: #ffffff;
+}
+
+.light-mode html {
+  background: #ffffff;
+}
+
+.light-mode .section::before {
+  display: none; /* Remove section dots */
+}
+
+.light-mode .section {
+  border-left: none; /* Remove dashed border in light mode */
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.light-mode .card:hover {
+  box-shadow: none;
+  background: transparent;
+}
+
+.light-mode .card::after {
+  display: none; /* Remove corner accents */
+}
+
+.light-mode .btn {
+  text-transform: none; /* Remove uppercase if desired, but user said "remove all teh flourish" */
+  letter-spacing: normal;
+  border-width: 1px;
+}
+
+.light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6 {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.light-mode .text-small {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.875rem; /* 14px minimum */
+}
+
+/* Light mode font size increases for readability */
+.light-mode .label {
+  font-size: 0.875rem; /* 14px */
+}
+
+.light-mode .btn:hover {
+  background: #000;
+  color: #fff;
+  box-shadow: none;
+}
+
+.light-mode .input:focus, .light-mode textarea:focus {
+  background: white;
 }
 
 /* CRT Scanline Overlay - Subtle but present */
@@ -78,6 +186,7 @@ html {
   scroll-behavior: smooth;
   color-scheme: dark;
   background-color: var(--color-bg);
+  overflow-x: hidden;
 }
 
 body {
@@ -146,6 +255,8 @@ a:hover {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--container-padding);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .section {
@@ -310,11 +421,16 @@ a:hover {
     --space-6: 3rem;
     --space-8: 4rem;
     --space-12: 6rem;
+    --container-padding: 1rem;
   }
   
   .section {
     margin-left: var(--space-2);
     padding-left: var(--space-4);
     border-left: 1px solid var(--color-border);
+  }
+  
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
   }
 }

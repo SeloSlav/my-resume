@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
@@ -49,7 +50,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${jetbrainsMono.variable}`}>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

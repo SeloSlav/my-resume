@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import styles from './Navigation.module.css';
+import { useTheme } from '../../context/ThemeContext';
+import { content, getContent } from '../../config/content';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+  const { mode, toggleMode, isSimpleMode } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +34,11 @@ export default function Navigation() {
     setIsOpen(!isOpen);
   };
 
+  const handleToggleMode = () => {
+    toggleMode();
+    setIsOpen(false);
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -50,6 +58,8 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
+  const nav = content.nav;
+
   return (
     <>
       <nav className={styles.nav}>
@@ -58,8 +68,9 @@ export default function Navigation() {
             className={styles.logoButton}
             onClick={scrollToTop}
             aria-label="Go to top"
+            data-mode={mode}
           >
-            <span className={styles.logo}>Martin Erlic</span>
+            <span className={styles.logo}>{getContent(nav.logo, mode)}</span>
           </button>
           
           <button 
@@ -80,37 +91,45 @@ export default function Navigation() {
               className={`${styles.desktopNavItem} ${activeSection === 'portfolio' ? styles.active : ''}`}
               onClick={() => scrollToSection('portfolio')}
             >
-              Portfolio
+              {getContent(nav.items.portfolio, mode)}
             </button>
             <button 
               className={`${styles.desktopNavItem} ${activeSection === 'about' ? styles.active : ''}`}
               onClick={() => scrollToSection('about')}
             >
-              About
+              {getContent(nav.items.about, mode)}
             </button>
             <button 
               className={`${styles.desktopNavItem} ${activeSection === 'expertise' ? styles.active : ''}`}
               onClick={() => scrollToSection('expertise')}
             >
-              Expertise
+              {getContent(nav.items.expertise, mode)}
             </button>
             <button 
               className={`${styles.desktopNavItem} ${activeSection === 'ai-philosophy' ? styles.active : ''}`}
               onClick={() => scrollToSection('ai-philosophy')}
             >
-              AI
+              {getContent(nav.items.ai, mode)}
             </button>
             <button 
               className={`${styles.desktopNavItem} ${activeSection === 'why-hire' ? styles.active : ''}`}
               onClick={() => scrollToSection('why-hire')}
             >
-              Why
+              {getContent(nav.items.why, mode)}
             </button>
             <button 
               className={`${styles.desktopNavItem} ${styles.contactButton} ${activeSection === 'contact' ? styles.active : ''}`}
               onClick={() => scrollToSection('contact')}
             >
-              Contact
+              {getContent(nav.items.contact, mode)}
+            </button>
+            <button 
+              className={`${styles.desktopNavItem} ${styles.modeToggle}`}
+              onClick={handleToggleMode}
+              aria-label={isSimpleMode ? "Switch to tech mode" : "Switch to simple mode"}
+              title={isSimpleMode ? "Switch to tech mode" : "Switch to simple mode"}
+            >
+              <i className={isSimpleMode ? "fas fa-desktop" : "fas fa-pen"}></i>
             </button>
           </div>
         </div>
@@ -129,43 +148,50 @@ export default function Navigation() {
             className={`${styles.menuItem} ${activeSection === 'hero' ? styles.active : ''}`}
             onClick={() => scrollToSection('hero')}
           >
-            Home
+            {getContent(nav.items.home, mode)}
           </button>
           <button 
             className={`${styles.menuItem} ${activeSection === 'portfolio' ? styles.active : ''}`}
             onClick={() => scrollToSection('portfolio')}
           >
-            Portfolio
+            {getContent(nav.items.portfolio, mode)}
           </button>
           <button 
             className={`${styles.menuItem} ${activeSection === 'about' ? styles.active : ''}`}
             onClick={() => scrollToSection('about')}
           >
-            About
+            {getContent(nav.items.about, mode)}
           </button>
           <button 
             className={`${styles.menuItem} ${activeSection === 'expertise' ? styles.active : ''}`}
             onClick={() => scrollToSection('expertise')}
           >
-            Expertise
+            {getContent(nav.items.expertise, mode)}
           </button>
           <button 
             className={`${styles.menuItem} ${activeSection === 'ai-philosophy' ? styles.active : ''}`}
             onClick={() => scrollToSection('ai-philosophy')}
           >
-            AI
+            {getContent(nav.items.ai, mode)}
           </button>
           <button 
             className={`${styles.menuItem} ${activeSection === 'why-hire' ? styles.active : ''}`}
             onClick={() => scrollToSection('why-hire')}
           >
-            Why
+            {getContent(nav.items.why, mode)}
           </button>
           <button 
             className={`${styles.menuItem} ${styles.contactButton} ${activeSection === 'contact' ? styles.active : ''}`}
             onClick={() => scrollToSection('contact')}
           >
-            Contact
+            {getContent(nav.items.contact, mode)}
+          </button>
+          <button 
+            className={`${styles.menuItem} ${styles.modeToggle}`}
+            onClick={handleToggleMode}
+          >
+            <i className={isSimpleMode ? "fas fa-desktop" : "fas fa-pen"} style={{marginRight: '0.75rem'}}></i>
+            {isSimpleMode ? "Tech Mode" : "Simple Mode"}
           </button>
         </div>
       </div>

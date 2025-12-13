@@ -4,9 +4,7 @@
   position: relative;
   z-index: 2; /* Ensure main content is above overlay */
   /* Grid Background Pattern */
-  background-image: 
-    linear-gradient(rgba(0, 217, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px);
+  background-image: var(--bg-grid-pattern);
   background-size: 100px 100px;
   background-position: center top;
 }
@@ -58,6 +56,8 @@
   margin-top: var(--space-6);
   position: relative;
   z-index: 5;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 /* Decorative corner markers for system panel */
@@ -76,13 +76,20 @@
   border-bottom: 1px solid var(--color-border);
   padding: 0.75rem 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-text-dim);
-  background: rgba(0, 217, 255, 0.05);
+  background: var(--bg-panel-header);
+  overflow: hidden;
+}
+
+.systemHeader span {
+  word-break: break-all;
 }
 
 .systemBody {
@@ -110,6 +117,8 @@
 
 .dataValue {
   color: var(--color-text);
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .profileCards {
@@ -256,7 +265,7 @@
   text-decoration: none !important;
   font-size: 1rem;
   letter-spacing: 1px;
-  background: rgba(0, 217, 255, 0.03);
+  background: var(--bg-contact-link);
   position: relative;
   z-index: 10;
   transition: all 0.2s ease;
@@ -339,6 +348,10 @@
   position: relative;
 }
 
+.contactStatus {
+  background: var(--bg-contact-status);
+}
+
 @media (max-width: 768px) {
   .dataRow {
     grid-template-columns: 1fr;
@@ -349,4 +362,62 @@
     flex-direction: column;
     gap: var(--space-2);
   }
+  
+  .systemHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .systemPanel {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Light Mode - Clean background */
+:global(.light-mode) .main {
+  background: #ffffff;
+  background-image: none;
+}
+
+/* Light Mode - Larger text for readability */
+:global(.light-mode) .systemHeader {
+  font-size: 0.875rem; /* 14px */
+}
+
+:global(.light-mode) .systemBody {
+  font-size: 1rem; /* 16px */
+}
+
+:global(.light-mode) .profileCardTitle {
+  font-size: 0.875rem; /* 14px */
+}
+
+:global(.light-mode) .tagItem {
+  font-size: 0.875rem; /* 14px */
+}
+
+:global(.light-mode) .tag {
+  font-size: 0.75rem; /* 12px */
+}
+
+:global(.light-mode) .skill {
+  font-size: 0.875rem; /* 14px */
+}
+
+:global(.light-mode) .credentials {
+  font-size: 0.75rem; /* 12px */
+}
+
+:global(.light-mode) .dataKey {
+  font-size: 0.875rem; /* 14px */
+}
+
+:global(.light-mode) .dataValue {
+  font-size: 1rem; /* 16px */
+}
+
+:global(.light-mode) .infoList p {
+  font-size: 1rem; /* 16px */
 }

@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--nav-bg, rgba(0, 0, 0, 0.9));
   border-bottom: 1px solid var(--color-border);
   padding: 0;
 }
@@ -38,6 +38,19 @@
   content: "SYS::";
   color: var(--color-primary);
   margin-right: 5px;
+}
+
+.logoButton[data-mode="simple"]::before {
+  content: "";
+  margin-right: 0;
+}
+
+.modeToggle {
+  font-size: 1rem !important;
+}
+
+.modeToggle i {
+  font-size: 0.9rem;
 }
 
 .desktopNav {
@@ -191,4 +204,13 @@
 
 .overlay {
   display: none;
+}
+
+/* Light Mode - Larger text for readability */
+:global(.light-mode) .desktopNavItem {
+  font-size: 0.875rem; /* 14px */
+}
+
+:global(.light-mode) .logoButton {
+  font-size: 1rem; /* 16px */
 }
