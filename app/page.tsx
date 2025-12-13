@@ -39,9 +39,9 @@ export default function Home() {
               </h1>
               
               <p className={styles.heroSubtitle}>
-                PRODUCT ARCHITECT<br/>
+                PRODUCT DEVELOPER<br/>
                 <span className="text-dim text-small block mt-2">
-                  {'// STRATEGIC VISION POWERED BY FULL-STACK MASTERY'}
+                  {'// PRODUCT VISION + FULL-STACK EXECUTION + AI'}
                 </span>
               </p>
               
@@ -64,25 +64,25 @@ export default function Home() {
               <div className={styles.systemPanel}>
                 <div className={styles.systemHeader}>
                   <span>USER_ID: 0x4D415254494E</span>
-                  <span>ROLE: LEAD_ARCHITECT</span>
+                  <span>ROLE: PRODUCT_DEV</span>
                   <span>LOC: EU_CAN_REMOTE</span>
                 </div>
                 <div className={styles.systemBody}>
                   <div className={styles.dataRow}>
                     <span className={styles.dataKey}>FUNCTION</span>
-                    <span className={styles.dataValue}>Bridging the gap between high-level vision and technical execution.</span>
+                    <span className={styles.dataValue}>Turning product ideas into working software.</span>
                   </div>
                   <div className={styles.dataRow}>
                     <span className={styles.dataKey}>TRAITS</span>
-                    <span className={styles.dataValue}>[VISIONARY, PRAGMATIC, LEADERSHIP, TINKERER]</span>
+                    <span className={styles.dataValue}>[ORGANIZED, PRAGMATIC, TECHNICAL, TINKERER]</span>
                   </div>
                   <div className={styles.dataRow}>
                     <span className={styles.dataKey}>OBJECTIVE</span>
-                    <span className={styles.dataValue}>Leading teams to build products that matter, backed by deep technical understanding.</span>
+                    <span className={styles.dataValue}>Building products that matter with a deep understanding of the full stack.</span>
                   </div>
                   <div className={styles.dataRow}>
                     <span className={styles.dataKey}>ACCESS</span>
-                    <span className={styles.dataValue}>Open to leadership roles and ambitious product teams.</span>
+                    <span className={styles.dataValue}>Open to product roles, dev teams, and interesting problems.</span>
                   </div>
                 </div>
               </div>
@@ -228,38 +228,37 @@ export default function Home() {
             <div className="grid grid-2">
               <div>
                 <p className="mb-6 text-primary font-bold">
-                  &gt; EXECUTING LEADERSHIP_BIO...
+                  &gt; EXECUTING BIO...
                 </p>
                 <p className="mb-6 text-small leading-loose">
-                  I don&apos;t just write code; I build products. I am a Product Lead and Visionary who uses a deep 
-                  full-stack background to bridge the gap between abstract business goals and concrete technical execution.
+                  I don&apos;t just write code. I think about the product, the user, and the business problem. 
+                  My full-stack background lets me connect business goals to technical execution.
                 </p>
                 <p className="mb-6 text-small leading-loose">
-                  My strength lies in knowing the &quot;whole in and out&quot; of the stack—from database schema design to 
-                  user acquisition strategy. This allows me to lead teams effectively, communicate with engineers in their 
-                  own language, and ensure that every technical decision serves the broader product vision.
+                  I know the stack end to end, from database design to deployment to user acquisition. 
+                  I can talk to engineers, plan a roadmap, and ship features myself when needed.
                 </p>
                 <p className="mb-6 text-small leading-loose">
-                  Whether establishing international trade operations or architecting AI platforms, I bring a pragmatic, 
-                  holistic approach to building complex systems.
+                  I&apos;ve grown e-commerce brands, built AI SaaS products, and shipped internal tools. 
+                  I bring a pragmatic approach to building things that actually work.
                 </p>
               </div>
               
               <div className={styles.profileCards}>
                 <div className={styles.profileCard}>
-                  <h4 className={styles.profileCardTitle}>LEADERSHIP VALUES</h4>
+                  <h4 className={styles.profileCardTitle}>VALUES</h4>
                   <div className={styles.tagList}>
-                    <span className={styles.tagItem}><i className="fas fa-check"></i> STRATEGIC</span>
-                    <span className={styles.tagItem}><i className="fas fa-check"></i> EMPATHETIC</span>
+                    <span className={styles.tagItem}><i className="fas fa-check"></i> ORGANIZED</span>
+                    <span className={styles.tagItem}><i className="fas fa-check"></i> PRAGMATIC</span>
                     <span className={styles.tagItem}><i className="fas fa-check"></i> TECHNICAL</span>
-                    <span className={styles.tagItem}><i className="fas fa-check"></i> MENTOR</span>
+                    <span className={styles.tagItem}><i className="fas fa-check"></i> CURIOUS</span>
                   </div>
                 </div>
                 <div className={styles.profileCard}>
                   <h4 className={styles.profileCardTitle}>AVAILABILITY</h4>
                   <div className={styles.infoList}>
-                    <p><strong className="text-primary">ROLE:</strong> Product / Lead</p>
-                    <p><strong className="text-primary">ZONES:</strong> EU, Canada</p>
+                    <p><strong className="text-primary">ROLE:</strong> Product / Dev / Hybrid</p>
+                    <p><strong className="text-primary">ZONES:</strong> EU, Canada, Remote</p>
                   </div>
                 </div>
               </div>
@@ -382,6 +381,37 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Why Hire Me Section */}
+        <section id="why-hire" className={`${styles.section} ${styles.whyHire}`}>
+          <div className="container">
+            <h2>WHY_HIRE</h2>
+            
+            <div className="grid grid-2">
+              <div className={styles.whyCard}>
+                <h3 className="h3 mb-4 text-secondary">WORK_ETHIC</h3>
+                <p className="text-small mb-4">
+                  I put in full days without thinking about it. When I'm working on something that matters, 
+                  time just disappears. I meal prep on Sundays so I can stay chained to the desk when needed.
+                </p>
+                <p className="text-small">
+                  I'm wired to go deep on problems that interest me.
+                </p>
+              </div>
+
+              <div className={styles.whyCard}>
+                <h3 className="h3 mb-4 text-secondary">WHAT_I_WANT</h3>
+                <p className="text-small mb-4">
+                  I want to contribute to something lasting. A product people use. A team that ships quality work. 
+                  Code that doesn't rot in six months.
+                </p>
+                <p className="text-small">
+                  If you're building something real, I'm interested.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section id="contact" className={`${styles.section} ${styles.contact}`}>
           <div className="container">
@@ -394,9 +424,9 @@ export default function Home() {
                     CHANNEL_OPEN
                   </p>
                   <p className="text-dim text-small leading-relaxed">
-                    Ready to lead your next product initiative.
+                    Looking for product roles where I can build and ship.
                     <br/>
-                    Product Strategy || Technical Leadership || Innovation
+                    Product Dev || Full-Stack || AI Integration
                   </p>
                 </div>
                 

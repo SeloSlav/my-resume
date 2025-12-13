@@ -78,6 +78,11 @@
   color: var(--color-bg);
 }
 
+.desktopNavItem.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
 .contactButton {
   background: rgba(0, 255, 65, 0.05);
   color: var(--color-primary);
@@ -175,6 +180,11 @@
 }
 
 .menuItem:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.menuItem.active {
   background: var(--color-primary);
   color: var(--color-bg);
 }
