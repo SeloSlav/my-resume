@@ -146,7 +146,6 @@ export default function Home() {
                 </p>
                 <p className="text-small mb-6">
                   Collaborated with accelerators to define a product roadmap for AI-powered industrial parts matching. 
-                  Validated technical feasibility of the core algorithms.
                 </p>
                 <div className={styles.buttonGroup}>
                   <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
