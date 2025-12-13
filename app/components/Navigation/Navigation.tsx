@@ -74,6 +74,12 @@ export default function Navigation() {
               Expertise
             </button>
             <button 
+              className={styles.desktopNavItem}
+              onClick={() => scrollToSection('ai-philosophy')}
+            >
+              AI
+            </button>
+            <button 
               className={`${styles.desktopNavItem} ${styles.contactButton}`}
               onClick={() => scrollToSection('contact')}
             >
@@ -115,6 +121,12 @@ export default function Navigation() {
             onClick={() => scrollToSection('expertise')}
           >
             Expertise
+          </button>
+          <button 
+            className={styles.menuItem}
+            onClick={() => scrollToSection('ai-philosophy')}
+          >
+            AI
           </button>
           <button 
             className={`${styles.menuItem} ${styles.contactButton}`}

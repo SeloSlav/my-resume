@@ -39,7 +39,7 @@ export default function Home() {
               </h1>
               
               <p className={styles.heroSubtitle}>
-                PRODUCT ARCHITECT & TEAM LEAD<br/>
+                PRODUCT ARCHITECT<br/>
                 <span className="text-dim text-small block mt-2">
                   {'// STRATEGIC VISION POWERED BY FULL-STACK MASTERY'}
                 </span>
@@ -247,43 +247,21 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className={styles.systemPanel} style={{marginTop: 0}}>
-                <div className={styles.systemHeader}>
-                  <span>FILE: CORE_COMPETENCIES</span>
-                  <span>READ_ONLY</span>
+              <div className={styles.profileCards}>
+                <div className={styles.profileCard}>
+                  <h4 className={styles.profileCardTitle}>LEADERSHIP VALUES</h4>
+                  <div className={styles.tagList}>
+                    <span className={styles.tagItem}><i className="fas fa-check"></i> STRATEGIC</span>
+                    <span className={styles.tagItem}><i className="fas fa-check"></i> EMPATHETIC</span>
+                    <span className={styles.tagItem}><i className="fas fa-check"></i> TECHNICAL</span>
+                    <span className={styles.tagItem}><i className="fas fa-check"></i> MENTOR</span>
+                  </div>
                 </div>
-                <div className={styles.systemBody}>
-                  <div className={styles.competencyGrid}>
-                    <div className={styles.competencySection}>
-                      <p className="text-secondary mb-4 font-bold tracking-widest">LEADERSHIP VALUES</p>
-                      <div className="grid grid-2 gap-3">
-                        <span className="text-primary border border-primary p-2 text-center font-bold">
-                          <i className="fas fa-check" style={{marginRight: '0.5rem', color: 'var(--color-primary)'}}></i>
-                          STRATEGIC
-                        </span>
-                        <span className="text-primary border border-primary p-2 text-center font-bold">
-                          <i className="fas fa-check" style={{marginRight: '0.5rem', color: 'var(--color-primary)'}}></i>
-                          EMPATHETIC
-                        </span>
-                        <span className="text-primary border border-primary p-2 text-center font-bold">
-                          <i className="fas fa-check" style={{marginRight: '0.5rem', color: 'var(--color-primary)'}}></i>
-                          TECHNICAL
-                        </span>
-                        <span className="text-primary border border-primary p-2 text-center font-bold">
-                          <i className="fas fa-check" style={{marginRight: '0.5rem', color: 'var(--color-primary)'}}></i>
-                          MENTOR
-                        </span>
-                      </div>
-                    </div>
-                    <div className={styles.competencySection}>
-                      <p className="text-secondary mb-4 font-bold tracking-widest">AVAILABILITY</p>
-                      <p className="text-small border-l-2 border-primary pl-4">
-                        <span className="text-primary block mb-2 font-bold">ROLE:</span> 
-                        <span className="block mb-3">PRODUCT / TECH LEAD</span>
-                        <span className="text-primary block mb-2 font-bold">ZONES:</span> 
-                        <span className="block">EU, CANADA</span>
-                      </p>
-                    </div>
+                <div className={styles.profileCard}>
+                  <h4 className={styles.profileCardTitle}>AVAILABILITY</h4>
+                  <div className={styles.infoList}>
+                    <p><strong className="text-primary">ROLE:</strong> Product / Tech Lead</p>
+                    <p><strong className="text-primary">ZONES:</strong> EU, Canada</p>
                   </div>
                 </div>
               </div>
@@ -397,7 +375,7 @@ export default function Home() {
                   </p>
                   <p className="text-small leading-loose">
                     <span className="text-primary font-bold">&gt; SYMBIOSIS</span><br/>
-                    The best AI practitioners don&apos;t just use tools—they understand them deeply, 
+                    The best AI practitioners don&apos;t just use tools. They understand them deeply, 
                     know when to push boundaries, and when to trust their own judgment over the model&apos;s.
                   </p>
                 </div>
