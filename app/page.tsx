@@ -31,7 +31,7 @@ export default function Home() {
           <div className="container">
             <div className={styles.heroContent}>
               <div className="text-primary mb-6 tracking-widest font-bold border-b border-gray-800 pb-2 inline-block">
-                SYSTEM_STATUS :: {mounted ? 'ONLINE' : 'BOOTING'}
+                STATUS :: {mounted ? 'READY_FOR_DEPLOYMENT' : 'BOOTING'}
               </div>
               
               <h1 className={`display ${styles.heroTitle}`}>
