@@ -35,7 +35,7 @@ export default function Home() {
               </div>
               
               <h1 className={`display ${styles.heroTitle}`}>
-                MARTIN ERLIC
+                MARTIN ERLIĆ
               </h1>
               
               <p className={styles.heroSubtitle}>
@@ -182,7 +182,6 @@ export default function Home() {
                   STAKEHOLDER_MGMT // CREATIVE_DIR
                 </p>
                 <p className="text-small mb-6">
-                  Managed a complex creative project with multiple stakeholders. 
                   A study in narrative consistency and universe building.
                 </p>
                 <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
@@ -212,8 +211,8 @@ export default function Home() {
                   RAPID_MVP // AI_VALIDATION
                 </p>
                 <p className="text-small mb-6">
-                  Executed a &quot;Concept-to-Product&quot; sprint in 24 hours. 
-                  Demonstrating how AI can compress product development cycles.
+                  A personal tool I built in a day and actually use. 
+                  I make stuff like this all the time to solve real problems.
                 </p>
                 <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
                   INITIATE
@@ -260,7 +259,7 @@ export default function Home() {
                 <div className={styles.profileCard}>
                   <h4 className={styles.profileCardTitle}>AVAILABILITY</h4>
                   <div className={styles.infoList}>
-                    <p><strong className="text-primary">ROLE:</strong> Product / Tech Lead</p>
+                    <p><strong className="text-primary">ROLE:</strong> Product / Lead</p>
                     <p><strong className="text-primary">ZONES:</strong> EU, Canada</p>
                   </div>
                 </div>
