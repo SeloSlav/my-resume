@@ -35,7 +35,7 @@ Versatile IT professional with 10+ years of international experience spanning pr
 - Full-stack development (React, Next.js, TypeScript, Node.js, Java)
 - Process automation (HP Operations Orchestration, workflow design)
 - Database design and management (PostgreSQL, MySQL, MongoDB)
-- API integration and development (REST, GraphQL)
+- API integration and development (REST)
 - Cloud platforms (Google Cloud, Firebase, Vercel, Railway)
 - Enterprise systems (ticketing systems, incident management)
 - AI integration (OpenAI, Gemini, RAG + LLMs)

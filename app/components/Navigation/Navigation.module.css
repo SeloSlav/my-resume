@@ -1,34 +1,86 @@
-/* Navigation Component - Following @style-guide.mdc */
-
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-gray-light);
-  padding: var(--space-2) var(--space-3);
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0;
 }
 
 .navContent {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 60px;
 }
 
 .logoButton {
-  display: flex;
-  align-items: center;
   background: none;
   border: none;
   cursor: pointer;
-  padding: var(--space-1) 0;
-  transition: all var(--transition-fast);
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--color-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.logoButton::before {
+  content: "SYS::";
+  color: var(--color-primary);
+  margin-right: 5px;
+}
+
+.desktopNav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.desktopNavItem {
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--color-border);
+  cursor: pointer;
+  color: var(--color-text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0 1.5rem;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.desktopNavItem:last-child {
+  border-right: 1px solid var(--color-border);
+}
+
+.desktopNavItem:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.contactButton {
+  background: rgba(0, 255, 65, 0.05);
+  color: var(--color-primary);
 }
 
 .hamburgerButton {
@@ -37,265 +89,96 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: var(--space-1) 0;
-  transition: all var(--transition-fast);
+  padding: 0.5rem;
+  color: var(--color-primary);
 }
 
-.logoButton:hover,
-.hamburgerButton:hover {
-  opacity: 0.8;
+@media (min-width: 768px) {
+  .hamburgerButton {
+    display: none;
+  }
 }
 
-.logoButton:focus-visible,
-.hamburgerButton:focus-visible {
-  outline: 2px solid var(--color-black);
-  outline-offset: 2px;
-  border-radius: var(--radius-small);
-}
-
-.logo {
-  font-family: var(--font-display), Georgia, serif;
-  font-size: var(--text-h3);
-  font-weight: 400;
-  color: var(--color-black);
-  letter-spacing: -0.01em;
-}
-
-/* Desktop Navigation */
-.desktopNav {
-  display: none;
-  align-items: center;
-  gap: var(--space-6);
-}
-
-.desktopNavItem {
-  background: none;
-  border: none;
-  font-family: var(--font-serif), Georgia, serif;
-  font-size: var(--text-body);
-  font-weight: 400;
-  color: var(--color-black);
-  cursor: pointer;
-  padding: var(--space-2) 0;
-  transition: all var(--transition-fast);
-  position: relative;
-}
-
-.desktopNavItem:hover {
-  color: var(--color-gray-medium);
-}
-
-.desktopNavItem:focus-visible {
-  outline: 2px solid var(--color-black);
-  outline-offset: 2px;
-  border-radius: var(--radius-small);
-}
-
-/* Contact Button Styling */
-.contactButton {
-  background: var(--color-black) !important;
-  color: var(--color-white) !important;
-  border-radius: var(--radius-small);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all var(--transition-fast);
-}
-
-/* Desktop Contact Button */
-.desktopNavItem.contactButton {
-  padding: var(--space-2) var(--space-3) !important;
-}
-
-/* Mobile Contact Button */
-.menuItem.contactButton {
-  padding: var(--space-3) 0 var(--space-3) var(--space-3) !important;
-}
-
-.contactButton:hover {
-  background: var(--color-charcoal) !important;
-  color: var(--color-white) !important;
-}
-
-.desktopNavItem.contactButton:hover {
-  transform: translateY(-1px);
-}
-
-.menuItem.contactButton:hover {
-  padding-left: var(--space-4) !important;
-}
-
-/* Hamburger Menu Icon */
 .menuIcon {
-  display: flex;
-  flex-direction: column;
-  width: 24px;
-  height: 18px;
-  cursor: pointer;
-  transition: all var(--transition-fast);
+  width: 30px;
+  height: 20px;
+  position: relative;
 }
 
 .menuIcon span {
   display: block;
+  position: absolute;
   height: 2px;
   width: 100%;
-  background: var(--color-black);
-  margin-bottom: 4px;
-  transition: all var(--transition-fast);
-  transform-origin: center;
+  background: var(--color-primary);
+  transition: .25s ease-in-out;
 }
 
-.menuIcon span:last-child {
-  margin-bottom: 0;
-}
+.menuIcon span:nth-child(1) { top: 0px; }
+.menuIcon span:nth-child(2) { top: 9px; }
+.menuIcon span:nth-child(3) { top: 18px; }
 
-/* Menu Icon Animation */
 .menuIconOpen span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  top: 9px;
+  transform: rotate(135deg);
 }
 
 .menuIconOpen span:nth-child(2) {
   opacity: 0;
+  left: -60px;
 }
 
 .menuIconOpen span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  top: 9px;
+  transform: rotate(-135deg);
 }
 
-/* Overlay */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1001;
-  opacity: 0;
-  visibility: hidden;
-  transition: all var(--transition-medium);
-}
-
-.overlayOpen {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Fly-out Menu */
+/* Mobile Menu */
 .menu {
   position: fixed;
   top: 0;
-  right: -320px;
-  width: 320px;
+  right: -100%;
+  width: 100%;
   height: 100vh;
-  background: var(--color-white);
-  z-index: 1002;
-  transition: transform var(--transition-medium);
-  box-shadow: var(--shadow-medium);
-}
-
-.menuOpen {
-  transform: translateX(-320px);
-}
-
-.menuContent {
-  padding: var(--space-8) var(--space-4) var(--space-4);
-  height: 100%;
+  background: var(--color-bg);
+  z-index: 99;
+  transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 5rem 2rem;
   display: flex;
   flex-direction: column;
 }
 
+.menuOpen {
+  right: 0;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-border);
+}
+
 .menuItem {
-  display: block;
-  width: 100%;
-  padding: var(--space-3) 0 var(--space-3) var(--space-3);
   background: none;
   border: none;
-  font-family: var(--font-serif), Georgia, serif;
-  font-size: var(--text-h3);
-  font-weight: 400;
-  color: var(--color-black);
-  text-align: left;
+  border-bottom: 1px solid var(--color-border);
   cursor: pointer;
-  transition: all var(--transition-fast);
-  border-bottom: 1px solid var(--color-gray-light);
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.2s ease;
 }
 
 .menuItem:hover {
-  color: var(--color-gray-medium);
-  padding-left: var(--space-4);
+  background: var(--color-primary);
+  color: var(--color-bg);
 }
 
-.menuItem:focus-visible {
-  outline: 2px solid var(--color-black);
-  outline-offset: 2px;
-  border-radius: var(--radius-small);
-}
-
-.menuItem:last-child {
-  border-bottom: none;
-}
-
-/* Tablet Styles */
-@media (min-width: 768px) {
-  .nav {
-    padding: var(--space-3) var(--space-4);
-  }
-  
-  .logo {
-    font-size: var(--text-h2);
-  }
-  
-  .menuIcon {
-    width: 28px;
-    height: 20px;
-  }
-  
-  .menu {
-    width: 360px;
-    right: -360px;
-  }
-  
-  .menuOpen {
-    transform: translateX(-360px);
-  }
-  
-  .menuContent {
-    padding: var(--space-12) var(--space-6) var(--space-6);
-  }
-  
-  .menuItem {
-    font-size: var(--text-h2);
-    padding: var(--space-4) 0;
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 1024px) {
-  .nav {
-    padding: var(--space-4) var(--space-6);
-  }
-  
-  .logoButton {
-    width: auto;
-  }
-  
-  .logoButton:hover {
-    opacity: 0.8;
-  }
-  
-  /* Show desktop navigation */
-  .desktopNav {
-    display: flex;
-  }
-  
-  /* Hide hamburger button on desktop */
-  .hamburgerButton {
-    display: none;
-  }
-  
-  /* Hide mobile menu on desktop */
-  .menu,
-  .overlay {
-    display: none;
-  }
+.overlay {
+  display: none;
 }

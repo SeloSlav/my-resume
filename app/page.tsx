@@ -1,10 +1,16 @@
 'use client';
 
-import Image from 'next/image';
 import Navigation from './components/Navigation/Navigation';
 import styles from './page.module.css';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -22,64 +28,65 @@ export default function Home() {
       <main className={styles.main}>
         {/* Hero Section */}
         <section id="hero" className={`${styles.section} ${styles.hero}`}>
-          {/* Background Images - Desktop Only */}
-          <div className={styles.heroBackgroundImages}>
-            <Image
-              src="/business-icon.png"
-              alt=""
-              className={styles.heroImageLeft}
-              width={400}
-              height={400}
-            />
-            <Image
-              src="/hero_image_combined.png"
-              alt=""
-              className={styles.heroImageCombined}
-              width={280}
-              height={200}
-            />
-        <Image
-              src="/technology-icon.png"
-              alt=""
-              className={styles.heroImageRight}
-              width={400}
-              height={400}
-            />
-            <Image
-              src="/bridge-icon.png"
-              alt=""
-              className={styles.heroImageTop}
-              width={250}
-              height={250}
-            />
-          </div>
-          
           <div className="container">
             <div className={styles.heroContent}>
+              <div className="text-primary mb-6 tracking-widest font-bold border-b border-gray-800 pb-2 inline-block">
+                SYSTEM_STATUS :: {mounted ? 'ONLINE' : 'BOOTING'}
+              </div>
+              
               <h1 className={`display ${styles.heroTitle}`}>
-                Bridging Business
-                <br />
-                & Technology
+                MARTIN ERLIC
               </h1>
+              
               <p className={styles.heroSubtitle}>
-                Entrepreneur & Full-Stack Developer with proven expertise in scaling
-                businesses from concept to deployment across e-commerce
-                and the web.
+                PRODUCT ARCHITECT & TEAM LEAD<br/>
+                <span className="text-dim text-small block mt-2">
+                  // STRATEGIC VISION POWERED BY FULL-STACK MASTERY
+                </span>
               </p>
+              
               <div className={styles.heroActions}>
                 <button
                   className="btn btn--primary"
                   onClick={() => scrollToSection('portfolio')}
                 >
-                  View Work
+                  VIEW PRODUCT LOGS
                 </button>
                 <button
                   className="btn"
                   onClick={() => scrollToSection('contact')}
                 >
-                  Get in Touch
+                  INITIATE COMMS
                 </button>
               </div>
+
+              {/* System Panel */}
+              <div className={styles.systemPanel}>
+                <div className={styles.systemHeader}>
+                  <span>USER_ID: 0x4D415254494E</span>
+                  <span>ROLE: LEAD_ARCHITECT</span>
+                  <span>LOC: EU_CAN_REMOTE</span>
+                </div>
+                <div className={styles.systemBody}>
+                  <div className={styles.dataRow}>
+                    <span className={styles.dataKey}>FUNCTION</span>
+                    <span className={styles.dataValue}>Bridging the gap between high-level vision and technical execution.</span>
+                  </div>
+                  <div className={styles.dataRow}>
+                    <span className={styles.dataKey}>TRAITS</span>
+                    <span className={styles.dataValue}>[VISIONARY, PRAGMATIC, LEADERSHIP, TINKERER]</span>
+                  </div>
+                  <div className={styles.dataRow}>
+                    <span className={styles.dataKey}>OBJECTIVE</span>
+                    <span className={styles.dataValue}>Leading teams to build products that matter, backed by deep technical understanding.</span>
+                  </div>
+                  <div className={styles.dataRow}>
+                    <span className={styles.dataKey}>ACCESS</span>
+                    <span className={styles.dataValue}>Open to leadership roles and ambitious product teams.</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
@@ -87,210 +94,129 @@ export default function Home() {
         {/* Portfolio Section */}
         <section id="portfolio" className={`${styles.section} ${styles.portfolio}`}>
           <div className="container">
-            <h2 className="h1 text-center mb-8">Featured Projects</h2>
-            <div className={`grid grid-3 ${styles.portfolioGrid}`}>
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://www.seloolive.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage} data-has-image="true">
-                    <Image
-                      src="/selo.png"
-                      alt="Selo Olive E-Commerce Platform"
-                      className={styles.portfolioImageBg}
-                      fill
-                      style={{ objectFit: 'cover' }}
-                    />
-                    <div className={styles.portfolioOverlay}></div>
-                    <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Selo Olive</div>
-                    </div>
-                  </div>
-                </a>
-                <h3 className="h3 mb-2">Selo Olive E-Commerce</h3>
-                <p className="caption text-gray mb-3">
-                  International Trade • Regulatory Compliance • Digital Marketing
+            <h2>PRODUCT_DATABASE</h2>
+            <div className="grid grid-3">
+              {/* Selo Olive */}
+              <div className="card">
+                <div className={styles.projectTags}>
+                  <span className={styles.tag}>PRODUCT_LEAD</span>
+                  <span className={styles.tag}>GLOBAL</span>
+                </div>
+                <h3 className="h3">SELO OLIVE</h3>
+                <p className="text-dim mb-4 text-small font-bold">
+                  // E-COMMERCE // SUPPLY_CHAIN_ARCH
                 </p>
-                <p>
-                  Full-scale e-commerce platform specializing in olive oil imports.
-                  Managed regulatory compliance, licensing, and business establishment
-                  across international markets. Executed digital marketing campaigns
-                  across TikTok, Instagram, and Twitter to build brand awareness
-                  and drive customer acquisition.
+                <p className="text-small mb-6">
+                  Orchestrated the entire product lifecycle from international regulatory navigation 
+                  to the technical deployment of a global e-commerce platform.
                 </p>
-                <a href="https://www.seloolive.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Visit Site →
+                <a href="https://www.seloolive.com" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
+                  LAUNCH SITE
                 </a>
               </div>
 
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage} data-has-image="true">
-                    <Image
-                      src="/zoodio.png"
-                      alt="Zoodio AI Image Converter"
-                      className={styles.portfolioImageBg}
-                      fill
-                      style={{ objectFit: 'cover' }}
-                    />
-                    <div className={styles.portfolioOverlay}></div>
-                    <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Zoodio.ai</div>
-                    </div>
-                  </div>
-                </a>
-                <h3 className="h3 mb-2">Zoodio AI Image Converter</h3>
-                <p className="caption text-gray mb-3">
-                  AI Integration • Google Cloud • Business Strategy • UI/UX
+              {/* Zoodio AI */}
+              <div className="card">
+                <div className={styles.projectTags}>
+                  <span className={styles.tag}>AI_STRATEGY</span>
+                  <span className={styles.tag}>SAAS</span>
+                </div>
+                <h3 className="h3">ZOODIO AI</h3>
+                <p className="text-dim mb-4 text-small font-bold">
+                  // G_CLOUD // INTEGRATION_LEAD
                 </p>
-                <p>
-                  Built the complete application using React front-end with Firebase backend,
-                  integrating AI APIs and cloud-based data management.
-                  Connected to print-on-demand providers (Printful, Gelato) for automated product
-                  fulfillment and Stripe for payment processing. Focused heavily on front-end 
-                  design, UI/UX, and optimization of user subscriptions to maximize customer retention.
+                <p className="text-small mb-6">
+                  Conceptualized and executed a SaaS product integrating AI APIs. 
+                  Led the technical architecture to ensure scalability and user retention.
                 </p>
-                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Explore Platform →
+                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
+                  LAUNCH SITE
                 </a>
               </div>
 
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage} data-has-image="true">
-                    <Image 
-                      src="/profind.png" 
-                      alt="Profind Engineering Platform" 
-                      className={styles.portfolioImageBg}
-                      fill
-                      style={{objectFit: 'cover'}}
-                    />
-                    <div className={styles.portfolioOverlay}></div>
-                    <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Profind</div>
-                    </div>
+              {/* Profind */}
+              <div className="card">
+                <div className={styles.projectTags}>
+                  <span className={styles.tag}>VISION</span>
+                  <span className={styles.tag}>B2B</span>
+                </div>
+                <h3 className="h3">PROFIND</h3>
+                <p className="text-dim mb-4 text-small font-bold">
+                  // MCMASTER_FORGE // INNOVATION
+                </p>
+                <p className="text-small mb-6">
+                  Collaborated with accelerators to define a product roadmap for AI-powered industrial parts matching. 
+                  Validated technical feasibility of the core algorithms.
+                </p>
+                <div className={styles.buttonGroup}>
+                  <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
+                    VIEW CONCEPT
+                  </a>
+                  <div className={styles.devLinkWrapper}>
+                    <a href="https://dev.profind.shop/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
+                      DEV ENVIRONMENT
+                    </a>
+                    <p className={styles.credentials}>
+                      CREDENTIALS: parker / langlois
+                    </p>
                   </div>
-                </a>
-                <h3 className="h3 mb-2">Profind Engineering Platform</h3>
-                <p className="caption text-gray mb-3">
-                  Collaboration • McMaster Forge • AI Matching • Private Development
-                </p>
-                <p>
-                  AI-powered automotive parts catalog developed in collaboration with McMaster Forge 
-                  accelerator. Features intelligent parts matching and supplier connections. Currently 
-                  being iterated on in private development. References available upon request.
-                </p>
-                <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  View Proof of Concept →
-                </a>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* Experimental Projects Section */}
-            <div className="text-center mb-6" style={{marginTop: 'var(--space-12)'}}>
-              <h3 className="h2 mb-2">Experimental Projects</h3>
-              <p className="text-gray" style={{fontSize: 'var(--text-body)', maxWidth: '700px', margin: '0 auto'}}>
-                These are projects where I let curiosity drive the process. Sometimes I want to see 
-                how quickly I can build something, other times I&apos;m exploring a completely new domain 
-                just to understand how it works.
-              </p>
-            </div>
-
-            <div className={`grid grid-3 ${styles.portfolioGrid}`}>
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage} data-has-image="true">
-                    <Image 
-                      src="/babushka-book.png" 
-                      alt="Babushka Book & Universe" 
-                      className={styles.portfolioImageBg}
-                      fill
-                      style={{objectFit: 'cover'}}
-                    />
-                    <div className={styles.portfolioOverlay}></div>
-                    <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Babushka Book</div>
-                    </div>
-                  </div>
-                </a>
-                <h3 className="h3 mb-2">Babushka Book & Universe</h3>
-                <p className="caption text-gray mb-3">
-                  Project Management • Stakeholder Collaboration • Creative Development
+        {/* R&D Labs Section */}
+        <section id="rnd" className={`${styles.section} ${styles.rnd}`}>
+          <div className="container">
+            <h2>R_AND_D_LABS</h2>
+            <p className="text-dim text-small mb-8 font-mono">
+              &gt; Exploring new horizons. Validating concepts through rapid prototyping.
+            </p>
+            
+            <div className="grid grid-3">
+              {/* Babushka Book */}
+              <div className="card" style={{borderColor: 'var(--color-secondary)'}}>
+                <h3 className="h4 text-secondary">BABUSHKA BOOK</h3>
+                <p className="text-dim text-small mb-3">
+                  STAKEHOLDER_MGMT // CREATIVE_DIR
                 </p>
-                <p>
-                  Yes, I wrote a book! Published in 2022, working closely
-                  with professional developmental editor{' '}
-                  <a href="https://nonsensefreeeditor.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>
-                    Kristin McTiernan
-                  </a>. Think of it as
-                  the ultimate stakeholder management project, getting to know dozens of
-                  characters, understanding their motivations, and building a cohesive
-                  universe where everything connects.
+                <p className="text-small mb-6">
+                  Managed a complex creative project with multiple stakeholders. 
+                  A study in narrative consistency and universe building.
                 </p>
-                                <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Explore Universe →
-          </a>
-        </div>
-
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://www.brothandbullets.com/blog/broth-bullets-alpha-launch" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage} data-has-image="true">
-          <Image
-                      src="/broth-and-bullets.png" 
-                      alt="Broth & Bullets Multiplayer Game"
-                      className={styles.portfolioImageBg}
-                      fill
-                      style={{objectFit: 'cover'}}
-                    />
-                    <div className={styles.portfolioOverlay}></div>
-                    <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Broth & Bullets</div>
-                    </div>
-                  </div>
-                </a>
-                <h3 className="h3 mb-2">Real-Time Multiplayer Survival Game</h3>
-                <p className="caption text-gray mb-3">
-                  Real-Time Architecture • SpacetimeDB • React • Railway Hosting
-                </p>
-                <p>
-                  Real-time multiplayer survival game supporting multiple concurrent clients 
-                  with synchronized game state. Built with custom authentication server 
-                  and SpacetimeDB for real-time multiplayer state management, deployed 
-                  to production on Railway with scalable infrastructure.
-                </p>
-                <a href="https://www.brothandbullets.com/blog/broth-bullets-alpha-launch" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Read Blog →
+                <a href="https://www.babushkabook.com" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
+                  ACCESS UNIVERSE
                 </a>
               </div>
 
-              <div className={`card ${styles.portfolioCard}`}>
-                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.portfolioImageLink}>
-                  <div className={styles.portfolioImage} data-has-image="true">
-          <Image
-                      src="/travel-guide.png" 
-                      alt="Day Trip Planner" 
-                      className={styles.portfolioImageBg}
-                      fill
-                      style={{objectFit: 'cover'}}
-                    />
-                    <div className={styles.portfolioOverlay}></div>
-                    <div className={styles.portfolioText}>
-                      <div className={styles.placeholderImage}>Day Trip Planner</div>
-                    </div>
-                  </div>
+              {/* Broth & Bullets */}
+              <div className="card" style={{borderColor: 'var(--color-secondary)'}}>
+                <h3 className="h4 text-secondary">BROTH & BULLETS</h3>
+                <p className="text-dim text-small mb-3">
+                  SYS_ARCHITECTURE // REALTIME
+                </p>
+                <p className="text-small mb-6">
+                  Architected a real-time multiplayer system to understand the constraints 
+                  of low-latency state synchronization.
+                </p>
+                <a href="https://www.brothandbullets.com/blog/broth-bullets-alpha-launch" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
+                  READ LOGS
                 </a>
-                <h3 className="h3 mb-2">Single-Day MVP: Day Trip Planner</h3>
-                <p className="caption text-gray mb-3">
-                  Rapid Prototyping • AI-Powered • Product Validation • Next.js
+              </div>
+
+              {/* Travel Guide */}
+              <div className="card" style={{borderColor: 'var(--color-secondary)'}}>
+                <h3 className="h4 text-secondary">TRIP PLANNER</h3>
+                <p className="text-dim text-small mb-3">
+                  RAPID_MVP // AI_VALIDATION
                 </p>
-                <p>
-                  Example of rapid MVP development - built in a single day using AI to
-                  create personalized activity guides for every major city in Croatia.
-                  Developed consistent AI-readable documentation and custom rules files to 
-                  maximize output efficiency and ensure quality. I wanted to see how quickly 
-                  I could validate a product concept through strategic AI optimization rather 
-                  than just prompting.
+                <p className="text-small mb-6">
+                  Executed a "Concept-to-Product" sprint in 24 hours. 
+                  Demonstrating how AI can compress product development cycles.
                 </p>
-                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                  Try Day Planner →
+                <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
+                  INITIATE
                 </a>
               </div>
             </div>
@@ -300,38 +226,49 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className={`${styles.section} ${styles.about}`}>
           <div className="container">
-            <div className={styles.aboutContent}>
-              <div className={styles.aboutText}>
-                <h2 className="h1 mb-6">About Me</h2>
-                <p className="mb-4">
-                  I&apos;m an entrepreneur and full-stack developer who thrives at the
-                  intersection of business strategy and cutting-edge technology.
-                  My journey spans from establishing international trade operations
-                  to deploying AI-powered applications that push the boundaries of
-                  what&apos;s possible.
+            <h2>OPERATOR_PROFILE</h2>
+            <div className="grid grid-2">
+              <div>
+                <p className="mb-6 text-primary font-bold">
+                  &gt; EXECUTING LEADERSHIP_BIO...
                 </p>
-                <p className="mb-4">
-                  From navigating complex health code regulations and licensing for
-                  e-commerce ventures to architecting real-time gaming platforms with
-                  advanced AI integration, I bring a unique perspective that combines
-                  entrepreneurial vision with technical execution.
+                <p className="mb-6 text-small leading-loose">
+                  I don&apos;t just write code; I build products. I am a Product Lead and Visionary who uses a deep 
+                  full-stack background to bridge the gap between abstract business goals and concrete technical execution.
                 </p>
-                <p>
-                  My approach is rooted in rapid adaptation, continuous learning,
-                  and the relentless pursuit of innovative solutions. Whether it&apos;s
-                  scaling businesses across international markets or implementing
-                  sophisticated AI systems, I deliver results that matter.
+                <p className="mb-6 text-small leading-loose">
+                  My strength lies in knowing the &quot;whole in and out&quot; of the stack—from database schema design to 
+                  user acquisition strategy. This allows me to lead teams effectively, communicate with engineers in their 
+                  own language, and ensure that every technical decision serves the broader product vision.
+                </p>
+                <p className="mb-6 text-small leading-loose">
+                  Whether establishing international trade operations or architecting AI platforms, I bring a pragmatic, 
+                  holistic approach to building complex systems.
                 </p>
               </div>
-              <div className={styles.aboutImage}>
-                <div className={styles.profileImage}>
-          <Image
-                    src="/me.png"
-                    alt="Martin Erlic - Entrepreneur & Full-Stack Developer"
-                    className={styles.profilePhoto}
-                    width={280}
-                    height={280}
-                  />
+              
+              <div className={styles.systemPanel} style={{marginTop: 0}}>
+                <div className={styles.systemHeader}>
+                  <span>FILE: CORE_COMPETENCIES.JSON</span>
+                  <span>READ_ONLY</span>
+                </div>
+                <div className={styles.systemBody}>
+                  <div className="mb-6">
+                    <p className="text-secondary mb-2 font-bold tracking-widest">// LEADERSHIP_VALUES</p>
+                    <div className="grid grid-2 gap-4">
+                      <span className="text-dim border border-gray-800 p-2 text-center">[x] STRATEGIC</span>
+                      <span className="text-dim border border-gray-800 p-2 text-center">[x] EMPATHETIC</span>
+                      <span className="text-dim border border-gray-800 p-2 text-center">[x] TECHNICAL</span>
+                      <span className="text-dim border border-gray-800 p-2 text-center">[x] MENTOR</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-secondary mb-2 font-bold tracking-widest">// AVAILABILITY</p>
+                    <p className="text-small border-l-2 border-primary pl-4">
+                      <span className="text-primary block mb-1">ROLE:</span> PRODUCT / TECH LEAD<br/>
+                      <span className="text-primary block mb-1">ZONES:</span> EU, CANADA
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -341,98 +278,54 @@ export default function Home() {
         {/* Expertise Section */}
         <section id="expertise" className={`${styles.section} ${styles.expertise}`}>
           <div className="container">
-            <h2 className="h1 text-center mb-8">Core Expertise</h2>
+            <h2>CAPABILITIES_MATRIX</h2>
 
-            <div className={styles.expertiseGrid}>
-              {/* Business & Strategy */}
-              <div className={styles.expertiseCategory}>
-                <h3 className="h3 mb-4">Business & Strategy</h3>
+            <div className="grid grid-2">
+              {/* Product Leadership */}
+              <div className="card">
+                <h3 className="h3 mb-6 text-secondary">PRODUCT_LEADERSHIP</h3>
                 <div className={styles.skillsList}>
-                  <span className={styles.skill}>Product Development</span>
-                  <span className={styles.skill}>Agile/Scrum Methodologies</span>
-                  <span className={styles.skill}>Waterfall Project Management</span>
-                  <span className={styles.skill}>Market Analysis</span>
-                  <span className={styles.skill}>Competitive Analysis</span>
-                  <span className={styles.skill}>Strategic Copywriting</span>
-                  <span className={styles.skill}>Customer Acquisition</span>
-                  <span className={styles.skill}>Outsourcing Management</span>
-                  <span className={styles.skill}>MVP Development</span>
+                  <span className={styles.skill}>VISION_STRATEGY</span>
+                  <span className={styles.skill}>ROADMAP_PLANNING</span>
+                  <span className={styles.skill}>TEAM_MENTORSHIP</span>
+                  <span className={styles.skill}>STAKEHOLDER_MGMT</span>
+                  <span className={styles.skill}>AGILE_PROCESS</span>
                 </div>
               </div>
 
-              {/* AI & Integration */}
-              <div className={styles.expertiseCategory}>
-                <h3 className="h3 mb-4">AI & Integration</h3>
+              {/* Technical Authority (formerly Tech Stack) */}
+              <div className="card">
+                <h3 className="h3 mb-6 text-secondary">ENGINEERING_CORE</h3>
                 <div className={styles.skillsList}>
-                  <span className={styles.skill}>OpenAI APIs</span>
-                  <span className={styles.skill}>Gemini APIs</span>
-                  <span className={styles.skill}>ElevenLabs APIs</span>
-                  <span className={styles.skill}>Cursor IDE</span>
-                  <span className={styles.skill}>AI-Readable Documentation</span>
-                  <span className={styles.skill}>Rule Files & Context Optimization</span>
-                  <span className={styles.skill}>RAG</span>
-                  <span className={styles.skill}>LLMs</span>
+                  <span className={styles.skill}>FULL_STACK_ARCH</span>
+                  <span className={styles.skill}>TYPESCRIPT/REACT</span>
+                  <span className={styles.skill}>PYTHON/AI</span>
+                  <span className={styles.skill}>DATABASE_DESIGN</span>
+                  <span className={styles.skill}>CLOUD_INFRA</span>
                 </div>
               </div>
 
-              {/* Technical Skills */}
-              <div className={styles.expertiseCategory}>
-                <h3 className="h3 mb-4">Technical Stack</h3>
+              {/* AI & Innovation */}
+              <div className="card">
+                <h3 className="h3 mb-6 text-secondary">INNOVATION_LAYER</h3>
                 <div className={styles.skillsList}>
-                  <span className={styles.skill}>JavaScript</span>
-                  <span className={styles.skill}>TypeScript</span>
-                  <span className={styles.skill}>React</span>
-                  <span className={styles.skill}>HTML/CSS</span>
-                  <span className={styles.skill}>Git</span>
-                  <span className={styles.skill}>Node.js</span>
-                  <span className={styles.skill}>Ruby on Rails</span>
-                  <span className={styles.skill}>Python</span>
-                  <span className={styles.skill}>Java</span>
-                  <span className={styles.skill}>Kotlin</span>
-                  <span className={styles.skill}>Android</span>
+                  <span className={styles.skill}>AI_INTEGRATION</span>
+                  <span className={styles.skill}>LLM_PIPELINES</span>
+                  <span className={styles.skill}>RAG_SYSTEMS</span>
+                  <span className={styles.skill}>RAPID_PROTOTYPING</span>
+                  <span className={styles.skill}>TECH_VALIDATION</span>
                 </div>
               </div>
 
-              {/* Cloud & Deployment */}
-              <div className={styles.expertiseCategory}>
-                <h3 className="h3 mb-4">Cloud & Deployment</h3>
+              {/* Operations & Scale */}
+              <div className="card">
+                <h3 className="h3 mb-6 text-secondary">OPERATIONS_&&_SCALE</h3>
                 <div className={styles.skillsList}>
-                  <span className={styles.skill}>Vercel</span>
-                  <span className={styles.skill}>Railway</span>
-                  <span className={styles.skill}>Firebase</span>
-                  <span className={styles.skill}>Google Cloud</span>
-                  <span className={styles.skill}>AWS</span>
-                  <span className={styles.skill}>Docker</span>
-                  <span className={styles.skill}>CI/CD</span>
-                </div>
-              </div>
-
-              {/* Databases & APIs */}
-              <div className={styles.expertiseCategory}>
-                <h3 className="h3 mb-4">Databases & APIs</h3>
-                <div className={styles.skillsList}>
-                  <span className={styles.skill}>PostgreSQL</span>
-                  <span className={styles.skill}>MySQL</span>
-                  <span className={styles.skill}>MongoDB</span>
-                  <span className={styles.skill}>SpacetimeDB</span>
-                  <span className={styles.skill}>Parse (Open Source)</span>
-                  <span className={styles.skill}>REST APIs</span>
-                  <span className={styles.skill}>GraphQL</span>
-                  <span className={styles.skill}>API Testing</span>
-                </div>
-              </div>
-
-              {/* International Operations */}
-              <div className={styles.expertiseCategory}>
-                <h3 className="h3 mb-4">International Operations</h3>
-                <div className={styles.skillsList}>
-                  <span className={styles.skill}>Import/Export</span>
-                  <span className={styles.skill}>Regulatory Compliance</span>
-                  <span className={styles.skill}>International Licensing</span>
-                  <span className={styles.skill}>Health Code Navigation</span>
-                  <span className={styles.skill}>Cross-border E-commerce</span>
-                  <span className={styles.skill}>Supply Chain Management</span>
-                  <span className={styles.skill}>Cross-border Tax Compliance</span>
+                  <span className={styles.skill}>GO_TO_MARKET</span>
+                  <span className={styles.skill}>REGULATORY_COMPLIANCE</span>
+                  <span className={styles.skill}>CI/CD_DEVOPS</span>
+                  <span className={styles.skill}>SCALABILITY</span>
+                  <span className={styles.skill}>INTL_OPERATIONS</span>
                 </div>
               </div>
             </div>
@@ -442,85 +335,84 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className={`${styles.section} ${styles.contact}`}>
           <div className="container">
-            <div className={styles.contactContent}>
+            <div className="grid grid-2">
               <div className={styles.contactInfo}>
-                <h2 className="h1 mb-6">Let&apos;s Build Something Extraordinary</h2>
-                <p className="mb-6">
-                  Ready to transform your vision into reality? Whether you need
-                  a full-stack application, business strategy consultation, or
-                  innovative AI integration, let&apos;s discuss how we can push the
-                  boundaries together.
-                </p>
-                <p className="mb-6 text-gray">
-                  <strong>[EU] [HR] [CA] Available for immediate work in the EU and Canada</strong>
-                  <br />
-                  I grew up in Canada but speak conversational Croatian and can understand almost everything.
-                  <br />
-                </p>
-                <div className={styles.contactDetails}>
-                  <a href="tel:+385091906361" className={styles.contactLink}>
-                    +385 091 906 3613
-                  </a>
+                <h2>TRANSMIT</h2>
+                <div className="mb-8 border-l-4 border-primary pl-6 py-2 bg-gray-900 bg-opacity-30">
+                  <p className="text-small mb-4 font-bold tracking-widest">
+                    <span className={styles.statusIndicator}></span>
+                    CHANNEL_OPEN
+                  </p>
+                  <p className="text-dim text-small leading-relaxed">
+                    Ready to lead your next product initiative.
+                    <br/>
+                    Product Strategy || Technical Leadership || Innovation
+                  </p>
+                </div>
+                
+                <div className="mt-8 space-y-4">
                   <a href="mailto:martin.erlic@gmail.com" className={styles.contactLink}>
-                    martin.erlic@gmail.com
+                    <i className="fas fa-envelope" style={{marginRight: '0.75rem', width: '20px'}}></i>
+                    MARTIN.ERLIC@GMAIL.COM
                   </a>
                   <a href="https://github.com/seloslav" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
-                    GitHub Profile
+                    <i className="fab fa-github" style={{marginRight: '0.75rem', width: '20px'}}></i>
+                    GITHUB.COM/SELOSLAV
                   </a>
-                  <a href="https://github.com/SeloSlav/my-resume" target="_blank" rel="noopener noreferrer" className={`${styles.contactLink} ${styles.resumeLink}`}>
-                    📄 View Full Resume
+                  <a href="https://stackoverflow.com/users/4077513/martin-erlic" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+                    <i className="fab fa-stack-overflow" style={{marginRight: '0.75rem', width: '20px'}}></i>
+                    STACKOVERFLOW
                   </a>
-                  <div className={styles.stackOverflowLink}>
-                    <a href="https://stackoverflow.com/users/4077513/martin-erlic" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
-                      Stack Overflow Profile
-                    </a>
-                    <p className={`caption text-gray ${styles.stackOverflowNote}`}>
-                      * Yeah, I know SO is basically dead, but here&apos;s some proof I knew a thing or two before OpenAI called all of our technical abilities into question 😅
-                    </p>
-                  </div>
+                  <a href="https://www.x.com/seloslav" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+                    <i className="fab fa-x-twitter" style={{marginRight: '0.75rem', width: '20px'}}></i>
+                    @SELOSLAV
+                  </a>
                 </div>
               </div>
 
               <form className={styles.contactForm}>
-                <div className={styles.formGroup}>
-                  <label htmlFor="name" className="caption mb-1">Name</label>
+                <div className="mb-6">
+                  <label htmlFor="name" className="label">NAME</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     className="input"
+                    placeholder="ENTER FULL NAME"
                     required
                   />
                 </div>
 
-                <div className={styles.formGroup}>
-                  <label htmlFor="email" className="caption mb-1">Email</label>
+                <div className="mb-6">
+                  <label htmlFor="email" className="label">EMAIL</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     className="input"
+                    placeholder="ENTER CONTACT EMAIL"
                     required
                   />
                 </div>
 
-                <div className={styles.formGroup}>
-                  <label htmlFor="message" className="caption mb-1">Message</label>
+                <div className="mb-6">
+                  <label htmlFor="message" className="label">MESSAGE</label>
                   <textarea
                     id="message"
                     name="message"
-                    rows={5}
-                    className={`input ${styles.textarea}`}
+                    rows={6}
+                    className="input"
+                    placeholder="ENTER TRANSMISSION DATA..."
                     required
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn--primary">
-                  Send Message
+                <button type="submit" className="btn btn--primary w-full py-4 text-lg font-bold tracking-widest">
+                  SEND TRANSMISSION
                 </button>
               </form>
             </div>
-    </div>
+          </div>
         </section>
       </main>
     </>

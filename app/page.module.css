@@ -1,561 +1,267 @@
-/* Homepage Styles - Following @style-guide.mdc */
-
 .main {
-  padding-top: 80px; /* Account for fixed navigation */
-}
-
-.section {
-  padding-block: var(--space-8);
-}
-
-/* Hero Section */
-.hero {
+  padding-top: var(--space-8);
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-gray-light) 100%);
   position: relative;
-  overflow: hidden;
+  z-index: 2; /* Ensure main content is above overlay */
+  /* Grid Background Pattern */
+  background-image: 
+    linear-gradient(rgba(0, 217, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px;
+  background-position: center top;
+}
+
+/* Hero */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-left: none; 
+  padding-left: 0;
+  margin-left: 0;
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
 }
 
 .heroContent {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .heroTitle {
-  margin-bottom: var(--space-6);
-  line-height: var(--leading-tight);
+  margin-bottom: var(--space-4);
+  position: relative;
+  font-weight: 800;
 }
 
 .heroSubtitle {
   font-size: var(--text-h3);
-  color: var(--color-gray-medium);
+  color: var(--color-text);
   margin-bottom: var(--space-8);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: var(--leading-normal);
+  max-width: 800px;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
 }
 
 .heroActions {
   display: flex;
-  gap: var(--space-3);
-  justify-content: center;
-  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
 }
 
-/* Hero Background Images */
-.heroBackgroundImages {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.heroContent {
+/* System Panel (Replaces Terminal Window) */
+.systemPanel {
+  background: var(--color-bg-offset);
+  border: 1px solid var(--color-border);
+  margin-top: var(--space-6);
   position: relative;
-  z-index: 1;
-  padding-top: 120px; /* Mobile: Push content down to make room for combined image */
+  z-index: 5;
 }
 
-/* Mobile: Hide individual icons */
-.heroImageLeft,
-.heroImageRight,
-.heroImageTop {
-  display: none;
-}
-
-/* Mobile: Show combined image centered */
-.heroImageCombined {
-  display: block;
+/* Decorative corner markers for system panel */
+.systemPanel::before,
+.systemPanel::after {
+  content: "+";
   position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 280px;
-  height: 200px;
-  opacity: 0.3;
-  transition: all var(--transition-slow);
-  object-fit: contain;
+  color: var(--color-border);
+  font-weight: 300;
+  pointer-events: none;
+}
+.systemPanel::before { top: -9px; left: -4px; }
+.systemPanel::after { bottom: -9px; right: -4px; }
+
+.systemHeader {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-text-dim);
+  background: rgba(0, 217, 255, 0.05);
 }
 
-/* Portfolio Section */
-.portfolio {
-  background: var(--color-white);
+.systemBody {
+  padding: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 2;
+  color: var(--color-text);
 }
 
-.portfolioGrid {
-  margin-top: var(--space-8);
+.dataRow {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
 }
 
-.portfolioCard {
-  text-align: left;
-  height: 100%;
+.dataKey {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.dataValue {
+  color: var(--color-text);
+}
+
+/* Portfolio */
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-3);
+}
+
+.tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  background: var(--color-text-dim);
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+}
+
+/* Button Group */
+.buttonGroup {
   display: flex;
   flex-direction: column;
+  gap: var(--space-3);
 }
 
-.portfolioImageLink {
-  display: block;
-  text-decoration: none;
-  transition: all var(--transition-fast);
-}
-
-.portfolioImageLink:hover {
-  transform: translateY(-2px);
-}
-
-.portfolioImage {
-  width: 100%;
-  height: 200px;
-  background: var(--color-gray-light);
-  border-radius: var(--radius-medium);
-  margin-bottom: var(--space-3);
-  overflow: hidden;
-  position: relative;
-  transition: all var(--transition-fast);
-}
-
-.portfolioImageBg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all var(--transition-fast);
-  z-index: 1;
-}
-
-.portfolioOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: all var(--transition-fast);
-  border-radius: var(--radius-medium);
-  z-index: 2;
-}
-
-.portfolioText {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.devLinkWrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3;
-  transition: all var(--transition-fast);
+  flex-direction: column;
+  gap: var(--space-1);
 }
 
-.portfolioImageLink:hover .portfolioOverlay,
-.portfolioImageLink:hover .portfolioText {
-  opacity: 0;
-}
-
-.placeholderImage {
-  font-family: var(--font-serif), Georgia, serif;
-  font-size: var(--text-h3);
-  color: var(--color-white);
-  font-weight: 400;
+.credentials {
+  color: var(--color-text-dim);
+  font-size: 0.65rem;
   text-align: center;
-  z-index: 3;
-  position: relative;
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+  margin-top: var(--space-1);
+  padding-top: var(--space-1);
+  border-top: 1px dashed var(--color-border);
 }
 
-/* Styling for images WITH background */
-.portfolioImage[data-has-image="true"] .placeholderImage {
-  color: var(--color-white);
-}
-
-/* Fallback styling when no background image */
-.portfolioImage:not([data-has-image="true"]) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.portfolioImage:not([data-has-image="true"]) .placeholderImage {
-  color: var(--color-gray-medium);
-}
-
-.portfolioImage:not([data-has-image="true"]) .portfolioOverlay,
-.portfolioImage:not([data-has-image="true"]) .portfolioText {
-  display: none;
-}
-
-.comingSoon {
-  opacity: 0.8;
-}
-
-.comingSoon .portfolioImage {
-  background: var(--color-charcoal);
-}
-
-.comingSoon .placeholderImage {
-  color: var(--color-white);
-}
-
-.placeholderImage {
-  font-family: var(--font-serif), Georgia, serif;
-  font-size: var(--text-h3);
-  color: var(--color-gray-medium);
-  font-weight: 400;
-}
-
-.projectLink {
-  display: inline-block;
-  margin-top: var(--space-3);
-  font-family: var(--font-serif), Georgia, serif;
-  font-size: var(--text-caption);
-  font-weight: 600;
-  color: var(--color-black);
-  text-decoration: none;
-  transition: all var(--transition-fast);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.projectLink:hover {
-  color: var(--color-gray-medium);
-  text-decoration: none;
-  transform: translateX(4px);
-}
-
-/* About Section */
-.about {
-  background: var(--color-gray-light);
-}
-
-.aboutContent {
-  display: grid;
-  gap: var(--space-8);
-  align-items: start;
-  grid-template-columns: 1fr;
-}
-
-.aboutText {
-  max-width: none;
-}
-
-.aboutImage {
-  display: flex;
-  justify-content: center;
-  order: -1; /* Show image above text on mobile */
-}
-
-.profileImage {
-  max-width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition-medium);
-}
-
-.profileImage:hover {
-  transform: translateY(-4px);
-}
-
-.profilePhoto {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-medium);
-}
-
-.profilePlaceholder {
-  font-family: var(--font-display), Georgia, serif;
-  font-size: var(--text-h3);
-  color: var(--color-gray-medium);
-  font-weight: 400;
-  text-align: center;
-}
-
-/* Expertise Section */
-.expertise {
-  background: var(--color-white);
-}
-
-.expertiseGrid {
-  display: grid;
-  gap: var(--space-8);
-  grid-template-columns: 1fr;
-}
-
-.expertiseCategory {
-  background: var(--color-gray-light);
-  padding: var(--space-6);
-  border-radius: var(--radius-medium);
-  box-shadow: var(--shadow-subtle);
-}
-
+/* Skills */
 .skillsList {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2);
+  gap: 1rem;
 }
 
 .skill {
-  display: inline-block;
-  padding: var(--space-1) var(--space-2);
-  background: var(--color-black);
-  color: var(--color-white);
-  font-size: var(--text-caption);
-  border-radius: var(--radius-small);
-  font-family: var(--font-serif), Georgia, serif;
-  transition: all var(--transition-fast);
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .skill:hover {
-  background: var(--color-charcoal);
-  transform: translateY(-1px);
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
 }
 
-/* Contact Section */
-.contact {
-  background: var(--color-white);
-}
-
-.contactContent {
-  display: grid;
-  gap: var(--space-8);
-  align-items: start;
-}
-
-.contactInfo {
-  max-width: none;
-}
-
-.contactDetails {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-}
-
+/* Contact */
 .contactLink {
-  font-family: var(--font-serif), Georgia, serif;
-  font-size: var(--text-h3);
-  color: var(--color-black);
-  text-decoration: none;
-  transition: all var(--transition-fast);
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-2);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  text-decoration: none !important;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background: rgba(0, 217, 255, 0.03);
+  position: relative;
+  z-index: 10;
+  transition: all 0.2s ease;
 }
 
 .contactLink:hover {
-  color: var(--color-gray-medium);
-  text-decoration: underline;
+  border-color: var(--color-primary);
+  background: var(--color-bg);
+  color: var(--color-primary);
 }
 
-/* Resume Link in Contact Section */
-.contactLink.resumeLink {
-  background: var(--color-black);
-  color: var(--color-white);
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-medium);
-  font-weight: 500;
-  margin-top: var(--space-2);
-  text-align: center;
-  font-size: var(--text-body);
-  transition: all var(--transition-fast);
+.contactLink i {
+  color: var(--color-primary);
+  font-size: 1rem;
+  transition: all 0.2s ease;
 }
 
-.contactLink.resumeLink:hover {
-  background: var(--color-charcoal);
-  color: var(--color-white);
-  text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-medium);
+.contactLink:hover i {
+  color: var(--color-primary);
+  transform: scale(1.1);
 }
 
-.stackOverflowLink {
-  margin-top: var(--space-2);
+.statusIndicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-primary);
+  margin-right: 10px;
+  box-shadow: 0 0 10px var(--color-primary);
+  animation: pulse 2s infinite;
 }
 
-.stackOverflowNote {
-  margin-top: var(--space-1);
-  font-style: italic;
-  line-height: var(--leading-normal);
-  max-width: 400px;
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
-.contactForm {
-  background: var(--color-gray-light);
-  padding: var(--space-6);
-  border-radius: var(--radius-medium);
+/* Section-specific spacing adjustments */
+.about {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
 }
 
-.formGroup {
-  margin-bottom: var(--space-4);
+.expertise {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
 }
 
-.formGroup:last-of-type {
-  margin-bottom: var(--space-6);
+.contact {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
 }
 
-.formGroup label {
-  display: block;
-  margin-bottom: var(--space-1);
-  color: var(--color-black);
-  font-weight: 600;
+.portfolio {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
 }
 
-.textarea {
-  resize: vertical;
-  min-height: 120px;
+.rnd {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
 }
 
-/* Tablet Styles */
-@media (min-width: 768px) {
-  .main {
-    padding-top: 90px;
-  }
-  
-  .section {
-    padding-block: var(--space-12);
-  }
-  
-  .hero {
-    padding-block: var(--space-12);
-  }
-  
-  .heroSubtitle {
-    font-size: var(--text-body);
-    margin-bottom: var(--space-12);
+@media (max-width: 768px) {
+  .dataRow {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
   
   .heroActions {
-    gap: var(--space-4);
-  }
-  
-  .aboutContent {
-    grid-template-columns: 2fr 1fr;
-    gap: var(--space-12);
-    align-items: center;
-  }
-  
-  .aboutImage {
-    order: 0; /* Reset order - image goes to the right on tablet+ */
-    justify-content: flex-end;
-  }
-  
-  .profileImage {
-    max-width: 240px;
-  }
-  
-  .expertiseGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-6);
-  }
-  
-  .contactContent {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-12);
-  }
-  
-  .portfolioImage {
-    height: 240px;
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 1024px) {
-  .main {
-    padding-top: 100px;
-  }
-  
-  .heroTitle {
-    margin-bottom: var(--space-8);
-  }
-  
-  .heroSubtitle {
-    margin-bottom: var(--space-12);
-  }
-  
-  /* Desktop: Hide combined image */
-  .heroImageCombined {
-    display: none;
-  }
-  
-  /* Desktop: Reset hero content padding */
-  .heroContent {
-    padding-top: 0;
-  }
-  
-  /* Desktop: Show individual icons in triangle layout */
-  .heroImageLeft {
-    display: block;
-    position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 400px;
-    height: 400px;
-    opacity: 0.25;
-    transition: all var(--transition-slow);
-    object-fit: contain;
-  }
-  
-  .heroImageRight {
-    display: block;
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 400px;
-    height: 400px;
-    opacity: 0.25;
-    transition: all var(--transition-slow);
-    object-fit: contain;
-    left: auto;
-  }
-  
-  .heroImageTop {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 350px;
-    height: 350px;
-    opacity: 0.25;
-    transition: all var(--transition-slow);
-    object-fit: contain;
-  }
-  
-  .portfolioImage {
-    height: 280px;
-  }
-  
-  .aboutContent {
-    gap: var(--space-16);
-  }
-  
-  .profileImage {
-    max-width: 280px;
-  }
-  
-  .expertiseGrid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-8);
-  }
-  
-  .contactContent {
-    gap: var(--space-16);
-  }
-}
-
-/* Large Desktop Styles */
-@media (min-width: 1440px) {
-  .heroContent {
-    max-width: 900px;
-  }
-  
-  .heroSubtitle {
-    max-width: 700px;
+    flex-direction: column;
+    gap: var(--space-2);
   }
 }
