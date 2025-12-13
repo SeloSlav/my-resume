@@ -112,6 +112,40 @@
   color: var(--color-text);
 }
 
+.competencyGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .competencyGrid {
+    flex-direction: row;
+    gap: var(--space-6);
+  }
+}
+
+.competencySection {
+  flex: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .competencySection {
+    border-bottom: none;
+    border-right: 1px solid var(--color-border);
+    padding-right: var(--space-4);
+  }
+  
+  .competencySection:last-child {
+    border-right: none;
+    padding-right: 0;
+    padding-left: var(--space-4);
+  }
+}
+
 /* Portfolio */
 .projectTags {
   display: flex;
@@ -250,6 +284,11 @@
 }
 
 .rnd {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.aiPhilosophy {
   padding-top: var(--space-8);
   padding-bottom: var(--space-8);
 }

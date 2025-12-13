@@ -249,25 +249,41 @@ export default function Home() {
               
               <div className={styles.systemPanel} style={{marginTop: 0}}>
                 <div className={styles.systemHeader}>
-                  <span>FILE: CORE_COMPETENCIES.JSON</span>
+                  <span>FILE: CORE_COMPETENCIES</span>
                   <span>READ_ONLY</span>
                 </div>
                 <div className={styles.systemBody}>
-                  <div className="mb-6">
-                    <p className="text-secondary mb-2 font-bold tracking-widest">// LEADERSHIP_VALUES</p>
-                    <div className="grid grid-2 gap-4">
-                      <span className="text-dim border border-gray-800 p-2 text-center">[x] STRATEGIC</span>
-                      <span className="text-dim border border-gray-800 p-2 text-center">[x] EMPATHETIC</span>
-                      <span className="text-dim border border-gray-800 p-2 text-center">[x] TECHNICAL</span>
-                      <span className="text-dim border border-gray-800 p-2 text-center">[x] MENTOR</span>
+                  <div className={styles.competencyGrid}>
+                    <div className={styles.competencySection}>
+                      <p className="text-secondary mb-4 font-bold tracking-widest">LEADERSHIP VALUES</p>
+                      <div className="grid grid-2 gap-3">
+                        <span className="text-primary border border-primary p-2 text-center font-bold">
+                          <i className="fas fa-check" style={{marginRight: '0.5rem', color: 'var(--color-primary)'}}></i>
+                          STRATEGIC
+                        </span>
+                        <span className="text-primary border border-primary p-2 text-center font-bold">
+                          <i className="fas fa-check" style={{marginRight: '0.5rem', color: 'var(--color-primary)'}}></i>
+                          EMPATHETIC
+                        </span>
+                        <span className="text-primary border border-primary p-2 text-center font-bold">
+                          <i className="fas fa-check" style={{marginRight: '0.5rem', color: 'var(--color-primary)'}}></i>
+                          TECHNICAL
+                        </span>
+                        <span className="text-primary border border-primary p-2 text-center font-bold">
+                          <i className="fas fa-check" style={{marginRight: '0.5rem', color: 'var(--color-primary)'}}></i>
+                          MENTOR
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <p className="text-secondary mb-2 font-bold tracking-widest">// AVAILABILITY</p>
-                    <p className="text-small border-l-2 border-primary pl-4">
-                      <span className="text-primary block mb-1">ROLE:</span> PRODUCT / TECH LEAD<br/>
-                      <span className="text-primary block mb-1">ZONES:</span> EU, CANADA
-                    </p>
+                    <div className={styles.competencySection}>
+                      <p className="text-secondary mb-4 font-bold tracking-widest">AVAILABILITY</p>
+                      <p className="text-small border-l-2 border-primary pl-4">
+                        <span className="text-primary block mb-2 font-bold">ROLE:</span> 
+                        <span className="block mb-3">PRODUCT / TECH LEAD</span>
+                        <span className="text-primary block mb-2 font-bold">ZONES:</span> 
+                        <span className="block">EU, CANADA</span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -326,6 +342,64 @@ export default function Home() {
                   <span className={styles.skill}>CI/CD_DEVOPS</span>
                   <span className={styles.skill}>SCALABILITY</span>
                   <span className={styles.skill}>INTL_OPERATIONS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* AI Philosophy Section */}
+        <section id="ai-philosophy" className={`${styles.section} ${styles.aiPhilosophy}`}>
+          <div className="container">
+            <h2>AI_PHILOSOPHY</h2>
+            
+            <div className="grid grid-2">
+              <div>
+                <div className={styles.systemPanel} style={{marginTop: 0}}>
+                  <div className={styles.systemHeader}>
+                    <span>STATUS: CYBORG_MODE</span>
+                    <span>ACTIVE</span>
+                  </div>
+                  <div className={styles.systemBody}>
+                    <div className={styles.dataRow}>
+                      <span className={styles.dataKey}>EQUIPMENT</span>
+                      <span className={styles.dataValue}>Cursor Ultra, GPT Pro</span>
+                    </div>
+                    <div className={styles.dataRow}>
+                      <span className={styles.dataKey}>APPROACH</span>
+                      <span className={styles.dataValue}>Human + AI Symbiosis</span>
+                    </div>
+                    <div className={styles.dataRow}>
+                      <span className={styles.dataKey}>PHILOSOPHY</span>
+                      <span className={styles.dataValue}>Tools amplify expertise, not replace it</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="h3 mb-4 text-secondary">CORE_BELIEFS</h3>
+                <div className="mb-6">
+                  <p className="text-small mb-4 leading-loose">
+                    <span className="text-primary font-bold">&gt; CONTEXT {'>'} RAG</span><br/>
+                    File search and direct context injection beats RAG architectures. 
+                    LLMs need massive amounts of CONTEXT, not clever retrieval tricks.
+                  </p>
+                  <p className="text-small mb-4 leading-loose">
+                    <span className="text-primary font-bold">&gt; WORKING_MEMORY {'>'} FINE_TUNING</span><br/>
+                    Inspired by <a href="https://github.com/opensouls/opensouls" target="_blank" rel="noopener noreferrer" className="text-primary">Open Souls</a>—working memory 
+                    architectures create more dynamic, context-aware AI than static fine-tuning.
+                  </p>
+                  <p className="text-small mb-4 leading-loose">
+                    <span className="text-primary font-bold">&gt; KNOWLEDGE {'>'} TOOLS</span><br/>
+                    MCP tools are overrated. Deep domain expertise + leveraging SOTA models 
+                    correctly is the clearest path to AI domination.
+                  </p>
+                  <p className="text-small leading-loose">
+                    <span className="text-primary font-bold">&gt; SYMBIOSIS</span><br/>
+                    The best AI practitioners don&apos;t just use tools—they understand them deeply, 
+                    know when to push boundaries, and when to trust their own judgment over the model&apos;s.
+                  </p>
                 </div>
               </div>
             </div>
