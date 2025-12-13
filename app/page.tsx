@@ -41,7 +41,7 @@ export default function Home() {
               <p className={styles.heroSubtitle}>
                 PRODUCT ARCHITECT & TEAM LEAD<br/>
                 <span className="text-dim text-small block mt-2">
-                  // STRATEGIC VISION POWERED BY FULL-STACK MASTERY
+                  {'// STRATEGIC VISION POWERED BY FULL-STACK MASTERY'}
                 </span>
               </p>
               
@@ -104,7 +104,7 @@ export default function Home() {
                 </div>
                 <h3 className="h3">SELO OLIVE</h3>
                 <p className="text-dim mb-4 text-small font-bold">
-                  // E-COMMERCE // SUPPLY_CHAIN_ARCH
+                  {'// E-COMMERCE // SUPPLY_CHAIN_ARCH'}
                 </p>
                 <p className="text-small mb-6">
                   Orchestrated the entire product lifecycle from international regulatory navigation 
@@ -123,7 +123,7 @@ export default function Home() {
                 </div>
                 <h3 className="h3">ZOODIO AI</h3>
                 <p className="text-dim mb-4 text-small font-bold">
-                  // G_CLOUD // INTEGRATION_LEAD
+                  {'// G_CLOUD // INTEGRATION_LEAD'}
                 </p>
                 <p className="text-small mb-6">
                   Conceptualized and executed a SaaS product integrating AI APIs. 
@@ -142,7 +142,7 @@ export default function Home() {
                 </div>
                 <h3 className="h3">PROFIND</h3>
                 <p className="text-dim mb-4 text-small font-bold">
-                  // MCMASTER_FORGE // INNOVATION
+                  {'// MCMASTER_FORGE // INNOVATION'}
                 </p>
                 <p className="text-small mb-6">
                   Collaborated with accelerators to define a product roadmap for AI-powered industrial parts matching. 
@@ -212,7 +212,7 @@ export default function Home() {
                   RAPID_MVP // AI_VALIDATION
                 </p>
                 <p className="text-small mb-6">
-                  Executed a "Concept-to-Product" sprint in 24 hours. 
+                  Executed a &quot;Concept-to-Product&quot; sprint in 24 hours. 
                   Demonstrating how AI can compress product development cycles.
                 </p>
                 <a href="https://travel-guide-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
