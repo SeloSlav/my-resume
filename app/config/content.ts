@@ -273,12 +273,12 @@ export const content = {
         simple: "Zoodio AI"
       },
       subtitle: {
-        tech: "// G_CLOUD // INTEGRATION_LEAD",
-        simple: "Google Cloud • Integration Lead"
+        tech: "// PERSONAL_PROJECT // AI_EXPERIMENT",
+        simple: "Personal Project • AI Experiment"
       },
       description: {
-        tech: "Conceptualized and executed a SaaS product integrating AI APIs. Led the technical architecture to ensure scalability and user retention.",
-        simple: "Built a SaaS product integrating AI APIs. Led technical architecture for scalability and user retention."
+        tech: "A personal project I built to experiment with AI API integrations. Just Firebase and some APIs. Nothing fancy, but it works.",
+        simple: "A personal project experimenting with AI API integrations. Built with Firebase. Simple but functional."
       },
       button: {
         tech: "LAUNCH SITE",

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Product Strategy",
     "Team Lead",
     "AI Integration"
-  ],
+  ],  
   authors: [{ name: "Martin Erlić" }],
   creator: "Martin Erlić",
   viewport: "width=device-width, initial-scale=1",
