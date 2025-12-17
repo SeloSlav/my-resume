@@ -237,8 +237,8 @@ export const content = {
         simple: "System Architecture • Real-time"
       },
       description: {
-        tech: "Architected a real-time multiplayer system to understand the constraints of low-latency state synchronization.",
-        simple: "Built a real-time multiplayer system to understand low-latency state synchronization."
+        tech: "Built a real-time multiplayer game using SpacetimeDB to learn about reactor render cycles, animation frames, game canvas, subscriptions, and state synchronization.",
+        simple: "Built a real-time multiplayer game to learn about render cycles, animation frames, and state synchronization."
       },
       button: {
         tech: "READ LOGS",
@@ -255,12 +255,52 @@ export const content = {
         simple: "Rapid MVP • AI Validation"
       },
       description: {
-        tech: "A personal tool I built in a day and actually use. I make stuff like this all the time to solve real problems.",
-        simple: "A personal tool I built in a day and actually use. I make tools like this to solve real problems."
+        tech: "A personal tool I built in a day and actually use. I make stuff like this all the time for myself and friends.",
+        simple: "A personal tool I built in a day and actually use. I make tools like this for myself and friends."
       },
       button: {
         tech: "INITIATE",
         simple: "Try It"
+      }
+    },
+    velesVault: {
+      title: {
+        tech: "VELES VAULT",
+        simple: "Veles Vault"
+      },
+      subtitle: {
+        tech: "// X402_PROTOCOL // CREDENTIAL_MGMT",
+        simple: "AI Infrastructure • Web3"
+      },
+      description: {
+        tech: "Building 1Password for AI agent payments. Secure credential delegation with spending limits, instant revocation, and audit logs. Agents get API keys, never raw wallet access.",
+        simple: "Secure credential management for AI agents. Spending limits, instant revocation, and audit logs without exposing wallet access."
+      },
+      button: {
+        tech: "LAUNCH SITE",
+        simple: "Visit Site"
+      },
+      note: {
+        tech: "IN DEVELOPMENT",
+        simple: "In Development"
+      }
+    },
+    arkyv: {
+      title: {
+        tech: "ARKYV ENGINE",
+        simple: "Arkyv Engine"
+      },
+      subtitle: {
+        tech: "// OPEN_SOURCE // MULTIPLAYER_MUD",
+        simple: "Open Source • Multiplayer"
+      },
+      description: {
+        tech: "Open-source multi-user dungeon engine. Text-based world with AI-powered NPCs, real-time multiplayer, and emergent narratives through collaborative gameplay.",
+        simple: "Open-source text-based multiplayer game engine with AI-powered NPCs and emergent storytelling."
+      },
+      button: {
+        tech: "TRY DEMO",
+        simple: "Try Demo"
       }
     }
   },

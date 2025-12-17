@@ -20,8 +20,8 @@
   --text-h1: clamp(2rem, 5vw, 3.5rem);
   --text-h2: clamp(1.5rem, 4vw, 2.5rem);
   --text-h3: clamp(1.25rem, 3vw, 1.75rem);
-  --text-body: clamp(0.9rem, 1.5vw, 1.1rem);
-  --text-small: 0.8rem;
+  --text-body: clamp(1rem, 1.8vw, 1.125rem); /* 16px-18px for readability */
+  --text-small: 0.9375rem; /* 15px - more legible */
   
   /* Spacing - Optimized for Readability */
   --space-1: 0.5rem;
@@ -79,8 +79,8 @@
   --font-mono: "Times New Roman", Times, serif;
   
   /* Font Sizes - Larger for readability with serif font */
-  --text-body: 1rem; /* 16px base */
-  --text-small: 0.875rem; /* 14px */
+  --text-body: 1.0625rem; /* 17px base */
+  --text-small: 1rem; /* 16px */
   
   /* Remove Effects */
   --glow-primary: none;
@@ -124,9 +124,16 @@
 }
 
 .light-mode .btn {
-  text-transform: none; /* Remove uppercase if desired, but user said "remove all teh flourish" */
+  text-transform: none;
   letter-spacing: normal;
   border-width: 1px;
+  font-size: 1rem; /* 16px */
+}
+
+/* Ensure all body paragraphs are readable in light mode */
+.light-mode p {
+  font-size: 1rem; /* 16px minimum */
+  line-height: 1.75;
 }
 
 .light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6 {
@@ -137,12 +144,12 @@
 .light-mode .text-small {
   text-transform: none;
   letter-spacing: normal;
-  font-size: 0.875rem; /* 14px minimum */
+  font-size: 1rem; /* 16px for readability */
 }
 
 /* Light mode font size increases for readability */
 .light-mode .label {
-  font-size: 0.875rem; /* 14px */
+  font-size: 1rem; /* 16px */
 }
 
 .light-mode .btn:hover {
@@ -422,6 +429,9 @@ a:hover {
     --space-8: 4rem;
     --space-12: 6rem;
     --container-padding: 1rem;
+    /* Larger text on mobile for readability */
+    --text-body: 1rem; /* 16px minimum on mobile */
+    --text-small: 0.9375rem; /* 15px on mobile */
   }
   
   .section {
@@ -432,5 +442,11 @@ a:hover {
   
   .grid-2, .grid-3 {
     grid-template-columns: 1fr;
+  }
+  
+  /* Ensure body text is readable on mobile */
+  body {
+    font-size: 1rem;
+    line-height: 1.75;
   }
 }

@@ -222,6 +222,37 @@ export default function Home() {
                   {getContent(c.rndProjects.travel.button, mode)}
                 </a>
               </div>
+
+              {/* Veles Vault */}
+              <div className="card" style={{borderColor: 'var(--color-secondary)'}}>
+                <h3 className="h4 text-secondary">{getContent(c.rndProjects.velesVault.title, mode)}</h3>
+                <p className="text-dim text-small mb-3">
+                  {getContent(c.rndProjects.velesVault.subtitle, mode)}
+                </p>
+                <p className="text-small mb-6">
+                  {getContent(c.rndProjects.velesVault.description, mode)}
+                </p>
+                <a href="https://veles-vault.vercel.app" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
+                  {getContent(c.rndProjects.velesVault.button, mode)}
+                </a>
+                <p className="text-dim text-small mt-2 text-center">
+                  {getContent(c.rndProjects.velesVault.note, mode)}
+                </p>
+              </div>
+
+              {/* Arkyv Engine */}
+              <div className="card" style={{borderColor: 'var(--color-secondary)'}}>
+                <h3 className="h4 text-secondary">{getContent(c.rndProjects.arkyv.title, mode)}</h3>
+                <p className="text-dim text-small mb-3">
+                  {getContent(c.rndProjects.arkyv.subtitle, mode)}
+                </p>
+                <p className="text-small mb-6">
+                  {getContent(c.rndProjects.arkyv.description, mode)}
+                </p>
+                <a href="https://arkyv.org" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
+                  {getContent(c.rndProjects.arkyv.button, mode)}
+                </a>
+              </div>
             </div>
           </div>
         </section>

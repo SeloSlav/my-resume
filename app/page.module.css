@@ -80,7 +80,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.8125rem; /* 13px */
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-text-dim);
@@ -95,8 +95,8 @@
 .systemBody {
   padding: var(--space-4);
   font-family: var(--font-mono);
-  font-size: 0.9rem;
-  line-height: 2;
+  font-size: 1rem; /* 16px for readability */
+  line-height: 1.8;
   color: var(--color-text);
 }
 
@@ -143,7 +143,7 @@
 
 .profileCardTitle {
   color: var(--color-secondary);
-  font-size: 0.8rem;
+  font-size: 0.9375rem; /* 15px */
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: var(--space-3);
@@ -165,7 +165,7 @@
   background: transparent;
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
-  font-size: 0.8rem;
+  font-size: 0.9375rem; /* 15px */
   font-weight: 700;
 }
 
@@ -181,7 +181,7 @@
 
 .infoList p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem; /* 16px */
 }
 
 .infoList strong {
@@ -199,7 +199,7 @@
 }
 
 .tag {
-  font-size: 0.7rem;
+  font-size: 0.8125rem; /* 13px */
   text-transform: uppercase;
   color: var(--color-bg);
   background: var(--color-text-dim);
@@ -222,7 +222,7 @@
 
 .credentials {
   color: var(--color-text-dim);
-  font-size: 0.65rem;
+  font-size: 0.8125rem; /* 13px */
   text-align: center;
   font-family: var(--font-mono);
   letter-spacing: 1px;
@@ -239,7 +239,7 @@
 }
 
 .skill {
-  font-size: 0.8rem;
+  font-size: 0.9375rem; /* 15px */
   color: var(--color-primary);
   font-family: var(--font-mono);
   border: 1px solid var(--color-border);
@@ -383,41 +383,41 @@
 
 /* Light Mode - Larger text for readability */
 :global(.light-mode) .systemHeader {
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.9375rem; /* 15px */
 }
 
 :global(.light-mode) .systemBody {
-  font-size: 1rem; /* 16px */
+  font-size: 1.0625rem; /* 17px */
 }
 
 :global(.light-mode) .profileCardTitle {
-  font-size: 0.875rem; /* 14px */
+  font-size: 1rem; /* 16px */
 }
 
 :global(.light-mode) .tagItem {
-  font-size: 0.875rem; /* 14px */
+  font-size: 1rem; /* 16px */
 }
 
 :global(.light-mode) .tag {
-  font-size: 0.75rem; /* 12px */
+  font-size: 0.875rem; /* 14px */
 }
 
 :global(.light-mode) .skill {
-  font-size: 0.875rem; /* 14px */
+  font-size: 1rem; /* 16px */
 }
 
 :global(.light-mode) .credentials {
-  font-size: 0.75rem; /* 12px */
-}
-
-:global(.light-mode) .dataKey {
   font-size: 0.875rem; /* 14px */
 }
 
-:global(.light-mode) .dataValue {
+:global(.light-mode) .dataKey {
   font-size: 1rem; /* 16px */
 }
 
+:global(.light-mode) .dataValue {
+  font-size: 1.0625rem; /* 17px */
+}
+
 :global(.light-mode) .infoList p {
-  font-size: 1rem; /* 16px */
+  font-size: 1.0625rem; /* 17px */
 }

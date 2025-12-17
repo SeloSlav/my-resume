@@ -8,7 +8,17 @@ import { content, getContent } from '../../config/content';
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+  const [showModeDialog, setShowModeDialog] = useState(false);
+  const [hasSeenDialog, setHasSeenDialog] = useState(false);
   const { mode, toggleMode, isSimpleMode } = useTheme();
+
+  // Check if user has seen the dialog before
+  useEffect(() => {
+    const seen = localStorage.getItem('hasSeenModeDialog');
+    if (seen) {
+      setHasSeenDialog(true);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,8 +45,25 @@ export default function Navigation() {
   };
 
   const handleToggleMode = () => {
-    toggleMode();
+    if (!hasSeenDialog) {
+      setShowModeDialog(true);
+    } else {
+      toggleMode();
+    }
     setIsOpen(false);
+  };
+
+  const handleDialogConfirm = () => {
+    localStorage.setItem('hasSeenModeDialog', 'true');
+    setHasSeenDialog(true);
+    setShowModeDialog(false);
+    toggleMode();
+  };
+
+  const handleDialogClose = () => {
+    localStorage.setItem('hasSeenModeDialog', 'true');
+    setHasSeenDialog(true);
+    setShowModeDialog(false);
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -124,12 +151,14 @@ export default function Navigation() {
               {getContent(nav.items.contact, mode)}
             </button>
             <button 
-              className={`${styles.desktopNavItem} ${styles.modeToggle}`}
+              className={`${styles.desktopNavItem} ${styles.modeToggle} ${isSimpleMode ? styles.modeToggleDark : styles.modeToggleLight}`}
               onClick={handleToggleMode}
               aria-label={isSimpleMode ? "Switch to tech mode" : "Switch to simple mode"}
-              title={isSimpleMode ? "Switch to tech mode" : "Switch to simple mode"}
             >
               <i className={isSimpleMode ? "fas fa-desktop" : "fas fa-pen"}></i>
+              <span className={styles.tooltip}>
+                {isSimpleMode ? "Switch to Tech Mode" : "Switch to Simple Mode"}
+              </span>
             </button>
           </div>
         </div>
@@ -187,14 +216,49 @@ export default function Navigation() {
             {getContent(nav.items.contact, mode)}
           </button>
           <button 
-            className={`${styles.menuItem} ${styles.modeToggle}`}
+            className={`${styles.menuItem} ${styles.modeToggle} ${isSimpleMode ? styles.modeToggleDark : styles.modeToggleLight}`}
             onClick={handleToggleMode}
           >
             <i className={isSimpleMode ? "fas fa-desktop" : "fas fa-pen"} style={{marginRight: '0.75rem'}}></i>
-            {isSimpleMode ? "Tech Mode" : "Simple Mode"}
+            {isSimpleMode ? "Switch to Tech Mode" : "Switch to Simple Mode"}
           </button>
         </div>
       </div>
+
+      {/* Mode Switch Dialog */}
+      {showModeDialog && (
+        <div className={styles.dialogOverlay} onClick={handleDialogClose}>
+          <div className={styles.dialog} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.dialogHeader}>
+              <span className={styles.dialogIcon}>
+                {isSimpleMode ? "🖥️" : "✨"}
+              </span>
+              <h3>Wait, there&apos;s more!</h3>
+            </div>
+            <div className={styles.dialogBody}>
+              <p>
+                You didn&apos;t think I actually spent time developing a dark/light mode before sending out resumes, did you?
+              </p>
+              <p>
+                Well, I went above and beyond—I actually translated all the text too, so it sounds less... <em>cyberpunk terminal operator</em> and more <em>professional human being</em>.
+              </p>
+              <p className={styles.dialogHint}>
+                {isSimpleMode 
+                  ? "Tech mode: For those who appreciate a good monospace font and cyber aesthetics."
+                  : "Simple mode: Clean, readable, and employer-friendly."}
+              </p>
+            </div>
+            <div className={styles.dialogActions}>
+              <button className={styles.dialogButtonSecondary} onClick={handleDialogClose}>
+                Stay Here
+              </button>
+              <button className={styles.dialogButtonPrimary} onClick={handleDialogConfirm}>
+                {isSimpleMode ? "Enter the Matrix" : "Keep it Professional"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
