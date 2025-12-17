@@ -111,43 +111,7 @@ Versatile IT professional with 10+ years of international experience spanning pr
 
 ## Technical Projects
 
-### Zoodio AI Image Converter
-*AI-powered image conversion platform with e-commerce integration*
-
-- **Technologies**: React, Google Cloud, Firebase, AI APIs, Stripe, Printful, Gelato
-- **Live Demo**: [zoodio.ai](https://www.zoodio.ai)
-- Built complete application using React front-end with Google Cloud backend
-- Integrated AI APIs for image processing and conversion workflows
-- Connected multiple third-party services including Printful, Gelato (print-on-demand), and Stripe (payment processing)
-- Developed comprehensive user subscription system with retention optimization
-- Focused heavily on front-end design, UI/UX, and automated workflow implementation
-
-### Real-Time Multiplayer Gaming Platform
-*Real-time multiplayer survival game with custom authentication and scalable infrastructure*
-
-- **Technologies**: React, SpacetimeDB, PostgreSQL, Railway
-- **Project Blog**: [brothandbullets.com/blog](https://www.brothandbullets.com/blog)
-- Developed real-time multiplayer survival game supporting multiple concurrent clients
-- Implemented custom authentication server and SpacetimeDB for real-time state management
-- Deployed to production on Railway with scalable infrastructure
-
-### Baba Selo (AI Recipe Maker)
-*AI-powered recipe generator for traditional Slavic cuisine*
-
-- **Technologies**: Next.js, OpenAI API, Firebase, Vercel
-- **Live App**: [babaselo.com](https://www.babaselo.com/)
-- Built AI-powered recipe generator integrating multiple OpenAI endpoints, including image recognition, image generation, and text completion
-- Designed system to convert traditional Slavic cookbooks into structured, searchable recipes
-- Implemented custom workflows for recipe validation, substitution, and cultural context preservation
-- Optimized prompts and retrieval for both creative and practical culinary outputs
-
-
-### Day Trip Planner - Single-Day MVP
-- **Technologies**: Next.js, AI APIs, Vercel
-- **Live Demo**: [travel-guide-omega-nine.vercel.app](https://travel-guide-omega-nine.vercel.app/)
-- Rapid prototype development demonstrating product validation capabilities
-- Developed consistent AI-readable documentation and custom rules files for output optimization
-- Strategic AI optimization approach rather than basic prompting
+**Note**: Visit [martinerlic.com](https://martinerlic.com) to see my various live projects, games, web apps, and experiments.
 
 ---
 
