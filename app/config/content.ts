@@ -285,6 +285,24 @@ export const content = {
         simple: "Visit Site"
       }
     },
+    babaSelo: {
+      title: {
+        tech: "BABA SELO",
+        simple: "Baba Selo"
+      },
+      subtitle: {
+        tech: "// AI_RECIPES // SLAVIC_CUISINE",
+        simple: "AI Recipes • Slavic Cuisine"
+      },
+      description: {
+        tech: "AI-powered recipe generator for traditional Slavic cuisine. Uses OpenAI APIs for image recognition, generation, and recipe creation. Converts old cookbooks into searchable, structured recipes.",
+        simple: "AI recipe generator for traditional Slavic cuisine. Converts old cookbooks into searchable recipes using OpenAI APIs."
+      },
+      button: {
+        tech: "VISIT SITE",
+        simple: "Visit Site"
+      }
+    },
     arkyv: {
       title: {
         tech: "ARKYV ENGINE",

@@ -240,6 +240,20 @@ export default function Home() {
                 </a>
               </div>
 
+              {/* Baba Selo */}
+              <div className="card" style={{borderColor: 'var(--color-secondary)'}}>
+                <h3 className="h4 text-secondary">{getContent(c.rndProjects.babaSelo.title, mode)}</h3>
+                <p className="text-dim text-small mb-3">
+                  {getContent(c.rndProjects.babaSelo.subtitle, mode)}
+                </p>
+                <p className="text-small mb-6">
+                  {getContent(c.rndProjects.babaSelo.description, mode)}
+                </p>
+                <a href="https://babaselo.com" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
+                  {getContent(c.rndProjects.babaSelo.button, mode)}
+                </a>
+              </div>
+
               {/* Arkyv Engine */}
               <div className="card" style={{borderColor: 'var(--color-secondary)'}}>
                 <h3 className="h4 text-secondary">{getContent(c.rndProjects.arkyv.title, mode)}</h3>
