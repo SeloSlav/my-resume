@@ -151,26 +151,30 @@ export const content = {
         simple: "Visit Site"
       }
     },
-    zoodio: {
+    velesVault: {
       tags: {
-        tech: ["AI_STRATEGY", "SAAS"],
-        simple: ["AI Strategy", "SaaS"]
+        tech: ["AI_INFRA", "WEB3"],
+        simple: ["AI Infrastructure", "Web3"]
       },
       title: {
-        tech: "ZOODIO AI",
-        simple: "Zoodio AI"
+        tech: "VELES VAULT",
+        simple: "Veles Vault"
       },
       subtitle: {
-        tech: "// G_CLOUD // INTEGRATION_LEAD",
-        simple: "Google Cloud • Integration Lead"
+        tech: "// X402_PROTOCOL // CREDENTIAL_MGMT",
+        simple: "AI Infrastructure • Web3"
       },
       description: {
-        tech: "Conceptualized and executed a SaaS product integrating AI APIs. Led the technical architecture to ensure scalability and user retention.",
-        simple: "Built a SaaS product integrating AI APIs. Led technical architecture for scalability and user retention."
+        tech: "Building 1Password for AI agent payments. Secure credential delegation with spending limits, instant revocation, and audit logs. Agents get API keys, never raw wallet access.",
+        simple: "Secure credential management for AI agents. Spending limits, instant revocation, and audit logs without exposing wallet access."
       },
       button: {
         tech: "LAUNCH SITE",
         simple: "Visit Site"
+      },
+      note: {
+        tech: "IN DEVELOPMENT",
+        simple: "In Development"
       }
     },
     profind: {
@@ -263,26 +267,22 @@ export const content = {
         simple: "Try It"
       }
     },
-    velesVault: {
+    zoodio: {
       title: {
-        tech: "VELES VAULT",
-        simple: "Veles Vault"
+        tech: "ZOODIO AI",
+        simple: "Zoodio AI"
       },
       subtitle: {
-        tech: "// X402_PROTOCOL // CREDENTIAL_MGMT",
-        simple: "AI Infrastructure • Web3"
+        tech: "// G_CLOUD // INTEGRATION_LEAD",
+        simple: "Google Cloud • Integration Lead"
       },
       description: {
-        tech: "Building 1Password for AI agent payments. Secure credential delegation with spending limits, instant revocation, and audit logs. Agents get API keys, never raw wallet access.",
-        simple: "Secure credential management for AI agents. Spending limits, instant revocation, and audit logs without exposing wallet access."
+        tech: "Conceptualized and executed a SaaS product integrating AI APIs. Led the technical architecture to ensure scalability and user retention.",
+        simple: "Built a SaaS product integrating AI APIs. Led technical architecture for scalability and user retention."
       },
       button: {
         tech: "LAUNCH SITE",
         simple: "Visit Site"
-      },
-      note: {
-        tech: "IN DEVELOPMENT",
-        simple: "In Development"
       }
     },
     arkyv: {
@@ -610,7 +610,7 @@ export const content = {
   // Navigation
   nav: {
     logo: {
-      tech: "Martin Erlic",
+      tech: "Martin Erlić",
       simple: "Martin Erlić"
     },
     logoPrefix: {

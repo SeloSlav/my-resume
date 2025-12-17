@@ -121,23 +121,26 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Zoodio AI */}
+              {/* Veles Vault */}
               <div className="card">
                 <div className={styles.projectTags}>
-                  {getContent(c.projects.zoodio.tags, mode).map((tag, i) => (
+                  {getContent(c.projects.velesVault.tags, mode).map((tag, i) => (
                     <span key={i} className={styles.tag}>{tag}</span>
                   ))}
                 </div>
-                <h3 className="h3">{getContent(c.projects.zoodio.title, mode)}</h3>
+                <h3 className="h3">{getContent(c.projects.velesVault.title, mode)}</h3>
                 <p className="text-dim mb-4 text-small font-bold">
-                  {getContent(c.projects.zoodio.subtitle, mode)}
+                  {getContent(c.projects.velesVault.subtitle, mode)}
                 </p>
                 <p className="text-small mb-6">
-                  {getContent(c.projects.zoodio.description, mode)}
+                  {getContent(c.projects.velesVault.description, mode)}
                 </p>
-                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
-                  {getContent(c.projects.zoodio.button, mode)}
+                <a href="https://veles-vault.vercel.app" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
+                  {getContent(c.projects.velesVault.button, mode)}
                 </a>
+                <p className={`text-dim text-small text-center ${styles.credentials}`} style={{marginTop: 'var(--space-2)'}}>
+                  {getContent(c.projects.velesVault.note, mode)}
+                </p>
               </div>
 
               {/* Profind */}
@@ -223,21 +226,18 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Veles Vault */}
+              {/* Zoodio AI */}
               <div className="card" style={{borderColor: 'var(--color-secondary)'}}>
-                <h3 className="h4 text-secondary">{getContent(c.rndProjects.velesVault.title, mode)}</h3>
+                <h3 className="h4 text-secondary">{getContent(c.rndProjects.zoodio.title, mode)}</h3>
                 <p className="text-dim text-small mb-3">
-                  {getContent(c.rndProjects.velesVault.subtitle, mode)}
+                  {getContent(c.rndProjects.zoodio.subtitle, mode)}
                 </p>
                 <p className="text-small mb-6">
-                  {getContent(c.rndProjects.velesVault.description, mode)}
+                  {getContent(c.rndProjects.zoodio.description, mode)}
                 </p>
-                <a href="https://veles-vault.vercel.app" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
-                  {getContent(c.rndProjects.velesVault.button, mode)}
+                <a href="https://www.zoodio.ai" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block" style={{borderColor: 'var(--color-secondary)', color: 'var(--color-secondary)'}}>
+                  {getContent(c.rndProjects.zoodio.button, mode)}
                 </a>
-                <p className="text-dim text-small mt-2 text-center">
-                  {getContent(c.rndProjects.velesVault.note, mode)}
-                </p>
               </div>
 
               {/* Arkyv Engine */}

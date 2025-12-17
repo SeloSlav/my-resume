@@ -10,10 +10,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Martin Erlic | Product Lead & Technical Visionary",
+  title: "Martin Erlić | Product Lead & Technical Visionary",
   description: "Product Developer and Team Lead with deep Full-Stack expertise. Bridging the gap between high-level vision and technical execution.",
   keywords: [
-    "Martin Erlic",
+    "Martin Erlić",
     "Product Manager",
     "Technical Lead",
     "Full-Stack Developer",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     "Team Lead",
     "AI Integration"
   ],
-  authors: [{ name: "Martin Erlic" }],
-  creator: "Martin Erlic",
+  authors: [{ name: "Martin Erlić" }],
+  creator: "Martin Erlić",
   viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: [
