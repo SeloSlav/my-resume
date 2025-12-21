@@ -12,7 +12,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [mode, setMode] = useState<ContentMode>('tech');
+  const [mode, setMode] = useState<ContentMode>('simple');
 
   const toggleMode = useCallback(() => {
     const newMode = mode === 'tech' ? 'simple' : 'tech';

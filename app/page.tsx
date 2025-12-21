@@ -121,7 +121,7 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Veles Vault */}
+              {/* Veles Protocol */}
               <div className="card">
                 <div className={styles.projectTags}>
                   {getContent(c.projects.velesVault.tags, mode).map((tag, i) => (

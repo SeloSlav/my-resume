@@ -49,7 +49,7 @@ export default function RootLayout({
           referrerPolicy="no-referrer" 
         />
       </head>
-      <body className={`${jetbrainsMono.variable}`}>
+      <body className={`${jetbrainsMono.variable} light-mode`}>
         <ThemeProvider>
           {children}
         </ThemeProvider>

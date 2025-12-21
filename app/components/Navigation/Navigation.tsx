@@ -150,16 +150,7 @@ export default function Navigation() {
             >
               {getContent(nav.items.contact, mode)}
             </button>
-            <button 
-              className={`${styles.desktopNavItem} ${styles.modeToggle} ${isSimpleMode ? styles.modeToggleDark : styles.modeToggleLight}`}
-              onClick={handleToggleMode}
-              aria-label={isSimpleMode ? "Switch to tech mode" : "Switch to simple mode"}
-            >
-              <i className={isSimpleMode ? "fas fa-desktop" : "fas fa-pen"}></i>
-              <span className={styles.tooltip}>
-                {isSimpleMode ? "Switch to Tech Mode" : "Switch to Simple Mode"}
-              </span>
-            </button>
+            {/* Mode toggle hidden */}
           </div>
         </div>
       </nav>
@@ -215,13 +206,7 @@ export default function Navigation() {
           >
             {getContent(nav.items.contact, mode)}
           </button>
-          <button 
-            className={`${styles.menuItem} ${styles.modeToggle} ${isSimpleMode ? styles.modeToggleDark : styles.modeToggleLight}`}
-            onClick={handleToggleMode}
-          >
-            <i className={isSimpleMode ? "fas fa-desktop" : "fas fa-pen"} style={{marginRight: '0.75rem'}}></i>
-            {isSimpleMode ? "Switch to Tech Mode" : "Switch to Simple Mode"}
-          </button>
+          {/* Mode toggle hidden */}
         </div>
       </div>
 

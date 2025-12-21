@@ -157,8 +157,8 @@ export const content = {
         simple: ["AI Infrastructure", "Web3"]
       },
       title: {
-        tech: "VELES VAULT",
-        simple: "Veles Vault"
+        tech: "VELES PROTOCOL",
+        simple: "Veles Protocol"
       },
       subtitle: {
         tech: "// X402_PROTOCOL // CREDENTIAL_MGMT",
