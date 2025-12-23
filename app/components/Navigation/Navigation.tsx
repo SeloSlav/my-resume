@@ -22,7 +22,7 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'portfolio', 'rnd', 'about', 'expertise', 'ai-philosophy', 'why-hire', 'contact'];
+      const sections = ['hero', 'portfolio', 'rnd', 'about', 'expertise', 'ai-philosophy', 'writing', 'why-hire', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -139,6 +139,12 @@ export default function Navigation() {
               {getContent(nav.items.ai, mode)}
             </button>
             <button 
+              className={`${styles.desktopNavItem} ${activeSection === 'writing' ? styles.active : ''}`}
+              onClick={() => scrollToSection('writing')}
+            >
+              {getContent(nav.items.writing, mode)}
+            </button>
+            <button 
               className={`${styles.desktopNavItem} ${activeSection === 'why-hire' ? styles.active : ''}`}
               onClick={() => scrollToSection('why-hire')}
             >
@@ -193,6 +199,12 @@ export default function Navigation() {
             onClick={() => scrollToSection('ai-philosophy')}
           >
             {getContent(nav.items.ai, mode)}
+          </button>
+          <button 
+            className={`${styles.menuItem} ${activeSection === 'writing' ? styles.active : ''}`}
+            onClick={() => scrollToSection('writing')}
+          >
+            {getContent(nav.items.writing, mode)}
           </button>
           <button 
             className={`${styles.menuItem} ${activeSection === 'why-hire' ? styles.active : ''}`}

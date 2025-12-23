@@ -407,6 +407,40 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Writing Section */}
+        <section id="writing" className={`${styles.section} ${styles.writing}`}>
+          <div className="container">
+            <h2>{getContent(c.sections.writing, mode)}</h2>
+            <p className="text-primary font-bold mb-4">
+              {getContent(c.writing.description, mode)}
+            </p>
+            <p className="text-small mb-6 leading-loose" style={{fontStyle: 'italic'}}>
+              {getContent(c.writing.note, mode)}
+            </p>
+            
+            <div className="grid grid-3">
+              {c.writing.samples.map((sample, i) => (
+                <div key={i} className="card">
+                  <h3 className="h3 mb-4 text-secondary">{getContent(sample.title, mode)}</h3>
+                  <p className="text-small leading-loose mb-4">
+                    {getContent(sample.description, mode)}
+                  </p>
+                  {sample.link && (
+                    <a 
+                      href={sample.link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-secondary"
+                    >
+                      {getContent(sample.link.label, mode)}
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Why Hire Me Section */}
         <section id="why-hire" className={`${styles.section} ${styles.whyHire}`}>
           <div className="container">

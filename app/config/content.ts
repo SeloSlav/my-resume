@@ -117,6 +117,10 @@ export const content = {
       tech: "AI_PHILOSOPHY",
       simple: "AI Philosophy"
     },
+    writing: {
+      tech: "WRITING_ARCHIVE",
+      simple: "Writing"
+    },
     whyHire: {
       tech: "WHY_HIRE",
       simple: "Why Work With Me"
@@ -336,7 +340,7 @@ export const content = {
       },
       {
         tech: "I know the stack end to end, from database design to deployment to user acquisition. I can talk to engineers, plan a roadmap, and ship features myself when needed.",
-        simple: "I understand the full stack—from database design to deployment to user acquisition. I can communicate with engineers, plan roadmaps, and ship features myself when needed."
+        simple: "I understand the full stack, from database design to deployment to user acquisition. I can communicate with engineers, plan roadmaps, and ship features myself when needed."
       },
       {
         tech: "I've grown e-commerce brands, built AI SaaS products, and shipped internal tools. I bring a pragmatic approach to building things that actually work.",
@@ -400,7 +404,7 @@ export const content = {
       },
       skills: {
         tech: ["FULL_STACK_ARCH", "TYPESCRIPT/REACT", "PYTHON/AI", "DATABASE_DESIGN", "CLOUD_INFRA"],
-        simple: ["Full-Stack Architecture", "TypeScript & React", "Python & AI", "Database Design", "Cloud Infrastructure"]
+        simple: ["Full-Stack Architecture", "TypeScript & React", "Database Design", "Cloud Deployment", "HP/Ops Orchestration"]
       }
     },
     innovation: {
@@ -515,6 +519,75 @@ export const content = {
         }
       ]
     }
+  },
+
+  // Writing Section
+  writing: {
+    intro: {
+      tech: "> WRITING_ARCHIVE",
+      simple: "Writing"
+    },
+    description: {
+      tech: "Fiction, philosophy, economics, and social commentary. Exploring ideas beyond code.",
+      simple: "Fiction, philosophy, economics, and social commentary. Exploring ideas beyond code."
+    },
+    note: {
+      tech: "Writing since college. No AI—just deep research, technical precision, and modern writing techniques following Allan Watt and LA Writers Lab. Hard sci-fi requires real technical writing skills.",
+      simple: "Writing since college. Deep research, technical precision, and modern writing techniques following Allan Watt and LA Writers Lab. Hard sci-fi requires real technical writing."
+    },
+    samples: [
+      {
+        title: {
+          tech: "BABUSHKA_SUBSTACK",
+          simple: "Babushka Newsletter"
+        },
+        description: {
+          tech: "Behind-the-scenes essays about Babushka: Echoes of Immortality and other novellas. Writing process, character development, and story inspiration.",
+          simple: "Behind-the-scenes essays about Babushka and other novellas. Writing process and story inspiration."
+        },
+        link: {
+          label: {
+            tech: "READ_SUBSTACK",
+            simple: "Read on Substack"
+          },
+          url: "https://babushkabook.substack.com"
+        }
+      },
+      {
+        title: {
+          tech: "MEDIUM_STORIES",
+          simple: "Medium Articles"
+        },
+        description: {
+          tech: "Essays and narratives exploring philosophy, society, and human nature. Personal reflections and cultural commentary.",
+          simple: "Essays exploring philosophy, society, and human nature. Personal reflections."
+        },
+        link: {
+          label: {
+            tech: "VIEW_MEDIUM",
+            simple: "View on Medium"
+          },
+          url: "https://medium.com/@SeloSlav"
+        }
+      },
+      {
+        title: {
+          tech: "PUBLISHED_FICTION",
+          simple: "Published Books"
+        },
+        description: {
+          tech: "Author of Babushka: Echoes of Immortality. Fiction exploring identity, memory, cultural heritage, and what it means to be human.",
+          simple: "Author of Babushka: Echoes of Immortality. Fiction exploring identity, memory, and cultural heritage."
+        },
+        link: {
+          label: {
+            tech: "VIEW_ON_AMAZON",
+            simple: "View on Amazon"
+          },
+          url: "https://amazon.com/stores/Martin-Erlic/author/B0BQBMH7VJ?ref=ap_rdr&shoppingPortalEnabled=true"
+        }
+      }
+    ]
   },
 
   // Why Hire Section
@@ -641,6 +714,7 @@ export const content = {
       about: { tech: "About", simple: "About" },
       expertise: { tech: "Expertise", simple: "Expertise" },
       ai: { tech: "AI", simple: "AI" },
+      writing: { tech: "Writing", simple: "Writing" },
       why: { tech: "Why", simple: "Why" },
       contact: { tech: "Contact", simple: "Contact" }
     }
