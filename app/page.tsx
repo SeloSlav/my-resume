@@ -135,7 +135,7 @@ export default function Home() {
                 <p className="text-small mb-6">
                   {getContent(c.projects.velesVault.description, mode)}
                 </p>
-                <a href="https://veles-vault.vercel.app" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
+                <a href="https://velesprotocol.xyz" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
                   {getContent(c.projects.velesVault.button, mode)}
                 </a>
                 <p className={`text-dim text-small text-center ${styles.credentials}`} style={{marginTop: 'var(--space-2)'}}>
