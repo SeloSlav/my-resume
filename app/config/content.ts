@@ -539,7 +539,7 @@ export const content = {
       {
         title: {
           tech: "BABUSHKA_SUBSTACK",
-          simple: "Babushka Newsletter"
+          simple: "Long-Form Fiction Newsletter"
         },
         description: {
           tech: "Behind-the-scenes essays about Babushka: Echoes of Immortality and other novellas. Writing process, character development, and story inspiration.",
