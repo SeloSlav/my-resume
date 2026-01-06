@@ -438,44 +438,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-
-            {/* Papers Subsection */}
-            <div className={styles.papersSubsection}>
-              <h3 className="h4 text-secondary mb-4">Papers</h3>
-              
-              <div className={styles.paperEntry}>
-                <h4 className="h4 mb-3">Shadow Futures: Why Verifiable Work Cannot Signal Value in Path-Dependent Economies</h4>
-                
-                <p className="text-small leading-loose mb-4">
-                  This paper studies a narrow but increasingly common failure mode in modern economies: situations where effort is perfectly observable, work is fully verified, and yet outcomes cease to be causally attributable to that work.
-                </p>
-                <p className="text-small leading-loose mb-4">
-                  The argument is not that effort is unimportant, nor that outcomes are purely random. It is that in sufficiently path-dependent systems, verification survives while attribution fails. When rewards are allocated through reinforcing network processes, identical verified effort histories can be compatible with both success and failure. Observed success no longer identifies the causal role of work, even ex post.
-                </p>
-                <p className="text-small leading-loose mb-4">
-                  The paper introduces the concept of <em>shadow futures</em>: unrealized but observationally indistinguishable effort trajectories that fail due solely to timing or network position. Their existence implies that proof of work cannot function as proof of value once reinforcement dominates allocation.
-                </p>
-                <p className="text-small leading-loose mb-6">
-                  The result is epistemic rather than moral. It concerns what can be inferred from outcomes in non-ergodic systems, not how rewards ought to be distributed. The analysis applies to labor markets, scientific publishing, digital platforms, and proof-of-work systems, where increasingly precise verification coexists with declining informational content.
-                </p>
-                <p className="text-small leading-loose mb-6" style={{fontStyle: 'italic'}}>
-                  This is a working paper. The canonical academic version is hosted on SSRN.
-                </p>
-
-                <div className={styles.paperLinks}>
-                  <a href="/Martin-Erlic-Shadow-Futures.pdf" target="_blank" rel="noopener noreferrer">
-                    Download PDF
-                  </a>
-                  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6003994" target="_blank" rel="noopener noreferrer">
-                    View on SSRN
-                  </a>
-                </div>
-
-                <p className={styles.paperDisclaimer}>
-                  This paper addresses causal attribution under path dependence, not fairness, justice, or normative theories of merit.
-                </p>
-              </div>
-            </div>
           </div>
         </section>
 
