@@ -161,6 +161,9 @@ export default function Home() {
                   <a href="https://parts-graph.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
                     {getContent(c.projects.profind.buttons.concept, mode)}
                   </a>
+                  <a href="https://automatic-recommendation-tool.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
+                    Sensor Tool Demo
+                  </a>
                   <div className={styles.devLinkWrapper}>
                     <a href="https://dev.profind.shop/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
                       {getContent(c.projects.profind.buttons.dev, mode)}
