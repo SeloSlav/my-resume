@@ -589,8 +589,8 @@ export const content = {
       },
       {
         title: {
-          tech: "SHADOW_FUTURES",
-          simple: "Shadow Futures"
+          tech: "ACADEMIC_WRITING",
+          simple: "Academic Writing"
         },
         description: {
           tech: "Academic paper exploring why credentials and verifiable work fail to signal value in path-dependent economies, where past choices shape future outcomes. Published on SSRN, seeking publication with journals.",
@@ -602,6 +602,23 @@ export const content = {
             simple: "View on SSRN"
           },
           url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6003994"
+        }
+      },
+      {
+        title: {
+          tech: "X_ARTICLES",
+          simple: "X Articles"
+        },
+        description: {
+          tech: "Essays on software economics and agent-based systems. Exploring how markets, incentives, and autonomous agents interact in the digital economy.",
+          simple: "Essays on software economics and agent-based systems. Exploring how markets, incentives, and autonomous agents interact in the digital economy."
+        },
+        link: {
+          label: {
+            tech: "VIEW_ON_X",
+            simple: "View on X"
+          },
+          url: "https://x.com/SeloSlav/articles"
         }
       }
     ]
