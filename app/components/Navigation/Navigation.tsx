@@ -237,7 +237,7 @@ export default function Navigation() {
                 You didn&apos;t think I actually spent time developing a dark/light mode before sending out resumes, did you?
               </p>
               <p>
-                Well, I went above and beyond—I actually translated all the text too, so it sounds less... <em>cyberpunk terminal operator</em> and more <em>professional human being</em>.
+                Well, I went above and beyond. I actually translated all the text too, so it sounds less... <em>cyberpunk terminal operator</em> and more <em>professional human being</em>.
               </p>
               <p className={styles.dialogHint}>
                 {isSimpleMode 

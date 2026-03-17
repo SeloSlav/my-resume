@@ -493,7 +493,7 @@ export const content = {
             simple: "Working Memory Over Fine-Tuning"
           },
           description: {
-            tech: "Inspired by Open Souls—working memory architectures create more dynamic, context-aware AI than static fine-tuning.",
+            tech: "Inspired by Open Souls, working memory architectures create more dynamic, context-aware AI than static fine-tuning.",
             simple: "Working memory architectures create more dynamic, context-aware AI than static fine-tuning."
           }
         },
@@ -514,7 +514,7 @@ export const content = {
           },
           description: {
             tech: "The best AI practitioners don't just use tools. They understand them deeply, know when to push boundaries, and when to trust their own judgment over the model's.",
-            simple: "The best AI practitioners understand their tools deeply—knowing when to push boundaries and when to trust their own judgment."
+            simple: "The best AI practitioners understand their tools deeply, knowing when to push boundaries and when to trust their own judgment."
           }
         }
       ]
@@ -532,7 +532,7 @@ export const content = {
       simple: "Fiction, philosophy, economics, and social commentary. Exploring ideas beyond code."
     },
     note: {
-      tech: "Writing since college. No AI—just deep research, technical precision, and modern writing techniques following Allan Watt and LA Writers Lab. Hard sci-fi requires real technical writing skills.",
+      tech: "Writing since college. No AI, just deep research, technical precision, and modern writing techniques following Allan Watt and LA Writers Lab. Hard sci-fi requires real technical writing skills.",
       simple: "Writing since college. Deep research, technical precision, and modern writing techniques following Allan Watt and LA Writers Lab. Hard sci-fi requires real technical writing."
     },
     samples: [
@@ -585,6 +585,23 @@ export const content = {
             simple: "View on Amazon"
           },
           url: "https://amazon.com/stores/Martin-Erlic/author/B0BQBMH7VJ?ref=ap_rdr&shoppingPortalEnabled=true"
+        }
+      },
+      {
+        title: {
+          tech: "SHADOW_FUTURES",
+          simple: "Shadow Futures"
+        },
+        description: {
+          tech: "Academic paper exploring why credentials and verifiable work fail to signal value in path-dependent economies, where past choices shape future outcomes. Published on SSRN, seeking publication with journals.",
+          simple: "Academic paper exploring why credentials and verifiable work fail to signal value in path-dependent economies, where past choices shape future outcomes. Published on SSRN, seeking publication with journals."
+        },
+        link: {
+          label: {
+            tech: "VIEW_ON_SSRN",
+            simple: "View on SSRN"
+          },
+          url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6003994"
         }
       }
     ]
