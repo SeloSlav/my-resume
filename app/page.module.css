@@ -214,12 +214,6 @@
   gap: var(--space-3);
 }
 
-.devLinkWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-}
-
 .credentials {
   color: var(--color-text-dim);
   font-size: 0.8125rem; /* 13px */

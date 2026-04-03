@@ -206,15 +206,7 @@ export const content = {
         digikeyDemo: {
           tech: "DIGIKEY_COMPAT_DEMO",
           simple: "Digi-Key Compat Demo"
-        },
-        dev: {
-          tech: "DEV ENVIRONMENT",
-          simple: "Dev Environment"
         }
-      },
-      credentials: {
-        tech: "CREDENTIALS: parker / langlois",
-        simple: "Login: parker / langlois"
       }
     }
   },

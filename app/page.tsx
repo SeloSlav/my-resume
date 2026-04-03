@@ -167,14 +167,6 @@ export default function Home() {
                   <a href="https://digikey-compat.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
                     {getContent(c.projects.profind.buttons.digikeyDemo, mode)}
                   </a>
-                  <div className={styles.devLinkWrapper}>
-                    <a href="https://dev.profind.shop/" target="_blank" rel="noopener noreferrer" className="btn text-small w-full text-center block">
-                      {getContent(c.projects.profind.buttons.dev, mode)}
-                    </a>
-                    <p className={styles.credentials}>
-                      {getContent(c.projects.profind.credentials, mode)}
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
