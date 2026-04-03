@@ -479,28 +479,28 @@ export const content = {
             simple: "Context Over RAG"
           },
           description: {
-            tech: "File search and direct context injection beats RAG architectures. LLMs need massive amounts of CONTEXT, not clever retrieval tricks.",
-            simple: "Direct context injection beats complex retrieval systems. AI models need comprehensive context, not clever tricks."
+            tech: "Most failures are context failures. Bigger, cleaner context windows beat brittle retrieval chains when the task actually requires system-level understanding.",
+            simple: "Most failures are context failures. Clear, comprehensive context beats brittle retrieval chains when the task needs real system understanding."
           }
         },
         {
           title: {
-            tech: "> WORKING_MEMORY > FINE_TUNING",
-            simple: "Working Memory Over Fine-Tuning"
+            tech: "> PLANNING > BRUTE_FORCE",
+            simple: "Planning Over Brute Force"
           },
           description: {
-            tech: "Inspired by Open Souls, working memory architectures create more dynamic, context-aware AI than static fine-tuning.",
-            simple: "Working memory architectures create more dynamic, context-aware AI than static fine-tuning."
+            tech: "Good planning beats blind prompting. Breaking work into steps, defining constraints, and managing context deliberately produces better results than hoping a single prompt will reason its way through.",
+            simple: "Good planning beats blind prompting. Breaking work into steps and managing context deliberately works better than hoping one prompt solves everything."
           }
         },
         {
           title: {
-            tech: "> KNOWLEDGE > TOOLS",
-            simple: "Knowledge Over Tools"
+            tech: "> FAST_MODELS > LAZY_PROMPTS",
+            simple: "Fast Models Over Lazy Prompting"
           },
           description: {
-            tech: "MCP tools are overrated. Deep domain expertise + leveraging SOTA models correctly is the clearest path to AI domination.",
-            simple: "Deep domain expertise combined with state-of-the-art models is more valuable than any single tool."
+            tech: "Fast, cheap models with strong planning and enough context often outperform expensive reasoning models used with low-effort prompting. Process quality matters more than model prestige.",
+            simple: "Fast, affordable models with strong planning and enough context often beat expensive models used with weak prompts. Process quality matters more than model prestige."
           }
         },
         {
@@ -509,8 +509,8 @@ export const content = {
             simple: "Human-AI Symbiosis"
           },
           description: {
-            tech: "The best AI practitioners don't just use tools. They understand them deeply, know when to push boundaries, and when to trust their own judgment over the model's.",
-            simple: "The best AI practitioners understand their tools deeply, knowing when to push boundaries and when to trust their own judgment."
+            tech: "The edge comes from operator judgment: knowing what to plan, what context to supply, when to use a cheaper model, and when the model is confidently wrong.",
+            simple: "The edge comes from judgment: knowing what to plan, what context to provide, when a cheaper model is enough, and when the model is wrong."
           }
         }
       ]

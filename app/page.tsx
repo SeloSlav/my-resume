@@ -390,13 +390,7 @@ export default function Home() {
                   {c.aiPhilosophy.beliefs.items.map((belief, i) => (
                     <p key={i} className="text-small mb-4 leading-loose">
                       <span className="text-primary font-bold">{getContent(belief.title, mode)}</span><br/>
-                      {i === 1 ? (
-                        <>
-                          Inspired by <a href="https://github.com/opensouls/opensouls" target="_blank" rel="noopener noreferrer" className="text-primary">Open Souls</a>, {getContent(belief.description, mode).replace('Inspired by Open Souls, ', '').replace('Working memory architectures create more dynamic, context-aware AI than static fine-tuning.', 'working memory architectures create more dynamic, context-aware AI than static fine-tuning.')}
-                        </>
-                      ) : (
-                        getContent(belief.description, mode)
-                      )}
+                      {getContent(belief.description, mode)}
                     </p>
                   ))}
                 </div>
