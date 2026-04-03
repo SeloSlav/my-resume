@@ -203,6 +203,10 @@ export const content = {
           tech: "VIEW CONCEPT",
           simple: "View Concept"
         },
+        digikeyDemo: {
+          tech: "DIGIKEY_COMPAT_DEMO",
+          simple: "Digi-Key Compat Demo"
+        },
         dev: {
           tech: "DEV ENVIRONMENT",
           simple: "Dev Environment"
