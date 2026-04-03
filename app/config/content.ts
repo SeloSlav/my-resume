@@ -200,8 +200,8 @@ export const content = {
       },
       buttons: {
         concept: {
-          tech: "VIEW CONCEPT",
-          simple: "View Concept"
+          tech: "PARTS_CONFIGURATOR_DEMO",
+          simple: "Parts Configurator Demo"
         },
         digikeyDemo: {
           tech: "DIGIKEY_COMPAT_DEMO",
