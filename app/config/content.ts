@@ -255,8 +255,8 @@ export const content = {
         simple: "Babushka Book"
       },
       subtitle: {
-        tech: "ILLUSTRATED_STORYWORLD // CREATIVE_DIRECTION",
-        simple: "Illustrated Storyworld • Creative Direction"
+        tech: "WORLDBUILDING // CREATIVE_DIRECTION",
+        simple: "Worldbuilding • Creative Direction"
       },
       description: {
         tech: "Illustrated storyworld and children's book project combining narrative design, visual direction, production planning, and stakeholder coordination.",
@@ -327,12 +327,12 @@ export const content = {
         simple: "Baba Selo"
       },
       subtitle: {
-        tech: "AI_RECIPE_ENGINE // COMPUTER_VISION // SLAVIC_CUISINE",
-        simple: "AI Recipe Engine • Cookbook OCR • Slavic Cuisine"
+        tech: "AI_RECIPE_ENGINE // RAG // LANGGRAPH_LANGCHAIN // SLAVIC_CUISINE",
+        simple: "AI Recipe Engine • RAG • LangGraph/LangChain • Slavic Cuisine"
       },
       description: {
-        tech: "AI recipe engine for traditional Slavic cuisine using computer vision and OpenAI APIs to turn scanned cookbooks into searchable, structured recipes.",
-        simple: "An AI recipe engine using computer vision and OpenAI APIs to turn old Slavic cookbooks into searchable, structured recipes."
+        tech: "AI recipe engine for traditional Slavic cuisine using computer vision, RAG, LangGraph/LangChain, and OpenAI APIs to turn scanned cookbooks into searchable, structured recipes.",
+        simple: "An AI recipe engine using computer vision, RAG, LangGraph/LangChain, and OpenAI APIs to turn old Slavic cookbooks into searchable, structured recipes."
       },
       button: {
         tech: "VISIT SITE",
