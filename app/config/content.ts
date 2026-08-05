@@ -255,12 +255,12 @@ export const content = {
         simple: "Babushka Book"
       },
       subtitle: {
-        tech: "STAKEHOLDER_MGMT // CREATIVE_DIR",
-        simple: "Stakeholder Management • Creative Direction"
+        tech: "ILLUSTRATED_STORYWORLD // CREATIVE_DIRECTION",
+        simple: "Illustrated Storyworld • Creative Direction"
       },
       description: {
-        tech: "A study in narrative consistency and universe building.",
-        simple: "A study in narrative consistency and universe building."
+        tech: "Illustrated storyworld and children's book project combining narrative design, visual direction, production planning, and stakeholder coordination.",
+        simple: "An illustrated storyworld and children's book project spanning narrative design, visual direction, production planning, and stakeholder coordination."
       },
       button: {
         tech: "ACCESS UNIVERSE",
@@ -273,12 +273,12 @@ export const content = {
         simple: "Broth & Bullets"
       },
       subtitle: {
-        tech: "SYS_ARCHITECTURE // REALTIME",
-        simple: "System Architecture • Real-time"
+        tech: "2D_SURVIVAL_MMO // SPACETIMEDB // REALTIME",
+        simple: "2D Survival MMO • SpacetimeDB • Real-time"
       },
       description: {
-        tech: "Built a real-time multiplayer game using SpacetimeDB to learn about reactor render cycles, animation frames, game canvas, subscriptions, and state synchronization.",
-        simple: "Built a real-time multiplayer game to learn about render cycles, animation frames, and state synchronization."
+        tech: "Browser-based 2D multiplayer survival MMORPG built with SpacetimeDB, canvas rendering, animation systems, live subscriptions, and synchronized game state.",
+        simple: "A browser-based 2D multiplayer survival MMORPG using SpacetimeDB for live subscriptions and synchronized game state."
       },
       button: {
         tech: "READ LOGS",
@@ -309,12 +309,12 @@ export const content = {
         simple: "Zoodio AI"
       },
       subtitle: {
-        tech: "// PERSONAL_PROJECT // AI_EXPERIMENT",
-        simple: "Personal Project • AI Experiment"
+        tech: "AI_API_INTEGRATIONS // FIREBASE_PROTOTYPE",
+        simple: "AI Integrations • Firebase Prototype"
       },
       description: {
-        tech: "A personal project I built to experiment with AI API integrations. Just Firebase and some APIs. Nothing fancy, but it works.",
-        simple: "A personal project experimenting with AI API integrations. Built with Firebase. Simple but functional."
+        tech: "Working product prototype connecting AI APIs through a Firebase-backed application architecture.",
+        simple: "A working product prototype exploring AI API integrations with a Firebase backend."
       },
       button: {
         tech: "LAUNCH SITE",
@@ -327,12 +327,12 @@ export const content = {
         simple: "Baba Selo"
       },
       subtitle: {
-        tech: "// AI_RECIPES // SLAVIC_CUISINE",
-        simple: "AI Recipes • Slavic Cuisine"
+        tech: "AI_RECIPE_ENGINE // COMPUTER_VISION // SLAVIC_CUISINE",
+        simple: "AI Recipe Engine • Cookbook OCR • Slavic Cuisine"
       },
       description: {
-        tech: "AI-powered recipe generator for traditional Slavic cuisine. Uses OpenAI APIs for image recognition, generation, and recipe creation. Converts old cookbooks into searchable, structured recipes.",
-        simple: "AI recipe generator for traditional Slavic cuisine. Converts old cookbooks into searchable recipes using OpenAI APIs."
+        tech: "AI recipe engine for traditional Slavic cuisine using computer vision and OpenAI APIs to turn scanned cookbooks into searchable, structured recipes.",
+        simple: "An AI recipe engine using computer vision and OpenAI APIs to turn old Slavic cookbooks into searchable, structured recipes."
       },
       button: {
         tech: "VISIT SITE",
@@ -345,12 +345,12 @@ export const content = {
         simple: "Arkyv Engine"
       },
       subtitle: {
-        tech: "// OPEN_SOURCE // MULTIPLAYER_MUD",
-        simple: "Open Source • Multiplayer"
+        tech: "OPEN_SOURCE_MUD // AI_NPCS // MULTIPLAYER",
+        simple: "Open-source MUD • AI NPCs • Multiplayer"
       },
       description: {
-        tech: "Open-source multi-user dungeon engine. Text-based world with AI-powered NPCs, real-time multiplayer, and emergent narratives through collaborative gameplay.",
-        simple: "Open-source text-based multiplayer game engine with AI-powered NPCs and emergent storytelling."
+        tech: "Open-source multi-user dungeon engine with AI-powered NPCs, real-time multiplayer, and emergent narratives shaped through collaborative play.",
+        simple: "An open-source multiplayer MUD engine with AI-powered NPCs and emergent narratives shaped by collaborative play."
       },
       button: {
         tech: "TRY DEMO",
