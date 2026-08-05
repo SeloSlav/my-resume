@@ -13,7 +13,6 @@ const portfolioLinks = [
 const rndLinks = [
   { key: 'babushka', url: 'https://www.babushkabook.com' },
   { key: 'broth', url: 'https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg' },
-  { key: 'travel', url: 'https://travel-guide-omega-nine.vercel.app/' },
   { key: 'zoodio', url: 'https://www.zoodio.ai' },
   { key: 'babaSelo', url: 'https://babaselo.com' },
   { key: 'arkyv', url: 'https://arkyv.org' },
