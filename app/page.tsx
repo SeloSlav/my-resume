@@ -11,6 +11,8 @@ const portfolioLinks = [
 ] as const;
 
 const rndLinks = [
+  { key: 'barsoom', url: 'https://barsoom-planetary-survey.seloslav.chatgpt.site/' },
+  { key: 'medievalSettlement', url: 'https://github.com/SeloSlav/medieval-settlement-threejs' },
   { key: 'babushka', url: 'https://www.babushkabook.com' },
   { key: 'broth', url: 'https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg' },
   { key: 'zoodio', url: 'https://www.zoodio.ai' },
