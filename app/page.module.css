@@ -1,423 +1,404 @@
-.main {
-  padding-top: var(--space-8);
-  min-height: 100vh;
-  position: relative;
-  z-index: 2; /* Ensure main content is above overlay */
-  /* Grid Background Pattern */
-  background-image: var(--bg-grid-pattern);
-  background-size: 100px 100px;
-  background-position: center top;
-}
-
-/* Hero */
-.hero {
-  min-height: 85vh;
+/* Above-the-fold compact CV layout */
+.cv {
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: relative;
-  border-left: none; 
-  padding-left: 0;
-  margin-left: 0;
-  padding-top: var(--space-6);
-  padding-bottom: var(--space-6);
-}
-
-.heroContent {
+  padding-block: clamp(0.5rem, 1.5vh, 1rem);
   position: relative;
   z-index: 2;
+  background: var(--color-bg);
 }
 
-.heroTitle {
-  margin-bottom: var(--space-4);
-  position: relative;
-  font-weight: 800;
-}
-
-.heroSubtitle {
-  font-size: var(--text-h3);
-  color: var(--color-text);
-  margin-bottom: var(--space-8);
-  max-width: 800px;
-  border-top: 1px solid var(--color-border);
-  padding-top: var(--space-4);
-}
-
-.heroActions {
-  display: flex;
-  gap: var(--space-4);
-  margin-bottom: var(--space-8);
-}
-
-/* System Panel (Replaces Terminal Window) */
-.systemPanel {
-  background: var(--color-bg-offset);
-  border: 1px solid var(--color-border);
-  margin-top: var(--space-6);
-  position: relative;
-  z-index: 5;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-/* Decorative corner markers for system panel */
-.systemPanel::before,
-.systemPanel::after {
-  content: "+";
-  position: absolute;
-  color: var(--color-border);
-  font-weight: 300;
-  pointer-events: none;
-}
-.systemPanel::before { top: -9px; left: -4px; }
-.systemPanel::after { bottom: -9px; right: -4px; }
-
-.systemHeader {
-  border-bottom: 1px solid var(--color-border);
-  padding: 0.75rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.8125rem; /* 13px */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--color-text-dim);
-  background: var(--bg-panel-header);
-  overflow: hidden;
-}
-
-.systemHeader span {
-  word-break: break-all;
-}
-
-.systemBody {
-  padding: var(--space-4);
-  font-family: var(--font-mono);
-  font-size: 1rem; /* 16px for readability */
-  line-height: 1.8;
-  color: var(--color-text);
-}
-
-.dataRow {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: 0.5rem;
-}
-
-.dataKey {
-  color: var(--color-primary);
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.dataValue {
-  color: var(--color-text);
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-
-.profileCards {
+.cv :global(.container) {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  height: 100%;
+  max-height: 100%;
+  padding-inline: clamp(0.75rem, 2vw, 1.5rem);
+  overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .profileCards {
-    flex-direction: row;
-    gap: var(--space-4);
-  }
-}
-
-.profileCard {
-  flex: 1;
-  background: var(--color-bg-offset);
-  border: 1px solid var(--color-border);
-  padding: var(--space-4);
-}
-
-.profileCardTitle {
-  color: var(--color-secondary);
-  font-size: 0.9375rem; /* 15px */
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: var(--space-3);
-  padding-bottom: var(--space-2);
+/* Header */
+.cvHeader {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+  padding-bottom: clamp(0.375rem, 1vh, 0.625rem);
   border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
 }
 
-.tagList {
+.cvHeaderIdentity {
+  min-width: 0;
+}
+
+.cvStatus {
+  display: inline-block;
+  font-size: clamp(0.5625rem, 1.1vw, 0.6875rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.cvName {
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+  line-height: 1.05;
+  margin: 0 0 0.125rem;
+  letter-spacing: -0.02em;
+  color: var(--color-accent);
+}
+
+.cvRole {
+  font-size: clamp(0.6875rem, 1.4vw, 0.875rem);
+  font-weight: 700;
+  margin: 0 0 0.125rem;
+  color: var(--color-text);
+}
+
+.cvTagline {
+  font-size: clamp(0.5625rem, 1.1vw, 0.75rem);
+  color: var(--color-text-dim);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.cvHeaderMeta {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.cvLocation {
+  font-size: clamp(0.5625rem, 1.1vw, 0.6875rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-dim);
+  margin: 0;
+}
+
+.cvAvailability {
+  font-size: clamp(0.5625rem, 1vw, 0.6875rem);
+  color: var(--color-text-dim);
+  margin: 0;
+  max-width: 22ch;
+  line-height: 1.3;
+}
+
+.cvContact {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2);
+  justify-content: flex-end;
+  gap: 0.25rem 0.5rem;
+  margin-top: 0.125rem;
 }
 
-.tagItem {
+.cvContactLink {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: transparent;
-  border: 1px solid var(--color-primary);
+  gap: 0.25rem;
+  font-size: clamp(0.5rem, 0.95vw, 0.625rem);
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 0.125rem 0;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.cvContactLink i {
+  font-size: 0.625rem;
   color: var(--color-primary);
-  font-size: 0.9375rem; /* 15px */
-  font-weight: 700;
-}
-
-.tagItem i {
-  font-size: 0.7rem;
-}
-
-.infoList {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-}
-
-.infoList p {
-  margin: 0;
-  font-size: 1rem; /* 16px */
-}
-
-.infoList strong {
-  margin-right: 0.5rem;
-}
-
-/* Portfolio */
-.projectTags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: var(--space-3);
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: var(--space-3);
-}
-
-.tag {
-  font-size: 0.8125rem; /* 13px */
-  text-transform: uppercase;
-  color: var(--color-bg);
-  background: var(--color-text-dim);
-  padding: 0.25rem 0.5rem;
-  font-weight: 700;
-}
-
-/* Button Group */
-.buttonGroup {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-}
-
-.credentials {
-  color: var(--color-text-dim);
-  font-size: 0.8125rem; /* 13px */
+  width: 0.75rem;
   text-align: center;
-  font-family: var(--font-mono);
-  letter-spacing: 1px;
-  margin-top: var(--space-1);
-  padding-top: var(--space-1);
+}
+
+.cvContactLink:hover {
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.cvContactLink:hover span {
+  text-decoration: underline;
+}
+
+/* Main grid */
+.cvGrid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: clamp(0.375rem, 1vw, 0.75rem);
+  padding-top: clamp(0.375rem, 1vh, 0.625rem);
+  overflow: hidden;
+}
+
+.cvBlock {
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: clamp(0.375rem, 0.8vw, 0.5rem);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-offset);
+}
+
+.cvBlockTitle {
+  font-size: clamp(0.5625rem, 1.1vw, 0.6875rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin: 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.cvSubTitle {
+  font-size: clamp(0.5rem, 1vw, 0.625rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-dim);
+  margin: 0.125rem 0 0;
+  flex-shrink: 0;
+}
+
+.cvSubBlock {
+  margin-top: auto;
+  padding-top: 0.25rem;
   border-top: 1px dashed var(--color-border);
 }
 
-/* Skills */
-.skillsList {
+.cvText {
+  font-size: clamp(0.5rem, 0.95vw, 0.625rem);
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0;
+  max-width: none;
+}
+
+/* Lists */
+.cvList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+  overflow: hidden;
+}
+
+.cvListItem {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  align-items: baseline;
+  gap: 0.25rem 0.375rem;
+  line-height: 1.3;
 }
 
-.skill {
-  font-size: 0.9375rem; /* 15px */
-  color: var(--color-primary);
-  font-family: var(--font-mono);
-  border: 1px solid var(--color-border);
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.skill:hover {
-  background: var(--color-primary);
-  color: var(--color-bg);
-  border-color: var(--color-primary);
-}
-
-/* Contact */
-.contactLink {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--space-2);
-  padding: var(--space-3);
-  border: 1px solid var(--color-border);
+.cvLink {
+  font-size: clamp(0.5rem, 0.95vw, 0.625rem);
+  font-weight: 700;
   color: var(--color-text);
-  text-decoration: none !important;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  background: var(--bg-contact-link);
-  position: relative;
-  z-index: 10;
-  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
-.contactLink:hover {
-  border-color: var(--color-primary);
-  background: var(--color-bg);
+.cvLink:hover {
   color: var(--color-primary);
-}
-
-.contactLink i {
-  color: var(--color-primary);
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-
-.contactLink:hover i {
-  color: var(--color-primary);
-  transform: scale(1.1);
-}
-
-.statusIndicator {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-primary);
-  margin-right: 10px;
-  box-shadow: 0 0 10px var(--color-primary);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
-}
-
-/* Section-specific spacing adjustments */
-.about {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-
-.expertise {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-
-.contact {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-
-.portfolio {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-
-.rnd {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-
-.aiPhilosophy {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-
-/* Writing */
-.writing {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-
-/* Why Hire Me */
-.whyHire {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-
-.whyCard {
   background: transparent;
+  text-decoration: underline;
+}
+
+.cvListMeta {
+  font-size: clamp(0.4375rem, 0.85vw, 0.5625rem);
+  color: var(--color-text-dim);
+}
+
+.cvListNote {
+  font-size: clamp(0.4375rem, 0.8vw, 0.5rem);
+  color: var(--color-text-dim);
+  font-style: italic;
+}
+
+/* Tags & skills */
+.cvInlineTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.cvTag {
+  font-size: clamp(0.4375rem, 0.85vw, 0.5625rem);
+  font-weight: 700;
+  padding: 0.125rem 0.375rem;
   border: 1px solid var(--color-border);
-  padding: var(--space-4);
+  color: var(--color-primary);
+}
+
+.cvSkillGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.cvSkillGroup + .cvSkillGroup {
+  margin-top: 0.125rem;
+}
+
+.cvSkillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1875rem;
+}
+
+.cvSkill {
+  font-size: clamp(0.4375rem, 0.8vw, 0.5625rem);
+  padding: 0.0625rem 0.25rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-dim);
+  line-height: 1.3;
+}
+
+/* Definition list */
+.cvDl {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+}
+
+.cvDlRow {
+  display: grid;
+  grid-template-columns: minmax(3.5rem, auto) 1fr;
+  gap: 0.375rem;
+  align-items: baseline;
+}
+
+.cvDlRow dt {
+  font-size: clamp(0.4375rem, 0.85vw, 0.5625rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+}
+
+.cvDlRow dd {
+  font-size: clamp(0.4375rem, 0.85vw, 0.5625rem);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.cvBeliefs {
+  list-style: none;
+  margin: 0.125rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.cvBeliefs li {
+  font-size: clamp(0.4375rem, 0.85vw, 0.5625rem);
+  color: var(--color-text-dim);
+  line-height: 1.3;
+  padding-left: 0.5rem;
   position: relative;
 }
 
-.contactStatus {
-  background: var(--bg-contact-status);
+.cvBeliefs li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
 }
 
-@media (max-width: 768px) {
-  .dataRow {
+/* Mobile: 2-column grid, tighter header stack */
+@media (max-width: 767px) {
+  .cvHeader {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 0.375rem;
   }
-  
-  .heroActions {
-    flex-direction: column;
-    gap: var(--space-2);
-  }
-  
-  .systemHeader {
-    flex-direction: column;
+
+  .cvHeaderMeta {
     align-items: flex-start;
-    gap: 0.25rem;
+    text-align: left;
   }
-  
-  .systemPanel {
-    margin-left: 0;
-    margin-right: 0;
+
+  .cvContact {
+    justify-content: flex-start;
+  }
+
+  .cvAvailability {
+    max-width: none;
+  }
+
+  .cvGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.3125rem;
+  }
+
+  .cvBlock {
+    padding: 0.3125rem;
+    gap: 0.1875rem;
+  }
+
+  .cvSubBlock {
+    display: none;
   }
 }
 
-/* Light Mode - Clean background */
-:global(.light-mode) .main {
+/* Very small screens */
+@media (max-width: 380px) {
+  .cvContactLink span {
+    display: none;
+  }
+
+  .cvContact {
+    gap: 0.375rem;
+  }
+
+  .cvContactLink i {
+    font-size: 0.75rem;
+  }
+}
+
+/* Light mode refinements */
+:global(.light-mode) .cv {
   background: #ffffff;
-  background-image: none;
 }
 
-/* Light Mode - Larger text for readability */
-:global(.light-mode) .systemHeader {
-  font-size: 0.9375rem; /* 15px */
+:global(.light-mode) .cvBlock {
+  background: #ffffff;
 }
 
-:global(.light-mode) .systemBody {
-  font-size: 1.0625rem; /* 17px */
+:global(.light-mode) .cvBlockTitle,
+:global(.light-mode) .cvSubTitle,
+:global(.light-mode) .cvDlRow dt {
+  text-transform: none;
+  letter-spacing: normal;
 }
 
-:global(.light-mode) .profileCardTitle {
-  font-size: 1rem; /* 16px */
+:global(.light-mode) .cvName {
+  font-family: "Times New Roman", Times, serif;
 }
 
-:global(.light-mode) .tagItem {
-  font-size: 1rem; /* 16px */
-}
-
-:global(.light-mode) .tag {
-  font-size: 0.875rem; /* 14px */
-}
-
-:global(.light-mode) .skill {
-  font-size: 1rem; /* 16px */
-}
-
-:global(.light-mode) .credentials {
-  font-size: 0.875rem; /* 14px */
-}
-
-:global(.light-mode) .dataKey {
-  font-size: 1rem; /* 16px */
-}
-
-:global(.light-mode) .dataValue {
-  font-size: 1.0625rem; /* 17px */
-}
-
-:global(.light-mode) .infoList p {
-  font-size: 1.0625rem; /* 17px */
+:global(.light-mode) .cvText,
+:global(.light-mode) .cvLink,
+:global(.light-mode) .cvDlRow dd {
+  font-size: clamp(0.5625rem, 1vw, 0.6875rem);
 }
