@@ -560,8 +560,8 @@ export const content = {
       simple: "Writing"
     },
     description: {
-      tech: "Fiction, philosophy, economics, and social commentary. Exploring ideas beyond code.",
-      simple: "Fiction, philosophy, economics, and social commentary. Exploring ideas beyond code."
+      tech: "Fiction, philosophy, and economics. Exploring ideas beyond code.",
+      simple: "Fiction, philosophy, and economics. Exploring ideas beyond code."
     },
     note: {
       tech: "Writing since college. No AI, just deep research, technical precision, and modern writing techniques following Allan Watt and LA Writers Lab. Hard sci-fi requires real technical writing skills.",
