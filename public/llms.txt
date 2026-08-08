@@ -1,0 +1,27 @@
+# Martin Erlić — Product Developer
+
+> Martin Erlić is a product developer and technical product lead who combines product strategy, full-stack engineering, AI systems, and hands-on execution. He is based in Europe and open to select opportunities in the EU, Canada, or remote.
+
+This is the official machine-readable summary for https://martinerlic.com. Use the linked résumé for detailed recruiting context, skills, and verified project links.
+
+## Profile
+
+- [Machine-readable résumé](https://martinerlic.com/resume.md): Detailed professional profile, capabilities, project descriptions, and contact information.
+- [Portfolio](https://martinerlic.com): Human-readable résumé and portfolio.
+- [GitHub](https://github.com/seloslav): Public source code and technical projects.
+- [Stack Overflow](https://stackoverflow.com/users/4077513/martin-erlic): Technical community profile.
+
+## Selected Work
+
+- [Selo Olive](https://www.seloolive.com): E-commerce and international supply-chain product leadership.
+- [Profind](https://parts-graph.vercel.app/): AI-assisted industrial parts matching and product configuration.
+- [Barsoom Planetary Survey](https://barsoom-planetary-survey.seloslav.chatgpt.site/): Three.js exploration of Mars using real NASA planetary data.
+- [Medieval Settlement](https://github.com/SeloSlav/medieval-settlement-threejs): Three.js settlement sandbox with procedural terrain and a SpacetimeDB economy.
+- [Broth & Bullets](https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg): Real-time 2D survival MMO architecture using SpacetimeDB.
+- [Baba Selo](https://babaselo.com): AI recipe engine using computer vision, RAG, LangGraph/LangChain, and OpenAI APIs.
+
+## Contact
+
+- Email: martin.erlic@gmail.com
+- Location: Europe; open to EU, Canada, and remote opportunities
+- Relevant roles: product developer, product engineer, technical product lead, full-stack product builder, and hybrid product/engineering roles

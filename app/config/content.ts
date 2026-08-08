@@ -6,8 +6,8 @@ export const content = {
   // Hero Section
   hero: {
     status: {
-      tech: "STATUS :: READY_FOR_DEPLOYMENT",
-      simple: "Available for Work"
+      tech: "STATUS :: SELECTIVE_OPPORTUNITIES",
+      simple: "Open to Select Opportunities"
     },
     title: {
       tech: "MARTIN ERLIĆ",
