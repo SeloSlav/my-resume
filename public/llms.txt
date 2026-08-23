@@ -15,8 +15,6 @@ This is the official machine-readable summary for https://martinerlic.com. Use t
 
 - [Selo Olive](https://www.seloolive.com): E-commerce and international supply-chain product leadership.
 - [Profind](https://parts-graph.vercel.app/): AI-assisted industrial parts matching and product configuration.
-- [Barsoom Planetary Survey](https://barsoom-planetary-survey.seloslav.chatgpt.site/): Three.js exploration of Mars using real NASA planetary data.
-- [Medieval Settlement](https://github.com/SeloSlav/medieval-settlement-threejs): Three.js settlement sandbox with procedural terrain and a SpacetimeDB economy.
 - [Broth & Bullets](https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg): Real-time 2D survival MMO architecture using SpacetimeDB.
 - [Baba Selo](https://babaselo.com): AI recipe engine using computer vision, RAG, LangGraph/LangChain, and OpenAI APIs.
 

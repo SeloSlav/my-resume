@@ -38,18 +38,6 @@ Worked with accelerators to define the product roadmap for AI-assisted industria
 
 ## Technical and Creative Projects
 
-### Barsoom Planetary Survey
-
-https://barsoom-planetary-survey.seloslav.chatgpt.site/
-
-An interactive Three.js environment for exploring Mars using real NASA planetary data.
-
-### Medieval Settlement
-
-https://github.com/SeloSlav/medieval-settlement-threejs
-
-A Three.js medieval settlement sandbox with procedural hills, forests, rivers, curved PBR dirt roads, wooden bridges, and junctions. Players place mills, quarries, reforesters, and burgage residence zones along road frontage while SpacetimeDB runs the economy, labor, and road logistics.
-
 ### Broth & Bullets
 
 https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg

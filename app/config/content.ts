@@ -213,42 +213,6 @@ export const content = {
 
   // R&D Projects
   rndProjects: {
-    barsoom: {
-      title: {
-        tech: "BARSOOM PLANETARY SURVEY",
-        simple: "Barsoom Planetary Survey"
-      },
-      subtitle: {
-        tech: "MARS_EXPLORATION // NASA_DATA // THREE.JS",
-        simple: "Mars Exploration • NASA Data • Three.js"
-      },
-      description: {
-        tech: "Interactive Mars exploration environment built in Three.js using real NASA planetary data.",
-        simple: "Explore Mars in an interactive Three.js environment built with real NASA planetary data."
-      },
-      button: {
-        tech: "LAUNCH SURVEY",
-        simple: "Explore Mars"
-      }
-    },
-    medievalSettlement: {
-      title: {
-        tech: "MEDIEVAL SETTLEMENT",
-        simple: "Medieval Settlement"
-      },
-      subtitle: {
-        tech: "THREE.JS_SANDBOX // SPACETIMEDB",
-        simple: "Three.js Sandbox • SpacetimeDB"
-      },
-      description: {
-        tech: "Three.js medieval settlement sandbox with procedural hills, forests, rivers, curved dirt roads with PBR wear blending, wooden bridges, and junctions. Place mills, quarries, reforesters, and burgage residence zones along road frontage while SpacetimeDB runs the economy, labor, and road logistics.",
-        simple: "A Three.js medieval settlement sandbox with procedural terrain, forests, rivers, PBR roads, bridges, and junctions. Build mills, quarries, reforesters, and burgage zones while SpacetimeDB runs the economy, labor, and road logistics."
-      },
-      button: {
-        tech: "VIEW SOURCE",
-        simple: "View on GitHub"
-      }
-    },
     babushka: {
       title: {
         tech: "BABUSHKA BOOK",
@@ -511,12 +475,12 @@ export const content = {
       items: [
         {
           title: {
-            tech: "> CONTEXT > RAG",
-            simple: "Context Over RAG"
+            tech: "> OUTCOMES > OUTPUT",
+            simple: "Outcomes Over Output"
           },
           description: {
-            tech: "Most failures are context failures. Bigger, cleaner context windows beat brittle retrieval chains when the task actually requires system-level understanding.",
-            simple: "Most failures are context failures. Clear, comprehensive context beats brittle retrieval chains when the task needs real system understanding."
+            tech: "A polished answer is not the goal. AI work should be tested against the real problem, real constraints, and measurable results—not judged by how convincing the output sounds.",
+            simple: "A polished answer is not the goal. AI work should solve the real problem, respect real constraints, and produce results—not just sound convincing."
           }
         },
         {
