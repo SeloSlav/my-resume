@@ -14,7 +14,7 @@ This is the official machine-readable summary for https://martinerlic.com. Use t
 ## Selected Work
 
 - [Selo Olive](https://www.seloolive.com): E-commerce and international supply-chain product leadership.
-- [Profind](https://parts-graph.vercel.app/): AI-assisted industrial parts matching and product configuration.
+- [Profind](https://profind.shop): AI-assisted industrial parts matching and product configuration.
 - [Broth & Bullets](https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg): Real-time 2D survival MMO architecture using SpacetimeDB.
 - [Baba Selo](https://babaselo.com): AI recipe engine using computer vision, RAG, LangGraph/LangChain, and OpenAI APIs.
 

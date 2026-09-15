@@ -7,7 +7,7 @@ import { content, getContent } from './config/content';
 
 const portfolioLinks = [
   { key: 'selo', url: 'https://www.seloolive.com' },
-  { key: 'profind', url: 'https://parts-graph.vercel.app/' },
+  { key: 'profind', url: 'https://profind.shop' },
 ] as const;
 
 const rndLinks = [

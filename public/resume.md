@@ -32,7 +32,7 @@ Led the product lifecycle of an international olive-oil e-commerce business, con
 
 ### Profind
 
-https://parts-graph.vercel.app/
+https://profind.shop
 
 Worked with accelerators to define the product roadmap for AI-assisted industrial parts matching and configuration.
 
