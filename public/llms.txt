@@ -1,6 +1,6 @@
-# Martin Erlić — Product Developer
+# Martin Erlić — AI Product Developer
 
-> Martin Erlić is a product developer and technical product lead who combines product strategy, full-stack engineering, AI systems, and hands-on execution. He is based in Europe and open to select opportunities in the EU, Canada, or remote.
+> Martin Erlić is an AI product developer who takes products from problem definition through launch and iteration, combining product ownership, full-stack engineering, APIs, and AI-assisted development. He is based in Europe and open to select opportunities in the EU, Canada, or remote.
 
 This is the official machine-readable summary for https://martinerlic.com. Use the linked résumé for detailed recruiting context, skills, and verified project links.
 

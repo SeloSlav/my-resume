@@ -14,12 +14,12 @@ export const content = {
       simple: "Martin Erlić"
     },
     role: {
-      tech: "PRODUCT DEVELOPER",
-      simple: "Product Developer"
+      tech: "AI PRODUCT DEVELOPER",
+      simple: "AI Product Developer"
     },
     tagline: {
-      tech: "// PRODUCT VISION + FULL-STACK EXECUTION + AI",
-      simple: "Product Vision • Full-Stack Execution • AI"
+      tech: "// 0-TO-1 PRODUCTS + FULL-STACK DELIVERY + AI WORKFLOWS",
+      simple: "0-to-1 Products • Full-Stack Delivery • AI Workflows"
     },
     buttons: {
       portfolio: {
@@ -38,8 +38,8 @@ export const content = {
           simple: "Profile"
         },
         role: {
-          tech: "ROLE: PRODUCT_DEV",
-          simple: "Product Developer"
+          tech: "ROLE: AI_PRODUCT_DEV",
+          simple: "AI Product Developer"
         },
         location: {
           tech: "LOC: EU_CAN_REMOTE",
@@ -73,8 +73,8 @@ export const content = {
             simple: "Goal"
           },
           value: {
-            tech: "Building products that matter with a deep understanding of the full stack.",
-            simple: "Building products that matter with a deep understanding of the full stack."
+            tech: "Taking products from prototype to launch across UI, APIs, and AI workflows.",
+            simple: "Taking products from prototype to launch across UI, APIs, and AI workflows."
           }
         },
         access: {
@@ -83,8 +83,8 @@ export const content = {
             simple: "Open To"
           },
           value: {
-            tech: "Open to product roles, dev teams, and interesting problems.",
-            simple: "Product roles, dev teams, and interesting problems."
+            tech: "AI product development and full-stack teams.",
+            simple: "AI product development and full-stack teams."
           }
         }
       }
@@ -349,16 +349,16 @@ export const content = {
     },
     paragraphs: [
       {
-        tech: "I don't just write code. I think about the product, the user, and the business problem. My full-stack background lets me connect business goals to technical execution.",
-        simple: "I don't just write code. I think about the product, the user, and the business problem. My full-stack background lets me connect business goals to technical execution."
+        tech: "I take products from problem definition to launch. I connect user needs and business goals with full-stack delivery, using AI tools to prototype and iterate faster.",
+        simple: "I take products from problem definition to launch. I connect user needs and business goals with full-stack delivery, using AI tools to prototype and iterate faster."
       },
       {
         tech: "I know the stack end to end, from database design to deployment to user acquisition. I can talk to engineers, plan a roadmap, and ship features myself when needed.",
         simple: "I understand the full stack, from database design to deployment to user acquisition. I can communicate with engineers, plan roadmaps, and ship features myself when needed."
       },
       {
-        tech: "I've grown e-commerce brands, built AI SaaS products, and shipped internal tools. I bring a pragmatic approach to building things that actually work.",
-        simple: "I've grown e-commerce brands, built AI SaaS products, and shipped internal tools. I bring a pragmatic approach to building things that actually work."
+        tech: "I've built B2B software, e-commerce platforms, and internal tools. I work across product, APIs, and operations to ship useful features and improve them from feedback.",
+        simple: "I've built B2B software, e-commerce platforms, and internal tools. I work across product, APIs, and operations to ship useful features and improve them from feedback."
       }
     ],
     values: {
@@ -630,8 +630,8 @@ export const content = {
       },
       paragraphs: [
         {
-          tech: "I want to contribute to something lasting. A product people use. A team that ships quality work. Code that doesn't rot in six months.",
-          simple: "I want to contribute to something lasting. A product people use. A team that ships quality work. Code that stands the test of time."
+          tech: "I want to build useful AI products for real customer problems, from early prototype through launch. I work best with teams that ship, learn, and iterate.",
+          simple: "I want to build useful AI products for real customer problems, from early prototype through launch. I work best with teams that ship, learn, and iterate."
         },
         {
           tech: "If you're building something real, I'm interested.",
@@ -649,8 +649,8 @@ export const content = {
         simple: "Available"
       },
       description: {
-        tech: "Looking for product roles where I can build and ship.",
-        simple: "Looking for product roles where I can build and ship."
+        tech: "Open to AI product engineering roles.",
+        simple: "Open to AI product engineering roles."
       },
       roles: {
         tech: "Product Dev || Full-Stack || AI Integration",

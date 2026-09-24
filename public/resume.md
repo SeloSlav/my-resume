@@ -1,6 +1,6 @@
 # Martin Erlić
 
-Product Developer | Product Vision, Full-Stack Execution, and AI
+AI Product Developer | 0-to-1 Full-Stack Development, APIs, and Automation
 
 - Portfolio: https://martinerlic.com
 - Email: martin.erlic@gmail.com
@@ -10,9 +10,9 @@ Product Developer | Product Vision, Full-Stack Execution, and AI
 
 ## Professional Profile
 
-Martin Erlić turns product ideas into working software. He combines product strategy, roadmap planning, stakeholder communication, full-stack architecture, AI integration, deployment, and hands-on product delivery.
+Martin Erlić takes products from problem definition through prototype, launch, and iteration. He combines product ownership, full-stack engineering, API integration, and AI-assisted development to ship useful software.
 
-He is best suited to teams that value pragmatic execution, technical depth, product ownership, and the ability to move between business goals and implementation details.
+He works across customer needs, product decisions, interfaces, APIs, and operations, then improves what ships from real feedback.
 
 ## Core Capabilities
 

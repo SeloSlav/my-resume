@@ -18,9 +18,9 @@ const profileJsonLd = {
   name: "Martin Erlić",
   url: siteUrl,
   email: "mailto:martin.erlic@gmail.com",
-  jobTitle: "Product Developer",
+  jobTitle: "AI Product Developer",
   description:
-    "Product developer and technical product lead combining product strategy, full-stack engineering, AI systems, and hands-on execution.",
+    "AI product developer building products from problem definition through launch and iteration across interfaces, APIs, and cloud infrastructure.",
   sameAs: [
     "https://github.com/seloslav",
     "https://stackoverflow.com/users/4077513/martin-erlic",
@@ -47,16 +47,16 @@ const profileJsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Martin Erlić | Product Lead & Technical Visionary",
-  description: "Product Developer and Team Lead with deep Full-Stack expertise. Bridging the gap between high-level vision and technical execution.",
+  title: "Martin Erlić | AI Product Developer",
+  description: "AI product developer building 0-to-1 products with full-stack engineering, APIs, automation, and rapid iteration.",
   keywords: [
     "Martin Erlić",
-    "Product Manager",
-    "Technical Lead",
+    "AI Product Developer",
+    "AI Product Engineering",
     "Full-Stack Developer",
     "Product Strategy",
-    "Team Lead",
-    "AI Integration"
+    "0-to-1 Development",
+    "AI Workflows"
   ],  
   authors: [{ name: "Martin Erlić" }],
   creator: "Martin Erlić",
