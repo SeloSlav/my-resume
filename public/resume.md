@@ -52,7 +52,7 @@ An AI recipe engine for traditional Slavic cuisine using computer vision, RAG, L
 
 ### Arkyv Engine
 
-https://arkyv.org
+https://github.com/SeloSlav/arkyv-engine
 
 An open-source multiplayer MUD engine with AI-powered NPCs and emergent narratives shaped by collaborative play.
 

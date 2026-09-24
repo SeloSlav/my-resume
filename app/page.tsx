@@ -13,9 +13,7 @@ const portfolioLinks = [
 const rndLinks = [
   { key: 'babushka', url: 'https://www.babushkabook.com' },
   { key: 'broth', url: 'https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg' },
-  { key: 'zoodio', url: 'https://www.zoodio.ai' },
-  { key: 'babaSelo', url: 'https://babaselo.com' },
-  { key: 'arkyv', url: 'https://arkyv.org' },
+  { key: 'arkyv', url: 'https://github.com/SeloSlav/arkyv-engine' },
 ] as const;
 
 const contactLinks = [
