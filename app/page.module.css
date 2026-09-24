@@ -233,21 +233,7 @@
   font-style: italic;
 }
 
-/* Tags & skills */
-.cvInlineTags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-}
-
-.cvTag {
-  font-size: clamp(0.6875rem, 0.85vw, 0.8125rem);
-  font-weight: 700;
-  padding: 0.125rem 0.375rem;
-  border: 1px solid var(--color-border);
-  color: var(--color-primary);
-}
-
+/* Skills */
 .cvSkillGroup {
   display: flex;
   flex-direction: column;

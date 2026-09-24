@@ -599,45 +599,12 @@ export const content = {
           },
           url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6003994"
         }
-      },
-      {
-        title: {
-          tech: "X_ARTICLES",
-          simple: "X Articles"
-        },
-        description: {
-          tech: "Essays on software economics and agent-based systems. Exploring how markets, incentives, and autonomous agents interact in the digital economy.",
-          simple: "Essays on software economics and agent-based systems. Exploring how markets, incentives, and autonomous agents interact in the digital economy."
-        },
-        link: {
-          label: {
-            tech: "VIEW_ON_X",
-            simple: "View on X"
-          },
-          url: "https://x.com/SeloSlav/articles"
-        }
       }
     ]
   },
 
   // Why Hire Section
   whyHire: {
-    workEthic: {
-      title: {
-        tech: "WORK_ETHIC",
-        simple: "Work Ethic"
-      },
-      paragraphs: [
-        {
-          tech: "I put in full days without thinking about it. When I'm working on something that matters, time just disappears. I meal prep on Sundays so I can stay chained to the desk when needed.",
-          simple: "I put in full days without thinking about it. When I'm working on something that matters, time just disappears. I meal prep on Sundays so I can focus completely when needed."
-        },
-        {
-          tech: "I'm wired to go deep on problems that interest me.",
-          simple: "I'm wired to go deep on problems that interest me."
-        }
-      ]
-    },
     whatIWant: {
       title: {
         tech: "WHAT_I_WANT",

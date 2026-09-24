@@ -78,11 +78,6 @@ export default function Home() {
             <h2 id="about-heading" className={styles.cvBlockTitle}>{getContent(c.sections.about, mode)}</h2>
             <p className={styles.cvText}>{getContent(c.about.paragraphs[0], mode)}</p>
             <p className={styles.cvText}>{getContent(c.about.paragraphs[2], mode)}</p>
-            <div className={styles.cvInlineTags}>
-              {getContent(c.about.values.items, mode).map((item, i) => (
-                <span key={i} className={styles.cvTag}>{item}</span>
-              ))}
-            </div>
             <div className={styles.cvSubBlock}>
               <h3 className={styles.cvSubTitle}>{getContent(c.whyHire.whatIWant.title, mode)}</h3>
               <p className={styles.cvText}>{getContent(c.whyHire.whatIWant.paragraphs[0], mode)}</p>
@@ -197,10 +192,6 @@ export default function Home() {
                 <dd>{getContent(c.hero.panel.rows.access.value, mode)}</dd>
               </div>
             </dl>
-            <div className={styles.cvSubBlock}>
-              <h3 className={styles.cvSubTitle}>{getContent(c.whyHire.workEthic.title, mode)}</h3>
-              <p className={styles.cvText}>{getContent(c.whyHire.workEthic.paragraphs[0], mode)}</p>
-            </div>
           </section>
         </div>
       </div>
