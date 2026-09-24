@@ -320,6 +320,24 @@ export const content = {
         tech: "TRY DEMO",
         simple: "Try Demo"
       }
+    },
+    medievalSettlement: {
+      title: {
+        tech: "MEDIEVAL SETTLEMENT BUILDER",
+        simple: "Medieval Settlement Builder"
+      },
+      subtitle: {
+        tech: "THREEJS // SPACETIMEDB // CITY_BUILDER",
+        simple: "Three.js • SpacetimeDB • City Builder"
+      },
+      description: {
+        tech: "Medieval settlement simulation with procedural 3D landscapes, road networks, resource production, and a SpacetimeDB economy.",
+        simple: "A medieval settlement builder with procedural 3D landscapes, road networks, and a real-time economy."
+      },
+      button: {
+        tech: "VIEW SOURCE",
+        simple: "View on GitHub"
+      }
     }
   },
 

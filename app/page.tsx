@@ -6,14 +6,15 @@ import { useTheme } from './context/ThemeContext';
 import { content, getContent } from './config/content';
 
 const portfolioLinks = [
-  { key: 'selo', url: 'https://www.seloolive.com' },
   { key: 'profind', url: 'https://profind.shop' },
+  { key: 'selo', url: 'https://www.seloolive.com' },
 ] as const;
 
 const rndLinks = [
   { key: 'babushka', url: 'https://www.babushkabook.com' },
   { key: 'broth', url: 'https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg' },
   { key: 'arkyv', url: 'https://github.com/SeloSlav/arkyv-engine' },
+  { key: 'medievalSettlement', url: 'https://github.com/SeloSlav/medieval-settlement-threejs' },
 ] as const;
 
 const contactLinks = [
