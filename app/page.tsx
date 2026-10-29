@@ -11,6 +11,7 @@ const portfolioLinks = [
 ] as const;
 
 const rndLinks = [
+  { key: 'babaSelo', url: 'https://github.com/SeloSlav/baba-selo-agentic-recipe-maker' },
   { key: 'babushka', url: 'https://www.babushkabook.com' },
   { key: 'broth', url: 'https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg' },
   { key: 'arkyv', url: 'https://github.com/SeloSlav/arkyv-engine' },
@@ -31,17 +32,13 @@ export default function Home() {
 
   useEffect(() => {
     setMounted(true);
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = '';
-    };
   }, []);
 
   const expertiseGroups = [
     c.expertise.productLeadership,
-    c.expertise.engineering,
     c.expertise.innovation,
     c.expertise.operations,
+    c.expertise.engineering,
   ];
 
   return (
@@ -62,6 +59,7 @@ export default function Home() {
             <p className={styles.cvAvailability}>
               {getContent(c.contact.status.description, mode)}
             </p>
+            <a href="/resume.md" className={styles.cvContactLink}>Read full résumé</a>
             <nav className={styles.cvContact} aria-label="Contact links">
               {contactLinks.map(({ href, icon, key }) => (
                 <a key={key} href={href} target={key === 'email' ? undefined : '_blank'} rel="noopener noreferrer" className={styles.cvContactLink}>
@@ -112,6 +110,11 @@ export default function Home() {
                       {getContent(project.title, mode)}
                     </a>
                     <span className={styles.cvListMeta}>{getContent(project.subtitle, mode)}</span>
+                    {key === 'babaSelo' && (
+                      <>
+                        <a href="https://babaselo.com" target="_blank" rel="noopener noreferrer" className={styles.cvLink}>Live app</a>
+                      </>
+                    )}
                   </li>
                 );
               })}
@@ -133,26 +136,16 @@ export default function Home() {
             ))}
           </section>
 
-          {/* AI Philosophy */}
-          <section className={styles.cvBlock} aria-labelledby="ai-heading">
-            <h2 id="ai-heading" className={styles.cvBlockTitle}>{getContent(c.sections.aiPhilosophy, mode)}</h2>
-            <dl className={styles.cvDl}>
-              <div className={styles.cvDlRow}>
-                <dt>{getContent(c.aiPhilosophy.panel.equipment.label, mode)}</dt>
-                <dd>{getContent(c.aiPhilosophy.panel.equipment.value, mode)}</dd>
-              </div>
-              <div className={styles.cvDlRow}>
-                <dt>{getContent(c.aiPhilosophy.panel.approach.label, mode)}</dt>
-                <dd>{getContent(c.aiPhilosophy.panel.approach.value, mode)}</dd>
-              </div>
-              <div className={styles.cvDlRow}>
-                <dt>{getContent(c.aiPhilosophy.panel.philosophy.label, mode)}</dt>
-                <dd>{getContent(c.aiPhilosophy.panel.philosophy.value, mode)}</dd>
-              </div>
-            </dl>
-            <ul className={styles.cvBeliefs}>
-              {c.aiPhilosophy.beliefs.items.map((belief, i) => (
-                <li key={i}>{getContent(belief.title, mode)}</li>
+          {/* Professional experience */}
+          <section className={styles.cvBlock} aria-labelledby="experience-heading">
+            <h2 id="experience-heading" className={styles.cvBlockTitle}>{getContent(c.sections.experience, mode)}</h2>
+            <ul className={styles.cvExperience}>
+              {c.experience.map((job) => (
+                <li key={job.company}>
+                  <h3 className={styles.cvSubTitle}>{job.role} · {job.company}</h3>
+                  <p className={styles.cvListMeta}>{job.dates} · {job.location}</p>
+                  <p className={styles.cvText}>{job.summary}</p>
+                </li>
               ))}
             </ul>
           </section>
@@ -176,25 +169,48 @@ export default function Home() {
             </ul>
           </section>
 
-          {/* Profile summary panel */}
-          <section className={styles.cvBlock} aria-labelledby="profile-heading">
-            <h2 id="profile-heading" className={styles.cvBlockTitle}>{getContent(c.hero.panel.header.userId, mode)}</h2>
+          {/* Education and recruiting details */}
+          <section className={styles.cvBlock} aria-labelledby="education-heading">
+            <h2 id="education-heading" className={styles.cvBlockTitle}>{getContent(c.sections.education, mode)}</h2>
+            <h3 className={styles.cvSubTitle}>{c.education.degree}</h3>
+            <p className={styles.cvText}>{c.education.institution} · {c.education.dates}</p>
             <dl className={styles.cvDl}>
               <div className={styles.cvDlRow}>
-                <dt>{getContent(c.hero.panel.rows.function.label, mode)}</dt>
-                <dd>{getContent(c.hero.panel.rows.function.value, mode)}</dd>
+                <dt>Languages</dt>
+                <dd>{c.education.languages}</dd>
               </div>
               <div className={styles.cvDlRow}>
-                <dt>{getContent(c.hero.panel.rows.objective.label, mode)}</dt>
-                <dd>{getContent(c.hero.panel.rows.objective.value, mode)}</dd>
+                <dt>Citizenship</dt>
+                <dd>{c.education.citizenship}</dd>
               </div>
               <div className={styles.cvDlRow}>
-                <dt>{getContent(c.hero.panel.rows.access.label, mode)}</dt>
-                <dd>{getContent(c.hero.panel.rows.access.value, mode)}</dd>
+                <dt>Location</dt>
+                <dd>Zagreb, Croatia · EU / Canada / Remote</dd>
               </div>
             </dl>
+            <div className={styles.cvSubBlock}>
+              <h3 className={styles.cvSubTitle}>Recruiting</h3>
+              <p className={styles.cvText}>Have a relevant role? Email me with the company, job details, compensation range, and working arrangements.</p>
+              <a href="#recruiting-agent-guidance" className={styles.cvLink}>Recruiter & AI agent guidance</a>
+            </div>
           </section>
         </div>
+
+        <section id="recruiting-agent-guidance" className={`${styles.cvBlock} ${styles.cvRecruiting}`} aria-labelledby="recruiting-heading">
+          <h2 id="recruiting-heading" className={styles.cvBlockTitle}>{c.recruiting.title}</h2>
+          <p className={styles.cvText}>{c.recruiting.intro}</p>
+          <p className={styles.cvText}>
+            <a href="mailto:martin.erlic@gmail.com?subject=Job%20opportunity%20for%20Martin%20Erli%C4%87" className={styles.cvLink}>Contact Martin about a role: martin.erlic@gmail.com</a>
+          </p>
+          <ul className={styles.cvRecruitingList}>
+            {c.recruiting.guidance.map((instruction) => <li key={instruction}>{instruction}</li>)}
+          </ul>
+          <p className={styles.cvText}>
+            <a href="/resume.md" className={styles.cvLink}>Machine-readable résumé</a>
+            {' · '}
+            <a href="/llms.txt" className={styles.cvLink}>Profile index for agents</a>
+          </p>
+        </section>
       </div>
     </main>
   );

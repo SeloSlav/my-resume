@@ -18,9 +18,21 @@ const profileJsonLd = {
   name: "Martin Erlić",
   url: siteUrl,
   email: "mailto:martin.erlic@gmail.com",
-  jobTitle: "AI Product Developer",
+  jobTitle: "Full-Stack Developer",
   description:
-    "AI product developer building products from problem definition through launch and iteration across interfaces, APIs, and cloud infrastructure.",
+    "Full-stack developer in Zagreb with 10+ years across SaaS, enterprise applications, and business systems. React, TypeScript, Node.js, supplier APIs, automated testing, and independent AI/Python projects.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Zagreb",
+    addressCountry: "HR",
+  },
+  nationality: [
+    { "@type": "Country", name: "Croatia" },
+    { "@type": "Country", name: "Canada" },
+  ],
+  worksFor: { "@type": "Organization", name: "ProFIND" },
+  alumniOf: { "@type": "CollegeOrUniversity", name: "University of Victoria" },
+  subjectOf: { "@type": "CreativeWork", url: `${siteUrl}/resume.md`, name: "Professional résumé and recruiting guidance" },
   sameAs: [
     "https://github.com/seloslav",
     "https://stackoverflow.com/users/4077513/martin-erlic",
@@ -32,7 +44,17 @@ const profileJsonLd = {
     "Full-stack engineering",
     "TypeScript",
     "React",
+    "Node.js",
     "Next.js",
+    "REST APIs",
+    "PostgreSQL",
+    "Python",
+    "Flask",
+    "PyTorch projects",
+    "Playwright",
+    "Automated testing",
+    "Java",
+    "Spring Boot",
     "AI integration",
     "Retrieval-augmented generation",
     "LangGraph",
@@ -42,21 +64,23 @@ const profileJsonLd = {
     "E-commerce",
   ],
   skills:
-    "Product strategy, roadmap planning, full-stack architecture, TypeScript, React, Next.js, AI integrations, RAG, LangGraph, LangChain, Three.js, SpacetimeDB, technical operations",
+    "JavaScript, TypeScript, React, Node.js, Next.js, REST APIs, PostgreSQL, Python, Flask, AI integrations, RAG, LangGraph, LangChain, Playwright, Node.js test runner, Java, Spring Boot / MVC, GitLab CI/CD, Docker",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Martin Erlić | AI Product Developer",
-  description: "AI product developer building 0-to-1 products with full-stack engineering, APIs, automation, and rapid iteration.",
+  title: "Martin Erlić | Full-Stack Developer | React, Node.js & Applied AI",
+  description: "Full-stack developer in Zagreb with 10+ years across SaaS, enterprise applications, and business systems. React, TypeScript, Node.js, applied AI/Python, and automated testing.",
   keywords: [
     "Martin Erlić",
-    "AI Product Developer",
-    "AI Product Engineering",
     "Full-Stack Developer",
-    "Product Strategy",
-    "0-to-1 Development",
-    "AI Workflows"
+    "React Developer",
+    "TypeScript",
+    "Node.js Developer",
+    "Applied AI",
+    "Python",
+    "Playwright",
+    "Zagreb"
   ],  
   authors: [{ name: "Martin Erlić" }],
   creator: "Martin Erlić",

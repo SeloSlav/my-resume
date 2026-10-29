@@ -1,8 +1,6 @@
-/* Above-the-fold compact CV layout */
+/* Responsive CV layout with room for the full work history. */
 .cv {
-  height: 100dvh;
-  max-height: 100dvh;
-  overflow: hidden;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   padding-block: clamp(0.375rem, 1vh, 0.75rem);
@@ -14,10 +12,7 @@
 .cv :global(.container) {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-height: 100%;
   padding-inline: clamp(0.625rem, 1.5vw, 1.25rem);
-  overflow: hidden;
 }
 
 /* Header */
@@ -131,21 +126,26 @@
   text-decoration: underline;
 }
 
+.cvContactLink:focus-visible,
+.cvLink:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
 /* Main grid */
 .cvGrid {
   flex: 1;
   min-height: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto auto;
   gap: clamp(0.25rem, 0.75vw, 0.5rem);
   padding-top: clamp(0.25rem, 0.75vh, 0.5rem);
-  overflow: hidden;
 }
 
 .cvBlock {
   min-height: 0;
-  overflow: hidden;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 0.1875rem;
@@ -198,7 +198,30 @@
   display: flex;
   flex-direction: column;
   gap: 0.1875rem;
-  overflow: hidden;
+}
+
+.cvExperience {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.cvRecruiting {
+  margin-top: 0.5rem;
+  padding: var(--space-2);
+  gap: 0.5rem;
+  scroll-margin-top: 1rem;
+}
+
+.cvRecruitingList {
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-text);
 }
 
 .cvListItem {
@@ -225,6 +248,8 @@
 .cvListMeta {
   font-size: clamp(0.6875rem, 0.9vw, 0.8125rem);
   color: var(--color-text-dim);
+  margin: 0;
+  line-height: 1.35;
 }
 
 .cvListNote {
@@ -312,7 +337,7 @@
   color: var(--color-primary);
 }
 
-/* Mobile: 2-column grid, tighter header stack */
+/* Mobile: a single readable column with natural page scrolling. */
 @media (max-width: 767px) {
   .cvHeader {
     grid-template-columns: 1fr;
@@ -333,8 +358,8 @@
   }
 
   .cvGrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 0.3125rem;
   }
 
@@ -344,14 +369,15 @@
   }
 
   .cvSubBlock {
-    display: none;
+    margin-top: 0.5rem;
   }
 }
 
-/* Very small screens */
+/* Preserve visible labels and let long contact details wrap. */
 @media (max-width: 380px) {
-  .cvContactLink span {
-    display: none;
+  .cvContactLink {
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   .cvContact {
@@ -391,4 +417,9 @@
 
 :global(.light-mode) .cvText {
   line-height: 1.45;
+}
+
+:global(.light-mode) .cvListMeta {
+  font-size: 0.8125rem;
+  line-height: 1.35;
 }
