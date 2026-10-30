@@ -20,7 +20,7 @@ My background spans hands-on engineering, leading developers, owning product req
 
 | Area | Technologies and practices |
 | --- | --- |
-| Full stack | JavaScript, TypeScript, React, Node.js, Next.js, HTML5, CSS, REST APIs, PostgreSQL |
+| Full stack | JavaScript, TypeScript, React, Node.js, Next.js, Ruby on Rails, Ruby, jQuery, HTML5, CSS, REST APIs, PostgreSQL, MySQL, Redis |
 | Product ownership & team leadership | Requirements analysis, stakeholder communication, developer coordination, product delivery, Agile/Scrum |
 | AI & Python | Python, Flask services, PyTorch projects, LangChain, LangGraph, RAG, tool calling, OpenAI APIs, Codex, Cursor |
 | Quality & delivery | Playwright browser E2E, Node.js test runner for integration/regression tests, JUnit, GitLab CI/CD, Docker, Git, Linux |
