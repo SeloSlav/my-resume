@@ -425,8 +425,8 @@ export const content = {
         simple: "Full Stack"
       },
       skills: {
-        tech: ["JAVASCRIPT", "TYPESCRIPT", "REACT", "NODE.JS", "NEXT.JS", "HTML5/CSS", "REST_APIS", "POSTGRESQL"],
-        simple: ["JavaScript", "TypeScript", "React", "Node.js", "Next.js", "HTML5 / CSS", "REST APIs", "PostgreSQL"]
+        tech: ["JAVASCRIPT", "TYPESCRIPT", "REACT", "NODE.JS", "NEXT.JS", "RUBY_ON_RAILS", "RUBY", "JQUERY", "HTML5/CSS", "REST_APIS", "POSTGRESQL", "MYSQL", "REDIS"],
+        simple: ["JavaScript", "TypeScript", "React", "Node.js", "Next.js", "Ruby on Rails", "Ruby", "jQuery", "HTML5 / CSS", "REST APIs", "PostgreSQL", "MySQL", "Redis"]
       }
     },
     engineering: {
