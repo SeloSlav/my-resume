@@ -49,6 +49,7 @@ My background spans hands-on engineering, leading developers, owning product req
 **2018–2020 · Victoria, Canada**
 
 - Combined product ownership with development-team leadership for SmartBallot: translated user requirements into delivered functionality and coordinated implementation and technical support.
+- **Hands-on full-stack development:** Built SmartBallot features using Ruby on Rails, Ruby, JavaScript, Redis, jQuery, MySQL, and CSS.
 
 ### Cloud IT Developer · NNIT
 

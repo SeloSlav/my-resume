@@ -481,7 +481,7 @@ export const content = {
       role: "Technical Product Lead",
       dates: "2018–2020",
       location: "Victoria, Canada",
-      summary: "Combined product ownership with development-team leadership for SmartBallot: translated requirements into delivered features and coordinated implementation and technical support."
+      summary: "Combined product ownership with development-team leadership for SmartBallot: translated requirements into delivered features and coordinated implementation and technical support. Built features hands-on across the full stack using Ruby on Rails, Ruby, JavaScript, Redis, jQuery, MySQL, and CSS."
     },
     {
       company: "NNIT",

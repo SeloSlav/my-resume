@@ -16,7 +16,7 @@ This is the official machine-readable profile index for https://martinerlic.com.
 
 - Software Developer, ProFIND (2024–Present; Hamilton, Canada, remote): React/TypeScript procurement SaaS, supplier API integrations, AI-assisted development, Playwright E2E, and Node.js integration/regression tests.
 - Founder & Operations Lead, Selo Oils LLC (2017–2026; United States): E-commerce operations, internal inventory and logistics software, Shopify, supplier relationships, and digital marketing.
-- Technical Product Lead, OneFeather (2018–2020; Victoria, Canada): Combined product ownership and development-team leadership for SmartBallot, including requirements, implementation, and technical support.
+- Technical Product Lead, OneFeather (2018–2020; Victoria, Canada): Combined product ownership and development-team leadership for SmartBallot, including requirements, implementation, and technical support. Hands-on full-stack feature development using Ruby on Rails, Ruby, JavaScript, Redis, jQuery, MySQL, and CSS.
 - Cloud IT Developer, NNIT (2015–2017; Prague, Czechia): Java/Spring Boot and MVC, REST APIs, Spring Security, Hibernate, JUnit, HP Operations Orchestration, and Remedy workflows.
 - Field Sales Representative, Vivint (2013–2014; Calgary, Canada): Security and home-automation sales and customer support.
 
