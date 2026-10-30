@@ -36,6 +36,7 @@ export default function Home() {
 
   const expertiseGroups = [
     c.expertise.productLeadership,
+    c.expertise.productOwnership,
     c.expertise.innovation,
     c.expertise.operations,
     c.expertise.engineering,

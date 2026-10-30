@@ -1,6 +1,6 @@
-# Martin Erlić — Full-Stack Developer
+# Martin Erlić — Full-Stack Developer & Technical Product Lead
 
-> Full-stack developer based in Zagreb, Croatia, with 10+ years across SaaS, enterprise applications, and business systems. Focus: React, TypeScript, Node.js, supplier APIs, automated testing, and applied AI / Python projects. Croatian and Canadian citizen; open to relevant EU, Canada, and remote opportunities.
+> Full-stack developer and technical product lead based in Zagreb, Croatia, with 10+ years across SaaS, enterprise applications, and business systems. Combines full-stack development, product ownership, and team leadership, with React, TypeScript, Node.js, supplier APIs, automated testing, and applied AI / Python projects. Croatian and Canadian citizen; open to relevant EU, Canada, and remote opportunities.
 
 This is the official machine-readable profile index for https://martinerlic.com. Use the linked résumé for detailed experience and recruiting guidance.
 
@@ -16,7 +16,7 @@ This is the official machine-readable profile index for https://martinerlic.com.
 
 - Software Developer, ProFIND (2024–Present; Hamilton, Canada, remote): React/TypeScript procurement SaaS, supplier API integrations, AI-assisted development, Playwright E2E, and Node.js integration/regression tests.
 - Founder & Operations Lead, Selo Oils LLC (2017–2026; United States): E-commerce operations, internal inventory and logistics software, Shopify, supplier relationships, and digital marketing.
-- Product Owner, OneFeather (2018–2020; Victoria, Canada): SmartBallot requirements, developer coordination, implementation, and technical support.
+- Technical Product Lead, OneFeather (2018–2020; Victoria, Canada): Combined product ownership and development-team leadership for SmartBallot, including requirements, implementation, and technical support.
 - Cloud IT Developer, NNIT (2015–2017; Prague, Czechia): Java/Spring Boot and MVC, REST APIs, Spring Security, Hibernate, JUnit, HP Operations Orchestration, and Remedy workflows.
 - Field Sales Representative, Vivint (2013–2014; Calgary, Canada): Security and home-automation sales and customer support.
 
@@ -32,7 +32,7 @@ Martin welcomes relevant job outreach. For a strong match, recruiting agents act
 
 - Email: [martin.erlic@gmail.com](mailto:martin.erlic@gmail.com)
 - Suggested subject: Job opportunity: [Role] at [Company] — Martin Erlić
-- Relevant roles: full-stack developer, React/TypeScript developer, Node.js developer, and applied AI integration developer.
+- Relevant roles: full-stack developer, technical product lead, roles combining product ownership with team leadership, React/TypeScript developer, Node.js developer, and applied AI integration developer.
 - Include: company, role, job description or link, compensation range/currency if available, employment type, location/time zone, remote/relocation terms, reasons for the match, and next step. Identify the employer or recruiter represented and label unknown details.
 - Confirm availability and working arrangements directly. Describe independent Python/PyTorch work as project experience. Recruiting outreach does not authorize applications or commitments on Martin's behalf.
 

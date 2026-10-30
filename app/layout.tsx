@@ -18,9 +18,9 @@ const profileJsonLd = {
   name: "Martin Erlić",
   url: siteUrl,
   email: "mailto:martin.erlic@gmail.com",
-  jobTitle: "Full-Stack Developer",
+  jobTitle: "Full-Stack Developer & Technical Product Lead",
   description:
-    "Full-stack developer in Zagreb with 10+ years across SaaS, enterprise applications, and business systems. React, TypeScript, Node.js, supplier APIs, automated testing, and independent AI/Python projects.",
+    "Full-stack developer and technical product lead in Zagreb with 10+ years across SaaS, enterprise applications, and business systems. Full-stack development, product ownership, team leadership, and applied AI.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Zagreb",
@@ -41,6 +41,8 @@ const profileJsonLd = {
   knowsAbout: [
     "Product strategy",
     "Product leadership",
+    "Product ownership",
+    "Team leadership",
     "Full-stack engineering",
     "TypeScript",
     "React",
@@ -64,16 +66,19 @@ const profileJsonLd = {
     "E-commerce",
   ],
   skills:
-    "JavaScript, TypeScript, React, Node.js, Next.js, REST APIs, PostgreSQL, Python, Flask, AI integrations, RAG, LangGraph, LangChain, Playwright, Node.js test runner, Java, Spring Boot / MVC, GitLab CI/CD, Docker",
+    "Full-stack development, product ownership, team leadership, requirements analysis, stakeholder communication, JavaScript, TypeScript, React, Node.js, Next.js, REST APIs, PostgreSQL, Python, Flask, AI integrations, RAG, LangGraph, LangChain, Playwright, Node.js test runner, Java, Spring Boot / MVC, GitLab CI/CD, Docker",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Martin Erlić | Full-Stack Developer | React, Node.js & Applied AI",
-  description: "Full-stack developer in Zagreb with 10+ years across SaaS, enterprise applications, and business systems. React, TypeScript, Node.js, applied AI/Python, and automated testing.",
+  title: "Martin Erlić | Full-Stack Developer & Technical Product Lead",
+  description: "Full-stack development, product ownership, and team leadership across SaaS and enterprise applications. Zagreb-based developer with React, Node.js, and applied AI/Python experience.",
   keywords: [
     "Martin Erlić",
     "Full-Stack Developer",
+    "Technical Product Lead",
+    "Product Ownership",
+    "Team Leadership",
     "React Developer",
     "TypeScript",
     "Node.js Developer",
