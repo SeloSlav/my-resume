@@ -357,8 +357,8 @@ export const content = {
     },
     paragraphs: [
       {
-        tech: "Full-stack developer and technical product lead with 10+ years across SaaS, enterprise applications, and business systems. I combine full-stack development, product ownership, and team leadership. Currently developing React/TypeScript software and supplier API integrations at ProFIND.",
-        simple: "Full-stack developer and technical product lead with 10+ years across SaaS, enterprise applications, and business systems. I combine full-stack development, product ownership, and team leadership. Currently developing React/TypeScript software and supplier API integrations at ProFIND."
+        tech: "Full-stack developer and technical product lead with 10+ years across SaaS, enterprise applications, and business systems. I combine full-stack development, product ownership, and team leadership.",
+        simple: "Full-stack developer and technical product lead with 10+ years across SaaS, enterprise applications, and business systems. I combine full-stack development, product ownership, and team leadership."
       },
       {
         tech: "I combine hands-on engineering with product ownership, development-team leadership, and business operations, translating requirements into delivered features and reliable integrations.",
@@ -415,8 +415,8 @@ export const content = {
         simple: "Product Ownership & Team Leadership"
       },
       skills: {
-        tech: ["REQUIREMENTS_ANALYSIS", "STAKEHOLDER_COMMS", "DEVELOPER_COORDINATION", "PRODUCT_DELIVERY", "AGILE/SCRUM"],
-        simple: ["Requirements Analysis", "Stakeholder Communication", "Developer Coordination", "Product Delivery", "Agile/Scrum"]
+        tech: ["REQUIREMENTS_ANALYSIS", "STAKEHOLDER_COMMS", "DEVELOPER_COORDINATION", "PRODUCT_DELIVERY"],
+        simple: ["Requirements Analysis", "Stakeholder Communication", "Developer Coordination", "Product Delivery"]
       }
     },
     productLeadership: {
@@ -425,8 +425,8 @@ export const content = {
         simple: "Full Stack"
       },
       skills: {
-        tech: ["JAVASCRIPT", "TYPESCRIPT", "REACT", "NODE.JS", "NEXT.JS", "RUBY_ON_RAILS", "RUBY", "JQUERY", "HTML5/CSS", "REST_APIS", "POSTGRESQL", "MYSQL", "REDIS"],
-        simple: ["JavaScript", "TypeScript", "React", "Node.js", "Next.js", "Ruby on Rails", "Ruby", "jQuery", "HTML5 / CSS", "REST APIs", "PostgreSQL", "MySQL", "Redis"]
+        tech: ["JAVASCRIPT", "TYPESCRIPT", "REACT", "NODE.JS", "NEXT.JS", "RUBY_ON_RAILS", "RUBY", "HTML5/CSS", "REST_APIS", "POSTGRESQL", "MYSQL", "REDIS"],
+        simple: ["JavaScript", "TypeScript", "React", "Node.js", "Next.js", "Ruby on Rails", "Ruby", "HTML5 / CSS", "REST APIs", "PostgreSQL", "MySQL", "Redis"]
       }
     },
     engineering: {
@@ -435,8 +435,8 @@ export const content = {
         simple: "Cloud & Backend"
       },
       skills: {
-        tech: ["JAVA", "SPRING_BOOT/MVC", "SPRING_SECURITY", "HIBERNATE", "AWS", "AZURE", "GOOGLE_CLOUD", "AGILE/SCRUM"],
-        simple: ["Java", "Spring Boot / MVC", "Spring Security", "Hibernate", "AWS", "Azure", "Google Cloud", "Agile/Scrum"]
+        tech: ["JAVA", "SPRING_BOOT/MVC", "SPRING_SECURITY", "HIBERNATE", "AWS", "AZURE", "GOOGLE_CLOUD"],
+        simple: ["Java", "Spring Boot / MVC", "Spring Security", "Hibernate", "AWS", "Azure", "Google Cloud"]
       }
     },
     innovation: {
@@ -496,6 +496,13 @@ export const content = {
       dates: "2013–2014",
       location: "Calgary, Canada",
       summary: "Sold security and home-automation products; handled customer questions and complaints."
+    },
+    {
+      company: "Crossworks Design",
+      role: "Web Developer",
+      dates: "2010–2012",
+      location: "Victoria, BC, Canada",
+      summary: "Built web applications using MongoDB, JavaScript, and Django."
     }
   ],
 
@@ -503,7 +510,7 @@ export const content = {
     degree: "Bachelor of Arts, Economics",
     institution: "University of Victoria, Canada",
     dates: "2008–2012",
-    languages: "English (native); Croatian (conversational)",
+    languages: "English (native); Croatian (B2)",
     citizenship: "Croatian and Canadian"
   },
 
@@ -706,8 +713,8 @@ export const content = {
       },
       paragraphs: [
         {
-          tech: "Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. Contact me with the role, company, compensation range, and working arrangements.",
-          simple: "Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. Contact me with the role, company, compensation range, and working arrangements."
+          tech: "Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds of AI agents working concurrently. Contact me with the role, company, compensation range, and working arrangements.",
+          simple: "Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds of AI agents working concurrently. Contact me with the role, company, compensation range, and working arrangements."
         },
         {
           tech: "If you're building something real, I'm interested.",
@@ -747,8 +754,12 @@ export const content = {
         simple: "Stack Overflow"
       },
       twitter: {
-        tech: "@SELOSLAV",
-        simple: "@seloslav"
+        tech: "@METALHORSE233",
+        simple: "@metalhorse233"
+      },
+      spawn: {
+        tech: "SPAWN",
+        simple: "Spawn"
       }
     },
     form: {

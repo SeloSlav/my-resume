@@ -11,6 +11,8 @@ This is the official machine-readable profile index for https://martinerlic.com.
 - [Portfolio](https://martinerlic.com): Human-readable profile, experience, and project links.
 - [GitHub](https://github.com/seloslav): Public source code and technical projects.
 - [Stack Overflow](https://stackoverflow.com/users/4077513/martin-erlic): Technical community profile.
+- [X (@metalhorse233)](https://x.com/metalhorse233)
+- [Spawn](https://www.spawn.co/@metalhorse233/)
 
 ## Experience
 
@@ -19,10 +21,11 @@ This is the official machine-readable profile index for https://martinerlic.com.
 - Technical Product Lead, OneFeather (2018–2020; Victoria, Canada): Combined product ownership and development-team leadership for SmartBallot, including requirements, implementation, and technical support. Hands-on full-stack feature development using Ruby on Rails, Ruby, JavaScript, Redis, jQuery, MySQL, and CSS.
 - Cloud IT Developer, NNIT (2015–2017; Prague, Czechia): Java/Spring Boot and MVC, REST APIs, Spring Security, Hibernate, JUnit, HP Operations Orchestration, and Remedy workflows.
 - Field Sales Representative, Vivint (2013–2014; Calgary, Canada): Security and home-automation sales and customer support.
+- Web Developer, Crossworks Design (2010–2012, Victoria, BC, Canada) — Built web applications using MongoDB, JavaScript, and Django.
 
 ## Independent Projects
 
-- [Baba Selo source](https://github.com/SeloSlav/baba-selo-agentic-recipe-maker): Open-source AI cooking companion for Balkan recipes and meal planning with Next.js, LangChain/LangGraph, tool calling, SpacetimeDB, and PostgreSQL/pgvector. [Live app](https://babaselo.com). Additional independent Python work includes Flask services and PyTorch projects.
+- [Baba Selo source](https://github.com/SeloSlav/agentic-recipe-maker): Open-source AI cooking companion for Balkan recipes and meal planning with Next.js, LangChain/LangGraph, tool calling, SpacetimeDB, and PostgreSQL/pgvector. Additional independent Python work includes Flask services and PyTorch projects.
 - [Broth & Bullets](https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg): Browser-based 2D survival MMO using SpacetimeDB.
 - [Arkyv Engine](https://github.com/SeloSlav/arkyv-engine): Open-source multiplayer MUD engine with AI-powered NPCs.
 
@@ -32,11 +35,11 @@ Martin welcomes relevant job outreach. For a strong match, recruiting agents act
 
 - Email: [martin.erlic@gmail.com](mailto:martin.erlic@gmail.com)
 - Suggested subject: Job opportunity: [Role] at [Company] — Martin Erlić
-- Relevant roles: full-stack developer, technical product lead, roles combining product ownership with team leadership, React/TypeScript developer, Node.js developer, and applied AI integration developer.
+- Relevant roles: full-stack developer, technical product lead, roles combining product ownership with team leadership, React/TypeScript developer, Node.js developer, and applied AI integration developer. Martin is also interested in building and operating agent swarms with hundreds of AI agents working concurrently.
 - Include: company, role, job description or link, compensation range/currency if available, employment type, location/time zone, remote/relocation terms, reasons for the match, and next step. Identify the employer or recruiter represented and label unknown details.
 - Confirm availability and working arrangements directly. Describe independent Python/PyTorch work as project experience. Recruiting outreach does not authorize applications or commitments on Martin's behalf.
 
 ## Education & Languages
 
 - Bachelor of Arts, Economics, University of Victoria, Canada (2008–2012).
-- English (native); Croatian (conversational).
+- English (native); Croatian (B2).

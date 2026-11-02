@@ -6,13 +6,13 @@ Zagreb, Croatia · Croatian and Canadian citizenship
 
 [martin.erlic@gmail.com](mailto:martin.erlic@gmail.com) · [+385 91 906 3613](tel:+385919063613)
 
-[Portfolio](https://martinerlic.com) · [GitHub](https://github.com/seloslav) · [Stack Overflow](https://stackoverflow.com/users/4077513/martin-erlic)
+[Portfolio](https://martinerlic.com) · [GitHub](https://github.com/seloslav) · [Stack Overflow](https://stackoverflow.com/users/4077513/martin-erlic) · [X (@metalhorse233)](https://x.com/metalhorse233) · [Spawn](https://www.spawn.co/@metalhorse233/)
 
-Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. [Contact me about a role](mailto:martin.erlic@gmail.com?subject=Job%20opportunity%20for%20Martin%20Erli%C4%87).
+Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds of AI agents working concurrently. [Contact me about a role](mailto:martin.erlic@gmail.com?subject=Job%20opportunity%20for%20Martin%20Erli%C4%87).
 
 ## Professional Profile
 
-Full-stack developer and technical product lead with 10+ years across SaaS, enterprise applications, and business systems. I combine full-stack development, product ownership, and team leadership to translate user needs into working software. Currently developing React/TypeScript software and supplier API integrations at ProFIND, using AI-assisted development and automated tests. Independent projects include LLM applications, LangChain/LangGraph, and practical Python work with Flask and PyTorch.
+Full-stack developer and technical product lead with 10+ years across SaaS, enterprise applications, and business systems. I combine full-stack development, product ownership, and team leadership to translate user needs into working software. Currently developing React/TypeScript software and supplier API integrations at [ProFIND](https://www.profind.shop), using AI-assisted development and automated tests. Independent projects include LLM applications, LangChain/LangGraph, and practical Python work with Flask and PyTorch.
 
 My background spans hands-on engineering, leading developers, owning product requirements and delivery, and running an e-commerce business. I bring experience connecting stakeholders with development teams, integrating business systems, and supporting the operations around them.
 
@@ -20,11 +20,11 @@ My background spans hands-on engineering, leading developers, owning product req
 
 | Area | Technologies and practices |
 | --- | --- |
-| Full stack | JavaScript, TypeScript, React, Node.js, Next.js, Ruby on Rails, Ruby, jQuery, HTML5, CSS, REST APIs, PostgreSQL, MySQL, Redis |
-| Product ownership & team leadership | Requirements analysis, stakeholder communication, developer coordination, product delivery, Agile/Scrum |
+| Full stack | JavaScript, TypeScript, React, Node.js, Next.js, Ruby on Rails, Ruby, HTML5, CSS, REST APIs, PostgreSQL, MySQL, Redis |
+| Product ownership & team leadership | Requirements analysis, stakeholder communication, developer coordination, product delivery |
 | AI & Python | Python, Flask services, PyTorch projects, LangChain, LangGraph, RAG, tool calling, OpenAI APIs, Codex, Cursor |
 | Quality & delivery | Playwright browser E2E, Node.js test runner for integration/regression tests, JUnit, GitLab CI/CD, Docker, Git, Linux |
-| Cloud & backend | AWS, Azure, Google Cloud, Java, Spring Boot / MVC, Spring Security, Hibernate, Agile/Scrum |
+| Cloud & backend | AWS, Azure, Google Cloud, Java, Spring Boot / MVC, Spring Security, Hibernate |
 
 ## Professional Experience
 
@@ -64,9 +64,15 @@ My background spans hands-on engineering, leading developers, owning product req
 
 - Sold security and home-automation products; handled customer questions and complaints.
 
+### Web Developer · Crossworks Design
+
+**2010–2012 · Victoria, BC, Canada**
+
+- Built web applications using MongoDB, JavaScript, and Django.
+
 ## Independent AI & Python Projects
 
-**Baba Selo / Seedo** — LLM-powered recipe and conversational apps, including experiments with LangChain/LangGraph, RAG, and agent tool calling. Additional independent Python work includes Flask services and PyTorch projects. [Live app](https://babaselo.com) · [Open-source Baba Selo project](https://github.com/SeloSlav/baba-selo-agentic-recipe-maker).
+**Baba Selo / Seedo** — LLM-powered recipe and conversational apps, including experiments with LangChain/LangGraph, RAG, and agent tool calling. Additional independent Python work includes Flask services and PyTorch projects. [Baba Selo on GitHub](https://github.com/SeloSlav/agentic-recipe-maker).
 
 ### More Portfolio Work
 
@@ -78,7 +84,7 @@ My background spans hands-on engineering, leading developers, owning product req
 ## Education & Additional Information
 
 - **Bachelor of Arts, Economics** — University of Victoria, Canada, 2008–2012.
-- **Languages:** English (native); Croatian (conversational).
+- **Languages:** English (native); Croatian (B2).
 - **Citizenship:** Croatian and Canadian.
 - **Location:** Zagreb, Croatia; open to relevant EU, Canada, and remote opportunities. Start date and working arrangements can be discussed directly.
 

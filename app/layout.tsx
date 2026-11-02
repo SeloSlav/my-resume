@@ -36,7 +36,8 @@ const profileJsonLd = {
   sameAs: [
     "https://github.com/seloslav",
     "https://stackoverflow.com/users/4077513/martin-erlic",
-    "https://www.x.com/seloslav",
+    "https://x.com/metalhorse233",
+    "https://www.spawn.co/@metalhorse233/",
   ],
   knowsAbout: [
     "Product strategy",
@@ -50,7 +51,6 @@ const profileJsonLd = {
     "Next.js",
     "Ruby on Rails",
     "Ruby",
-    "jQuery",
     "REST APIs",
     "PostgreSQL",
     "MySQL",
@@ -71,7 +71,7 @@ const profileJsonLd = {
     "E-commerce",
   ],
   skills:
-    "Full-stack development, product ownership, team leadership, requirements analysis, stakeholder communication, JavaScript, TypeScript, React, Node.js, Next.js, Ruby on Rails, Ruby, jQuery, REST APIs, PostgreSQL, MySQL, Redis, Python, Flask, AI integrations, RAG, LangGraph, LangChain, Playwright, Node.js test runner, Java, Spring Boot / MVC, GitLab CI/CD, Docker",
+    "Full-stack development, product ownership, team leadership, requirements analysis, stakeholder communication, JavaScript, TypeScript, React, Node.js, Next.js, Ruby on Rails, Ruby, REST APIs, PostgreSQL, MySQL, Redis, Python, Flask, AI integrations, RAG, LangGraph, LangChain, Playwright, Node.js test runner, Java, Spring Boot / MVC, GitLab CI/CD, Docker",
 };
 
 export const metadata: Metadata = {

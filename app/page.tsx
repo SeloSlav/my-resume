@@ -5,13 +5,15 @@ import { useEffect, useState } from 'react';
 import { useTheme } from './context/ThemeContext';
 import { content, getContent } from './config/content';
 
+const profindUrl = 'https://www.profind.shop';
+
 const portfolioLinks = [
-  { key: 'profind', url: 'https://profind.shop' },
+  { key: 'profind', url: profindUrl },
   { key: 'selo', url: 'https://www.seloolive.com' },
 ] as const;
 
 const rndLinks = [
-  { key: 'babaSelo', url: 'https://github.com/SeloSlav/baba-selo-agentic-recipe-maker' },
+  { key: 'babaSelo', url: 'https://github.com/SeloSlav/agentic-recipe-maker' },
   { key: 'babushka', url: 'https://www.babushkabook.com' },
   { key: 'broth', url: 'https://github.com/SeloSlav/2d-multiplayer-survival-mmorpg' },
   { key: 'arkyv', url: 'https://github.com/SeloSlav/arkyv-engine' },
@@ -22,7 +24,8 @@ const contactLinks = [
   { href: 'mailto:martin.erlic@gmail.com', icon: 'fas fa-envelope', key: 'email' as const },
   { href: 'https://github.com/seloslav', icon: 'fab fa-github', key: 'github' as const },
   { href: 'https://stackoverflow.com/users/4077513/martin-erlic', icon: 'fab fa-stack-overflow', key: 'stackoverflow' as const },
-  { href: 'https://www.x.com/seloslav', icon: 'fab fa-x-twitter', key: 'twitter' as const },
+  { href: 'https://x.com/metalhorse233', icon: 'fab fa-x-twitter', key: 'twitter' as const },
+  { href: 'https://www.spawn.co/@metalhorse233/', icon: 'fas fa-link', key: 'spawn' as const },
 ];
 
 export default function Home() {
@@ -76,7 +79,10 @@ export default function Home() {
           {/* About */}
           <section className={styles.cvBlock} aria-labelledby="about-heading">
             <h2 id="about-heading" className={styles.cvBlockTitle}>{getContent(c.sections.about, mode)}</h2>
-            <p className={styles.cvText}>{getContent(c.about.paragraphs[0], mode)}</p>
+            <p className={styles.cvText}>
+              {getContent(c.about.paragraphs[0], mode)} I develop React/TypeScript software and supplier API integrations at{' '}
+              <a href={profindUrl} target="_blank" rel="noopener noreferrer" className={styles.cvLink}>ProFIND</a>.
+            </p>
             <p className={styles.cvText}>{getContent(c.about.paragraphs[2], mode)}</p>
             <div className={styles.cvSubBlock}>
               <h3 className={styles.cvSubTitle}>{getContent(c.whyHire.whatIWant.title, mode)}</h3>
@@ -111,11 +117,6 @@ export default function Home() {
                       {getContent(project.title, mode)}
                     </a>
                     <span className={styles.cvListMeta}>{getContent(project.subtitle, mode)}</span>
-                    {key === 'babaSelo' && (
-                      <>
-                        <a href="https://babaselo.com" target="_blank" rel="noopener noreferrer" className={styles.cvLink}>Live app</a>
-                      </>
-                    )}
                   </li>
                 );
               })}
