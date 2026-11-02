@@ -8,7 +8,7 @@ Zagreb, Croatia · Croatian and Canadian citizenship
 
 [Portfolio](https://martinerlic.com) · [GitHub](https://github.com/seloslav) · [Stack Overflow](https://stackoverflow.com/users/4077513/martin-erlic) · [X (@metalhorse233)](https://x.com/metalhorse233) · [Spawn](https://www.spawn.co/@metalhorse233/)
 
-Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds of AI agents working concurrently. [Contact me about a role](mailto:martin.erlic@gmail.com?subject=Job%20opportunity%20for%20Martin%20Erli%C4%87).
+Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds or thousands of AI agents working concurrently. [Contact me about a role](mailto:martin.erlic@gmail.com?subject=Job%20opportunity%20for%20Martin%20Erli%C4%87).
 
 ## Professional Profile
 

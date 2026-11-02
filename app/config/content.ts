@@ -713,8 +713,8 @@ export const content = {
       },
       paragraphs: [
         {
-          tech: "Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds of AI agents working concurrently. Contact me with the role, company, compensation range, and working arrangements.",
-          simple: "Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds of AI agents working concurrently. Contact me with the role, company, compensation range, and working arrangements."
+          tech: "Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds or thousands of AI agents working concurrently. Contact me with the role, company, compensation range, and working arrangements.",
+          simple: "Open to full-stack development, technical product leadership, and roles combining product ownership with team leadership in the EU, Canada, or remote. I’m also interested in building and operating agent swarms with hundreds or thousands of AI agents working concurrently. Contact me with the role, company, compensation range, and working arrangements."
         },
         {
           tech: "If you're building something real, I'm interested.",
