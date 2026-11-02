@@ -56,8 +56,6 @@ const profileJsonLd = {
     "MySQL",
     "Redis",
     "Python",
-    "Flask",
-    "PyTorch projects",
     "Playwright",
     "Automated testing",
     "Java",
@@ -71,7 +69,7 @@ const profileJsonLd = {
     "E-commerce",
   ],
   skills:
-    "Full-stack development, product ownership, team leadership, requirements analysis, stakeholder communication, JavaScript, TypeScript, React, Node.js, Next.js, Ruby on Rails, Ruby, REST APIs, PostgreSQL, MySQL, Redis, Python, Flask, AI integrations, RAG, LangGraph, LangChain, Playwright, Node.js test runner, Java, Spring Boot / MVC, GitLab CI/CD, Docker",
+    "Full-stack development, product ownership, team leadership, requirements analysis, stakeholder communication, JavaScript, TypeScript, React, Node.js, Next.js, Ruby on Rails, Ruby, REST APIs, PostgreSQL, MySQL, Redis, Python, AI integrations, RAG, LangGraph, LangChain, Playwright, Node.js test runner, Java, Spring Boot / MVC, GitLab CI/CD, Docker",
 };
 
 export const metadata: Metadata = {
